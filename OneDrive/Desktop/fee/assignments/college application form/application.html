@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Application Form</title>
+    <link rel="stylesheet" href="application.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="heading">
+                <h1>College Application Form</h1>
+            </div>
+            <form>
+                <h3>Personal Information:</h3>
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" placeholder="First name" required>
+                
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" placeholder="Last name" required>
+
+                <label for="phone">Phone number:</label>
+                <div class="phone_input">
+                    <select id="phone_code">
+                        <option value="+91" selected>+91</option>
+                        <option value="+1">+1</option>
+                        <option value="+44">+44</option>
+                        <option value="+61">+61</option>
+                    </select>
+                    <input type="tel" id="phone" placeholder="Phone number" required>
+                </div>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Email ID" required>
+                
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" required>
+
+                <label>Gender:</label>
+                <div class="gender_input">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other" required>
+                    <label for="other">Other</label>
+                </div>
+
+                <label for="nationality">Nationality:</label>
+                <select id="nationality" required>
+                    <option value="India" selected>India</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UK">UK</option>
+                    <option value="Australia">Australia</option>
+                </select>
+
+                <h3>Parent Information:</h3>
+                <label for="father_name">Father's Name:</label>
+                <input type="text" id="father_name" placeholder="Father's name" required>
+
+                <label for="mother_name">Mother's Name:</label>
+                <input type="text" id="mother_name" placeholder="Mother's name">
+
+                <label for="father_phone">Father's Contact:</label>
+                <input type="tel" id="father_phone" placeholder="Father's Contact" required>
+
+                <label for="mother_phone">Mother's Contact:</label>
+                <input type="tel" id="mother_phone" placeholder="Mother's Contact" required>
+
+                <label for="father_occupation">Father's Occupation:</label>
+                <input type="text" id="father_occupation" placeholder="Father's Occupation" required>
+
+                <label for="mother_occupation">Mother's Occupation:</label>
+                <input type="text" id="mother_occupation" placeholder="Mother's Occupation" required>
+
+                <label for="parent_email">Parent's Email:</label>
+                <input type="email" id="parent_email" placeholder="Parent's Email" required>
+
+                <h3>Residential Information:</h3>
+                <label for="address">Address:</label>
+                <input type="text" id="address" placeholder="Enter Address" required>
+
+                <label for="city">City:</label>
+                <input type="text" id="city" placeholder="Enter City" required>
+
+                <label for="state">State:</label>
+                <input type="text" id="state" placeholder="Enter State" required>
+
+                <label for="country">Country:</label>
+                <select id="country" required>
+                    <option value="India" selected>India</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UK">UK</option>
+                    <option value="Australia">Australia</option>
+                </select>
+
+                <h3>Class 12 Examinations:</h3>
+                <label for="class_12_percentage">Aggregate Percentage/CGPA:</label>
+                <input type="text" id="class_12_percentage" placeholder="12th Aggregate" required>
+
+                <label for="class_12_board">Education Board:</label>
+                <select id="class_12_board" required>
+                    <option value="CBSE">Central Board of Secondary Education (CBSE)</option>
+                    <option value="ICSE">Indian Certificate of Secondary Education (ICSE)</option>
+                    <option value="state_board">State Board</option>
+                </select>
+
+                <label for="class_12_roll">Roll Number:</label>
+                <input type="number" id="class_12_roll" placeholder="Roll Number" required>
+
+                <label for="class_12_passing_year">Year of Graduating:</label>
+                <input type="number" id="class_12_passing_year" placeholder="Year of Graduating" required>
+
+                <label for="class_12_school_name">School Name:</label>
+                <input type="text" id="class_12_school_name" placeholder="School Name" required>
+
+                <label for="class_12_school_city">School City:</label>
+                <input type="text" id="class_12_school_city" placeholder="School City" required>
+
+                <h3>Class 10 Examinations:</h3>
+                <label for="class_10_percentage">Aggregate Percentage/CGPA:</label>
+                <input type="text" id="class_10_percentage" placeholder="10th Aggregate" required>
+
+                <label for="class_10_board">Education Board:</label>
+                <select id="class_10_board" required>
+                    <option value="CBSE">Central Board of Secondary Education (CBSE)</option>
+                    <option value="ICSE">Indian Certificate of Secondary Education (ICSE)</option>
+                    <option value="state_board">State Board</option>
+                </select>
+
+                <label for="class_10_roll">Roll Number:</label>
+                <input type="number" id="class_10_roll" placeholder="Roll Number" required>
+
+                <label for="class_10_passing_year">Year of Graduating:</label>
+                <input type="number" id="class_10_passing_year" placeholder="Year of Graduating" required>
+
+                <label for="class_10_school_name">School Name:</label>
+                <input type="text" id="class_10_school_name" placeholder="School Name" required>
+
+                <label for="class_10_school_city">School City:</label>
+                <input type="text" id="class_10_school_city" placeholder="School City" required>
+
+                <h3>Entrance Examination Credentials:</h3>
+                <label for="exam_name">Name of Entrance Exam:</label>
+                <input type="text" id="exam_name" placeholder="Name of Entrance Exam" required>
+
+                <label for="percentile">Percentile Obtained:</label>
+                <input type="number" id="percentile" placeholder="Percentile Obtained" required>
+
+                <label for="application">Application Number:</label>
+                <input type="number" id="application" placeholder="Application Number" required>
+
+                <h3>Choose a Course:</h3>
+                <label for="course">Undergraduate Course Name:</label>
+                <select id="course" required>
+                    <option value="BE-CSE">BE-CSE</option>
+                    <option value="BE-CSE-AI">BE-CSE AI</option>
+                    <option value="Mechanical">Mechanical Engineering</option>
+                    <option value="Chemical">Chemical Engineering</option>
+                    <option value="Civil">Civil Engineering</option>
+                    <option value="BCA">BCA</option>
+                    <option value="BBA">BBA</option>
+                    <option value="B.Com">B.Com</option>
+                    <option value="B.Pharm">B.Pharm</option>
+                    <option value="B.Arch">B.Arch</option>
+                </select>
+
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

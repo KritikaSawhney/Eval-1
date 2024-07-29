@@ -1,0 +1,210 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a11cb, lavender);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    }
+    
+    /* Form Styling */
+    .form {
+    max-width: 80%;
+    margin: 0 auto;
+    }
+    
+    .form h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    }
+    
+    .form h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    }
+    
+    /* Label and Input Styling */
+    label {
+    display: block;
+    margin-top: 10px;
+    }
+    
+    input[type="text"], input[type="number"], input[type="email"], select {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    }
+    
+    input[type="date"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    }
+    
+    select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    }
+    
+    /* Button Styling */
+    button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 100%;
+    }
+    
+    button[type="submit"]
+    {
+    background-color: #45a049;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+    .container {
+    width: 90%;
+    }
+    }
+    /* Radio Button and Checkbox Styling */
+input[type="radio"], input[type="checkbox"] {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+/* Phone Input Styling */
+.phone_input {
+    display: flex;
+    align-items: center;
+}
+
+.phone_input select {
+    flex: 1;
+    padding: 8px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.phone_input input[type="tel"] {
+    flex: 4;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Gender Input Styling */
+.gender_input {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.gender_input label {
+    margin-right: 10px;
+}
+
+/* Form Heading Styling */
+.heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.heading h1 {
+    color: #333;
+    font-size: 32px;
+}
+
+/* Form Button Styling */
+button[type="submit"] {
+    background-color: #6a11cb;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2575fc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .form {
+        padding: 0 10px;
+    }
+
+    .form h1 {
+        font-size: 24px;
+    }
+
+    button[type="submit"] {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .phone_input {
+        flex-direction: column;
+    }
+
+    .phone_input select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .phone_input input[type="tel"] {
+        width: 100%;
+    }
+}

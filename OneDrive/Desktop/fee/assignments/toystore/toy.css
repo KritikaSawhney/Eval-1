@@ -1,0 +1,431 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+.navbar{
+    display: flex;
+    background-color:#a5c926;
+    height: 35px;
+    align-items: center;
+}
+
+.b1 {
+    margin-right: 3%;
+    margin-left: 6%;
+    color: white;
+}
+
+.b2 {
+    margin-right: 50%;
+    color: white;
+}
+
+.a1 {
+    color: white;
+}
+
+.img1 {
+    height: 25px;
+    width: 25px;
+    margin-left: 1%;
+    /* color: white; */
+}
+
+.nav2 {
+    display: flex;
+    align-items: center;
+
+}
+
+.head {
+    margin-left: 5%;
+    margin-right: 6%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.b3 {
+    font-size: 25px;
+    margin-left: 5%;
+}
+
+.b4 {
+    margin-left: 28%;
+    font-size: 25px;
+
+}
+
+
+.img2 {
+    height: 40px;
+    width: 40px;
+    margin-left: 1.5%;
+}
+
+.img3 {
+    mix-blend-mode: multiply;
+    height: 30px;
+    width: 30px;
+    margin-left: 1%;
+}
+
+
+/* .img4 {
+    height: 650px;
+    width: 100%;
+} */
+
+
+.div3 img {
+    height: 650px;
+    width: 100%;
+}
+
+.div3 {
+    position: relative;
+    
+}
+
+.div3 .divtext {
+    position: absolute;
+    top: 0%;
+    
+}
+
+
+.area {
+    background-color: white;
+    margin-left: 490px;
+    margin-top: 100px;
+    height: 400px;
+    width: 800px;
+    border-radius: 10px;
+}
+
+.b5 {
+    position: absolute;
+    color: #a5c926;
+    margin-left: 23%;
+    font-size: 20px;
+    margin-top: 6%;
+}
+
+
+.b6 {
+    position: absolute;
+    margin-left: 17%;
+    margin-top: 9%;
+    font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.b7 {
+    position: absolute;
+    margin-left: 13%;
+    margin-top: 14%;
+    font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button {
+    position: absolute;
+    margin-left: 23%;
+    margin-top: 21%;
+    font-size: 20px;
+    height: 60px;
+    width: 200px;
+    background-color:#a5c926;
+    border-radius: 30px;
+    color: white;
+    border: white;
+}
+
+
+
+.mouse {
+    position: absolute;
+    margin-left: 27%;
+    margin-top: 39%;
+    /* font-size: 20px; */
+    height: 100px;
+    width: 100px;   
+    border-radius: 50%;
+    color: black;
+    background-color: white;
+}
+
+#img5 {
+    position: absolute;
+    margin-left: 28.5%;
+    margin-top: 40%;
+    height: 60px;
+    width: 60px;
+    
+}
+
+
+.div4 {
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 8%;
+    
+    
+    
+}
+
+.div_1 {
+    background-color: #ffc12c;
+    width: 700px;
+    height: 250px;
+    border-radius: 18px;
+    position: relative;
+    
+}
+
+
+.teddy {
+    position: absolute;
+    top: -50%;
+    height: 350px;
+    width: 350px;
+}
+
+
+.b8 {
+    position: absolute;
+    margin-left: 48%;
+    margin-top: 9%;
+    font-size: 40px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.button1 {
+    position: absolute;
+    margin-left: 48%;
+    margin-top: 21%;
+    font-size: 20px;
+    height: 60px;
+    width: 170px;
+    background-color:white;
+    border-radius: 30px;
+    color: black;
+    border-color: 2px solid white;
+    border: white;
+}
+
+.div_2 {
+    background-color: #fb416b;
+    width: 700px;
+    height: 250px;
+    border-radius: 18px;
+}
+
+
+.toy {
+    position: absolute;
+    top: 940px;
+    right: 7%;
+    height: 300px;
+    width: 300px;
+}
+
+
+
+.b9 {
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 4%;
+    font-size: 40px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.button2 {
+    position: absolute;
+    margin-left: 11%;
+    margin-top: 9%;
+    font-size: 20px;
+    height: 60px;
+    width: 170px;
+    background-color:white;
+    border-radius: 30px;
+    color: black;
+    border: white;
+}
+
+
+
+.b10 {
+    margin-top: 10%;
+    font-size: 40px;
+    font-weight: 200;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 6%;
+}
+
+.div5 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button3 {
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    margin-top: 10%;
+    margin-right: 6%;
+    background-color: white;
+    border:2px solid rgba(128, 128, 128, 0.458);
+    border-radius: 20px;
+}
+
+hr {
+    width:88%;
+    margin: auto;
+}
+
+
+.div6 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 10px;
+    /* background-color: whitesmoke; */
+    
+}
+
+
+.div7 {
+  height: 500px;
+  width: 20%;
+  border: 2px solid rgba(76, 76, 76, 0.2);
+  padding-bottom: 2%;
+  border-radius: 20px;
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.165);
+}
+
+
+.div8 {
+    height: 500px;
+    width: 20%;
+    border: 2px solid rgba(76, 76, 76, 0.2);
+    padding-bottom: 2%;
+    border-radius: 20px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.165);
+}
+
+
+.div9 {
+    height: 500px;
+    width: 20%;
+    border: 2px solid rgba(76, 76, 76, 0.2);
+    padding-bottom: 2%;
+    border-radius: 20px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.165);
+}
+
+
+.div10 {
+    height: 500px;
+  width: 20%;
+  border: 2px solid rgba(76, 76, 76, 0.2);
+  padding-bottom: 2%;
+  border-radius: 20px;
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.165);
+}
+
+
+.pic1 {
+    height: 350px;
+    width: 350px;
+}
+
+
+.pic1 {
+    height: 350px;
+    width: 350px;
+}
+
+
+.pic1 {
+    height: 350px;
+    width: 350px;
+}
+
+
+.pic1 {
+    height: 350px;
+    width: 350px;
+}
+
+
+.b11 {
+    font-size: 30px;
+    margin-left: 27%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.button4 {
+    background-color:#a5c926;
+    color: white;
+    width: 130px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 20px;
+    margin-left: 32%;
+    border: white;
+}
+
+
+.b12 {
+    font-size: 30px;
+    margin-left: 18%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.b13 {
+    font-size: 30px;
+    margin-left: 30%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.b14 {
+    font-size: 30px;
+    margin-left: 23%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+.b15 {
+    font-size: 30px;
+    margin-left: 21%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.b16 {
+    font-size: 30px;
+    margin-left: 24%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.b17 {
+    font-size: 30px;
+    margin-left: 15%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.b18 {
+    font-size: 30px;
+    margin-left: 24%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
