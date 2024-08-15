@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+}
+@media screen and (max-width: 1062px) {
+    header{
+        padding: 10px 20px;
+        background-color: white;
+        position: sticky;
+        top: 0;
+    }
+    nav{
+        display: flex;
+        flex-direction: column  ;
+        justify-content: space-between;
+        align-items: center;
+    } 
+
+}
+header{
+    padding: 10px 20px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+ul{
+    list-style: none;
+}
+.navLinks ul{
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    font-weight: bold;
+    padding: 0px 0px;
+}
+
+/* DROPDOWN */
+.navLinks .dropdown-menu {
+    display: none; /* Ensure dropdown is hidden initially */
+    position: absolute;
+    background-color: white; /* Or any desired background */
+    margin-top: 0;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Show dropdown on hover */
+}
+.nav-link.dropdown-toggle::after {
+    display: none; /* Hides the dropdown arrow */
+}
+
+
+
+/* NAVPROFILE BUTTONS  */
+.navProfile ul{
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    font-weight: bold;
+}
+.navProfile ul li button{
+    border: none;
+}
+
+
+.hero-section{
+    background-image: url(Images/caite-look.webp);
+    height: 91vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.container-hero{
+    background-color: transparent;
+    height: 100%;
+    padding: 0px 100px;
+}
+.hero-text h1{
+    font-size: 110px;
+    font-weight: bold;
+}
+
+.hero-text p{
+    font-size: 24px;
+    font-weight: light;
+    margin-bottom: 48px;
+}
+.searchBar{
+    display: flex;  
+    padding: 20px 80px;
+    gap: 10px;
+    font-size: 24px;
+}
+.hero-button{
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.crypto-button{
+    padding: 12px 36px;
+    font-size: 24px;
+}
+.exploreFeatures{
+    min-height: 100vh;
+    background: rgb(13,33,72);
+    background: linear-gradient(0deg, rgba(13,33,72,1) 0%, rgba(0,1,1,1) 100%);
+    padding: 80px 0px 0px;
+}
+.container-exploreFeatures{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.exploreFeatures h1{
+    font-size: 90px;
+    font-weight: bolder;
+}
+.exploreFeatures p{
+    font-size: 24px;
+    font-weight: light;
+}
+
+.exploreFeatures button{
+    font-size: 18px;
+    font-weight: light;   
+    margin: auto;
+    padding: 15px 50px;
+}
+.videoContainer{
+    margin: 48px auto 0;
+    max-width: 70%;
+}
+video{
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+}
