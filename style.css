@@ -1,79 +1,85 @@
+/* GLOBAL STYLE */
 *{
     margin: 0;
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
+
 html{
     scroll-behavior: smooth;
 }
+
 body{
     min-height: 100vh;
 }
-@media screen and (max-width: 1062px) {
-    header{
-        padding: 10px 20px;
-        background-color: white;
-        position: sticky;
-        top: 0;
-    }
-    nav{
-        display: flex;
-        flex-direction: column  ;
-        justify-content: space-between;
-        align-items: center;
-    } 
 
-}
+
+/* NAV BAR */
 header{
-    padding: 10px 20px;
     background-color: white;
     position: sticky;
     top: 0;
 }
+
 nav{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
+
 ul{
     list-style: none;
 }
-.navLinks ul{
-    display: flex;
-    align-items: baseline;
-    gap: 20px;
-    font-weight: bold;
-    padding: 0px 0px;
+
+#navLinks  li{
+    padding: 0px 8px;
 }
+.nav-item a:hover{
+    color: rgba(34, 34, 221, 0.831);
+}
+
+.nav-item button:hover
+{
+    color: white;
+    background-color: rgba(34, 34, 221, 0.831);
+}
+
 
 /* DROPDOWN */
-.navLinks .dropdown-menu {
-    display: none; /* Ensure dropdown is hidden initially */
-    position: absolute;
-    background-color: white; /* Or any desired background */
-    margin-top: 0;
-}
 .nav-item.dropdown:hover .dropdown-menu {
-    display: block; /* Show dropdown on hover */
-}
-.nav-link.dropdown-toggle::after {
-    display: none; /* Hides the dropdown arrow */
+    display: block;
 }
 
+.nav-link.dropdown-toggle::after {
+    display: none;
+}
+
+.nav-link{
+  font-weight: bold;  
+}
 
 
 /* NAVPROFILE BUTTONS  */
-.navProfile ul{
-    display: flex;
-    align-items: baseline;
-    gap: 20px;
-    font-weight: bold;
-}
+
+
 .navProfile ul li button{
     border: none;
 }
 
+/* HAMBURGER MENU STYLING */
+.navbar-toggler {
+    border: none; 
+}
 
+@media (max-width: 991px) {
+    .navbar-nav {
+        margin-left: 0;
+        text-align: start;
+    }
+}
+
+
+/* HERO SECTION */
 .hero-section{
     background-image: url(Images/caite-look.webp);
     height: 91vh;
