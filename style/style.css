@@ -187,3 +187,35 @@ video{
     width: 100%;
     height: auto;
 }
+
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer .footer-social-icons a {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.footer .footer-company,
+.footer .footer-community,
+.footer .footer-business {
+    margin-bottom: 20px;
+}
