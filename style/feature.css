@@ -1,0 +1,179 @@
+body {
+    background-color: #000; /* Set the background color */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fullscreen Video Background */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+/* Content Container */
+.content-contain {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+    padding: 20px;
+}
+
+/* Text Styling */
+h1 {
+    font-weight: bold;
+}
+
+.lead {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.btn-group .btn {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+}
+.hero-sec h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-sec p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.stats-section {
+    background-color: #1a1a1a;
+    padding: 50px 0;
+}
+
+.stats-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.stats-section p {
+    font-size: 18px;
+    color: #888;
+}
+
+.feature-section {
+    background-color: #111;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.feature-section h3 {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.feature-section p {
+    font-size: 30px;
+    color: #ccc;
+}
+
+.build-section {
+    padding: 50px 0;
+    background-color: #222;
+}
+
+.build-section h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.build-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-size: 18px;
+    padding: 10px 30px;
+}
+
+.btn-outline-light {
+    font-size: 18px;
+    padding: 10px 30px;
+}
+.feature-section {
+    padding: 50px 0;
+    background-color: #111;
+}
+
+.feature-section h3 {
+    font-size: 22px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.feature-section h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.feature-section p {
+    font-size: 25px;
+    color: #ccc;
+}
+
+.build-section {
+    padding: 50px 0;
+    background-color: #222;
+}
+
+.build-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.build-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-size: 18px;
+    padding: 10px 30px;
+}
+
+.btn-outline-light {
+    font-size: 18px;
+    padding: 10px 30px;
+}
+
+.icons-contain img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.ecosystem-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full screen */
+    overflow: hidden;
+}

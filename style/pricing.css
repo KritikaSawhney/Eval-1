@@ -26,6 +26,7 @@
 .hero-section {
     background-color: #000;
     background-image: linear-gradient(to right, #000, #111);
+    margin-top: 10px;
 }
 
 .pricing-card {
@@ -68,7 +69,7 @@ body{
 
 /* NAV BAR */
 header{
-    background-color: transparent;
+    background-color: black;
     position: fixed;
     display: block;
     top: 0;
