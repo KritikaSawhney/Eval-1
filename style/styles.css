@@ -1,4 +1,3 @@
-/* GLOBAL STYLE */
 *{
     margin: 0;
     padding: 0;
@@ -16,7 +15,7 @@ body{
 
 /* NAV BAR */
 header{
-    background-color: transparent;
+    background-color: black;
     position: sticky;
     display: block; 
     top: 0;
