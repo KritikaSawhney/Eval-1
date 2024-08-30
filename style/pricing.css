@@ -26,71 +26,12 @@
 .hero-section {
     background-color: #000;
     background-image: linear-gradient(to right, #000, #111);
-}
-
-body {
-    background-color: #f8f9fa;
+    margin-top: 10px;
 }
 
 .pricing-card {
-    border: none;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-    border-radius: 15px;
-    background-color: #222;
-    color: #fff;
+    background-color: #111;
 }
-
-.pricing-card:hover {
-    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
-    transform: translateY(-10px);
-}
-
-.card-title {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.card-price {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
-
-.card-price span {
-    font-size: 1rem;
-    color: #888;
-}
-
-.card-annual-price {
-    font-size: 1rem;
-    color: #aaa;
-}
-
-.card-discount {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    color: #28a745;
-}
-
-.list-unstyled li {
-    padding: 0.5rem 0;
-    font-size: 1rem;
-    color: #bbb;
-}
-
-.btn-primary {
-    background-color: #007bff;
-    border: none;
-    border-radius: 20px;
-    padding: 0.5rem 1.5rem;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-}
-
 
 .display-3, .display-4 {
     font-weight: bold;
@@ -128,7 +69,7 @@ body{
 
 /* NAV BAR */
 header{
-    background-color: transparent;
+    background-color: black;
     position: fixed;
     display: block;
     top: 0;
