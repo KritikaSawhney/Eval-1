@@ -17,8 +17,8 @@ body {
 
 /* HEADER & NAVBAR */
 header {
-    background-color: transparent;
-    position: fixed;
+    background-color: black;
+    position: sticky;
     display: block;
     top: 0;
     width: 100%;
