@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
+*{
+    /* font-family: "Merriweather", serif; */
+    font-family: "Golos Text", sans-serif;
+}
+.Index_converter{
+    padding: 80px 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.ConverterBlock-Box{
+    padding: 80px 0px;
+    border: 0px;
+    border-radius: 20px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.ConverterBlock-Box-Left,
+.ConverterBlock-Box-Right{
+    flex: 1 1 400px;
+}
+
+.ConverterBlock-Box-Left h1{
+    font-weight:700;
+    margin: 0 0 32px;
+    color: var(--white);
+}
+
+.ConverterBlock-Box-Left h2{
+    font-weight: 700;
+    margin: 0 0 20px;
+    color: var(--white);
+}
+
+.ConverterBlock-Box-Left p{
+    color: var(--white);
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -.24px;
+}
+
+.ConverterBlock-Box-Right{
+    display: flex;
+    flex-direction: column; 
+    background-color: #141414;;
+    padding: 30px;
+    border: 0px;
+    border-radius: 20px;
+}
+
+.form-control{
+    background-color: #242424;
+    border: none;
+    color: #ffffff;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    background-color: #242424;
+    color: white;
+}
+
+.currency-selector {
+    display: flex;
+    align-items: center;
+    background-color: #242424;
+    color: white;
+}
+
+.currency-icon {
+    margin-left: 10px;
+    width: 24px;
+}
+
+.input-group-append{
+    display: flex;
+}
+
+.swap-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 426px) {
+    .form-floating{
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .input-group-append{
+        flex-grow: 1;
+    }
+    .input-group-append button{
+        width: 100%;
+        justify-content: center;
+    }     
+}
+
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}  
