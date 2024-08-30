@@ -1,0 +1,146 @@
+/* HERO SECTION */
+.hero-section {
+    background-image: url(Images/caite-look.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container-hero {
+    background-color: transparent;
+    height: 100%;
+}
+
+/* Responsive Text */
+.hero-text h1 {
+    font-size: 10vw;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 4vw;
+    font-weight: light;
+    margin-bottom: 24px;
+}
+
+/* Responsive Search Bar */
+.searchBar {
+    display: flex;  
+    padding: 15px 30px; /* Adjusted padding for smaller screens */
+    gap: 10px;
+    font-size: 3vw; /* Make the font size responsive */
+}
+
+.hero-button {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Responsive Crypto Buttons */
+.crypto-button {
+    padding: 8px 24px; /* Adjusted padding for smaller screens */
+    font-size: 3vw; /* Make the font size responsive */
+}
+
+@media (min-width: 768px) {
+    /* Medium to Large screens */
+    .hero-text h1 {
+        font-size: 6vw;
+    }
+
+    .hero-text p {
+        font-size: 1.5rem;
+    }
+
+    .searchBar {
+        padding: 15px 50px;
+        font-size: 1.25rem;
+    }
+
+    .crypto-button {
+        padding: 10px 30px;
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Large screens */
+    .container-hero {
+        padding: 0px 100px;
+    }
+
+    .hero-text h1 {
+        font-size: 5vw;
+    }
+
+    .hero-text p {
+        font-size: 1.75rem;
+    }
+
+    .searchBar {
+        padding: 20px 80px;
+        font-size: 1.5rem;
+    }
+
+    .crypto-button {
+        padding: 12px 36px;
+        font-size: 1.5rem;
+    }
+}
+
+
+.exploreFeatures{
+    /* min-height: 100vh; */
+    background: rgb(13,33,72);
+    background: linear-gradient(0deg, rgba(13,33,72,1) 0%, rgba(0,1,1,1) 100%);
+    padding: 80px 0px 0px;
+}
+.container-exploreFeatures{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.exploreFeatures h1{
+    font-size: 90px;
+    font-weight: bolder;
+}
+.exploreFeatures p{
+    font-size: 24px;
+    font-weight: light;
+}
+
+.exploreFeatures button{
+    font-size: 18px;
+    font-weight: light;   
+    margin: auto;
+    padding: 15px 50px;
+}
+.videoContainer{
+    margin: 48px auto 0;
+    max-width: 70%;
+}
+/* video{ */
+    /* height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0; */
+    /* object-fit: cover; */
+/* } */
+video{
+    border: 0px solid;
+    border-radius: 5%;    
+    width: 100%;
+    height: auto;
+}
