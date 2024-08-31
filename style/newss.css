@@ -1,0 +1,267 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    border: none;
+}
+
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.list-unstyled li a:hover {
+    text-decoration: underline;
+}
+
+.col-6 {
+    padding: 0;
+}
+
+/* New CSS for the tokens section */
+.token-icon {
+    width: 20px;  /* Ensure the width is correctly applied */
+    height: 20px; /* Ensure the height is correctly applied */
+    object-fit: contain; /* Ensures the image fits within the set width and height */
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.badge {
+    display: inline-flex;  /* Use inline-flex to ensure proper alignment */
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+}
+
+.badge.rounded-pill {
+    padding: 5px 10px;
+    border-radius: 50px;
+    background-color: #1c1c1e;
+    border: 1px solid #3a3a3c;
+}
+.carousel {
+    background-color: black;
+    padding: 0 5%; /* Responsive padding on LHS and RHS */
+}
+.carousel-item {
+    color: white;
+    padding: 5px 10px;
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: white;
+    border-radius: 50%;
+}
+.carousel-indicators button {
+    background-color: white;
+}
+.carousel-indicators .active {
+    background-color: white;
+}
+.carousel p {
+    margin-top: 10px;
+    color: white;
+}
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 20px;
+    padding: 20px;
+}
+
+.news-card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+}
+
+.news-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.news-content {
+    padding: 15px;
+    flex-grow: 1; /* Ensures the content takes up available space */
+}
+
+.news-badge {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.news-content h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.crypto-tags {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.crypto-tags span {
+    background-color: #444;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.news-time {
+    font-size: 12px;
+    color: #bbb;
+    margin-top: 10px;
+}
+.market-outlook {
+    padding: 20px;
+}
+.market-outlook h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.cards-containerr {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cardss {
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    overflow: hidden;
+    width: calc(16.666% - 20px); /* 6 cards per row with 20px gap */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-grow: 1;
+}
+.cardss img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.cardss-content {
+    padding: 15px;
+}
+.cardss-content h3 {
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+.cardss-content .tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.cardss-content .tags span {
+    background-color: #333;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+.cardss-content .time {
+    font-size: 12px;
+    color: #bbb;
+}
+.view-all {
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+}
+.view-all a {
+    color: #00A0E3;
+    text-decoration: none;
+}
+.market-articles {
+    padding: 20px;
+}
+.market-articles h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.articles-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.article {
+    display: flex;
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.article img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.article-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.article-content h3 {
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+.article-content p {
+    font-size: 14px;
+    color: #bbb;
+    margin: 0 0 10px;
+}
+.article-content .tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.article-content .tags span {
+    background-color: #333;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+.article-content .time {
+    font-size: 12px;
+    color: #bbb;
+}
+
