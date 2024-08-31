@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: black
 }
 
 .card {
@@ -31,6 +32,7 @@ ul {
 
 .list-unstyled li a:hover {
     text-decoration: underline;
+    text-align: left;
 }
 
 .col-6 {
@@ -56,8 +58,8 @@ ul {
 .badge.rounded-pill {
     padding: 5px 10px;
     border-radius: 50px;
-    background-color: #1c1c1e;
-    border: 1px solid #3a3a3c;
+    background-color: solid black;
+    border: 1px solid black;
 }
 .carousel {
     background-color: black;
@@ -96,7 +98,7 @@ ul {
 }
 
 .news-card {
-    background-color: #1e1e1e;
+    background-color: black;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -140,7 +142,7 @@ ul {
 }
 
 .crypto-tags span {
-    background-color: #444;
+    background-color: black;
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 12px;
@@ -165,7 +167,7 @@ ul {
     justify-content: space-between;
 }
 .cardss {
-    background-color: #1E1E1E;
+    background-color: black;
     border-radius: 10px;
     overflow: hidden;
     width: calc(16.666% - 20px); /* 6 cards per row with 20px gap */
@@ -222,7 +224,7 @@ ul {
 }
 .article {
     display: flex;
-    background-color: #1E1E1E;
+    background-color: black;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

@@ -7,16 +7,107 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="style/newss.css" class="css">
+    <link rel="stylesheet" href="style/styles.css" class="css">
 
     
 </head>
+<header>
+    <nav class="navbar navbar-expand-lg container">
+        <!-- LOGO -->
+        <a class="navbar-brand" href="index.html">
+            <img src="Images/Layer 1 copy2.png" alt="logo"  id="logo">
+        </a>
+
+        <!-- Hamburger Menu Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars text-light" ></i>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse bg-body-dark" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto" id="navLinks">
+
+                <!-- PRODUCTS -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-semibold link-light" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Home
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+
+                <!-- COMMUNITY -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-semibold link-light" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      About
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <li><a class="dropdown-item" href="#">About us</a></li>
+                    </ul>
+                </li>
+
+                <!-- MARKETS  -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-semibold link-light" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Markets
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                        <li><a class="dropdown-item" href="market.html">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+
+                <!-- NEWS -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-semibold link-light" href="#" id="navbarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      News
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+
+                <!-- MORE -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-semibold link-light" href="#" id="navbarDropdown5" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Contact
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>   
+            <div class="navProfile d-flex ms-2">
+                <ul class="navbar-nav gap-1">
+                    <li class="nav-item"><button class="btn btn-outline-dark fw-bold"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook" ></i></a></button></li>
+                    <li class="nav-item"><button class="btn btn-outline-dark fw-bold"><a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a></button></li>
+                    <li class="nav-item"><button class="btn btn-outline-dark fw-bold"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" ></i></a></button></li>
+                    <li class="nav-item"><button class="btn btn-outline-dark fw-bold"><a href="https://www.dribbble.com/"><i class="fa-brands fa-dribbble"></i></a></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
 <body class="bg-dark text-white">
 
     <div class="container mt-5">
         <div class="row">
             <!-- Latest -->
             <div class="col-md-4">
-                <h2 class="text-uppercase">Latest</h2>
+                <h2 class="text-uppercase"><strong>Latest</strong></h2>
                 <div class="mb-3">
                     <span class="badge bg-danger">Trending</span>
                     <div class="d-flex gap-2 flex-wrap mt-2">
@@ -28,40 +119,41 @@
 
                 <ul class="list-unstyled">
                     <li class="mb-3">
-                        <a href="#" class="text-white text-decoration-none">North Korean hackers target crypto institutions via Chromium browser</a>
-                        <div class="text-muted">13 hours ago</div>
+                        <a href="#" class="text-white text-decoration-none"><strong> Korean hackers target crypto institutions via Chromium browser.</strong></a>
+                        <div class=""><small>13 hours ago</small></div>
                     </li>
                     <li class="mb-3">
-                        <a href="#" class="text-white text-decoration-none">Report: Blockchain is poised to overhaul global payment systems</a>
-                        <div class="text-muted">14 hours ago</div>
+                        <a href="#" class="text-white text-decoration-none"><strong>Blockchain is poised to overhaul global payment systems.</strong></a>
+                        <div class=""><small>14 hours ago</small></div>
                     </li>
                     <li class="mb-3">
-                        <a href="#" class="text-white text-decoration-none">Robot Ventures raises $75m for early-stage crypto fund</a>
-                        <div class="text-muted">14 hours ago</div>
+                        <a href="#" class="text-white text-decoration-none"><strong> Ventures raises $75m for early-stage crypto fund.</strong></a>
+                        <div class=""><small>14 hours ago</small></div>
                     </li>
                     <li class="mb-3">
-                        <a href="#" class="text-white text-decoration-none">Binance to support Cardano's Chang hard fork</a>
-                        <div class="text-muted">17 hours ago</div>
+                        <a href="#" class="text-white text-decoration-none"><strong>To support Cardano's Chang hard fork.</strong></a>
+                        <div class=""><small>17 hours ago</small></div>
                     </li>
                     <li class="mb-3">
-                        <a href="#" class="text-white text-decoration-none">Trump's crypto embrace is winning him votes, poll shows</a>
-                        <div class="text-muted">17 hours ago</div>
+                        <a href="#" class="text-white text-decoration-none"><strong>Trump's crypto embrace is winning him votes, poll shows.</strong></a>
+                        <div class=""><small>19 hours ago</small></div>
                     </li>
                     <li class="mb-3">
-                        <a href="#" class="text-white text-decoration-none">Vitalik Buterin moves $2m in ETH to multisig wallet</a>
-                        <div class="text-muted">17 hours ago</div>
+                        <a href="#" class="text-white text-decoration-none"><strong>Vitalik Buterin moves $2m in ETH to multisig wallet.</strong></a>
+                        <div class=""><small></small>17 hours ago</div>
                     </li>
                 </ul>
             </div>
 
             <!-- Top Stories -->
             <div class="col-md-4">
-                <h2 class="text-uppercase">Top Stories</h2>
+                <h2 class="text-uppercase"><strong>TOP Stories</strong></h2>
                 <div class="card bg-dark text-white mb-4">
                     <img src="Images/trump.webp" class="card-img" alt="Trump Image">
                     <div class="card-img-overlay">
-                        <h5 class="card-title">Trump's crypto embrace is winning him votes, poll shows</h5>
+                       
                     </div>
+                    <p><strong><big>Trump's crypto embrace is winning him votes, poll shows.</big></strong></p>
                 </div>
 
                 <ul class="list-unstyled">
@@ -79,7 +171,7 @@
 
             <!-- Deep Dives -->
             <div class="col-md-4">
-                <h2 class="text-uppercase">Deep Dives</h2>
+                <h2 class="text-uppercase"><strong>DEEP Dives</strong></h2>
 
                 <div class="row">
                     <div class="col-6 mb-4">
@@ -96,7 +188,7 @@
                         <div class="card bg-dark text-white">
                             <img src="Images/deep dives pic 2.webp" class="card-img" alt="Toncoin Streisand Effect">
                             <div class="card-body p-2">
-                                <span class="badge bg-secondary">Markets</span>
+                                <span class="badge bg-primary">Markets</span>
                                 <h6 class="card-title mt-2">Pavel Durov's arrest unleashes the Streisand Effect on Toncoin</h6>
                             </div>
                         </div>
@@ -127,9 +219,7 @@
                      <!-- New Tokens Section -->
                      <div class="col-12 mb-4">
                         <div class="d-flex flex-wrap gap-2">
-                            <span class="badge rounded-pill bg-dark text-white">
-                               ETH
-                            </span>
+                    
                             <span class="badge rounded-pill bg-dark border text-white">
                                 OP
                             </span>
@@ -148,12 +238,8 @@
                             <span class="badge rounded-pill bg-dark border text-white">
                                STX
                             </span>
-                            <span class="badge rounded-pill bg-dark border text-white">
-                               BTC
-                            </span>
-                            <span class="badge rounded-pill bg-dark border text-white">
-                               MNT
-                            </span>
+                           
+                           
                         </div>
                         <div class="text-muted mt-2">22 hours ago</div>
                     </div>
@@ -168,7 +254,9 @@
             
         </div>
     </div>
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel"><br>
+      <h2 class="text-uppercase"><strong>PARTNER CONTENT </strong></h2>
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -257,8 +345,8 @@
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-        </button></div>
-
+        </button></div><br>
+        <h2 class="text-uppercase"><strong>CRYPTO CURRENCY NEWS </strong></h2>
         
         <div class="news-grid">
             <div class="news-card">
@@ -267,7 +355,7 @@
                     <span class="news-badge">NEWS</span>
                     <h3>North Korean hackers target crypto institutions via Chromium browser</h3>
                     <div class="crypto-tags"></div>
-                    <div class="news-time">13 hours ago</div>
+                    <div class="news-time">19 hours ago</div>
                 </div>
             </div>
         
@@ -287,7 +375,7 @@
             <div class="news-content">
                 <span class="news-badge">NEWS</span>
                 <h3>North Korean hackers target crypto institutions via Chromium browser</h3>
-                <div class="news-time">13 hours ago</div>
+                <div class="news-time">11 hours ago</div>
             </div>
         </div>
         
@@ -301,7 +389,7 @@
                 <span class="news-badge">NEWS</span>
                 <h3>History and evolution of Bitcoin ATMs</h3>
                 <div class="crypto-tags"></div>
-                <div class="news-time">18 hours ago</div>
+                <div class="news-time">2 days ago</div>
             </div>
         </div>
     
@@ -321,14 +409,15 @@
         <div class="news-content">
             <span class="news-badge">NEWS</span>
             <h3>Trump’s crypto embrace is winning him votes, poll shows</h3>
-            <div class="news-time">21 hours ago</div>
+            <div class="news-time">4 days ago</div>
         </div>
     </div>
     
-</div>
+</div><br>
 
 
-<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel"><br>
+    <h2 class="text-uppercase"><strong>PRESS RELEASES</strong></h2>
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -418,11 +507,11 @@
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
-    </button></div>
+    </button></div><br>
     
 
     <div class="market-outlook">
-        <h2>Market Outlook</h2>
+        <h2 class="text-uppercase"><strong>MARKET OUTLOOK</strong></h2><br>
         <div class="cards-containerr">
             <!-- Card 1 -->
             <div class="cardss">
@@ -432,7 +521,7 @@
                     <div class="tags">
                         <span>BTC</span>
                     </div>
-                    <div class="time">17 hours ago</div>
+                    <div class="time">14 hours ago</div>
                 </div>
             </div>
             <!-- Card 2 -->
@@ -480,7 +569,7 @@
                     <div class="tags">
                         <span>BTC</span>
                     </div>
-                    <div class="time">2 days ago</div>
+                    <div class="time">10 days ago</div>
                 </div>
             </div>
             <!-- Card 6 -->
@@ -493,7 +582,7 @@
                         <span>TON</span>
                         <span>DOGS</span>
                     </div>
-                    <div class="time">2 days ago</div>
+                    <div class="time">4 days ago</div>
                 </div>
             </div>
         </div>
@@ -503,7 +592,7 @@
     </div>
 
     <div class="market-articles">
-        <h2>Market Articles</h2>
+        <h2 class="text-uppercase"><strong>MARKET ARTICLES</strong></h2><BR>
         <div class="articles-container">
             <!-- Article 1 -->
             <div class="article">
@@ -514,7 +603,7 @@
                     <div class="tags">
                         <span>NEWS</span>
                     </div>
-                    <div class="time">2 days ago</div>
+                    <div class="time">1 day ago</div>
                 </div>
             </div>
             <!-- Article 2 -->
@@ -526,7 +615,7 @@
                     <div class="tags">
                         <span>NOT</span>
                     </div>
-                    <div class="time">2 days ago</div>
+                    <div class="time">7 days ago</div>
                 </div>
             </div>
             <!-- Article 3 -->
@@ -538,7 +627,7 @@
                     <div class="tags">
                         <span>DOGS</span>
                     </div>
-                    <div class="time">2 days ago</div>
+                    <div class="time">4 days ago</div>
                 </div>
             </div>
             <!-- Article 4 -->
@@ -565,7 +654,7 @@
                 <div class="tags">
                     <span>DOGS</span>
                 </div>
-                <div class="time">2 days ago</div>
+                <div class="time">4 days ago</div>
             </div>
             </div>
       
@@ -578,11 +667,135 @@
                 <div class="tags">
                     <span>USDT</span>
                 </div>
-                <div class="time">2 days ago</div>
+                <div class="time">8 days ago</div>
             </div>
         </div>
     </div>
+    <br>
+ <!-- FOOTER SECTION  -->
+ <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="footer-logo">CryptoWatch</div>
+                <p>Look first / Then leap.</p>
+                <div class="footer-social-icons">
+                    <a href="#"><i class="bi bi-x"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-telegram"></i></a>
+                    <a href="#"><i class="bi bi-tiktok"></i></a>
+                    <a href="#"><i class="bi bi-reddit"></i></a>
+                    <a href="#"><i class="bi bi-discord"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <div class="mt-3">
+                    <select class="form-select form-select-sm" aria-label="Language">
+                        <option selected>English (India)</option>
+                        <option value="1">English (US)</option>
+                        <option value="2">English (UK)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-3 footer-company">
+                <h5 class="text-start">Products</h5>
+                <ul class="list-unstyled text-start">
+                    <li><a href="#">Supercharts</a></li>
+                    <li><a href="#">Pine Script™</a></li>
+                    <li><a href="#">Stock Screener</a></li>
+                    <li><a href="#">ETF Screener</a></li>
+                    <li><a href="#">Forex Screener</a></li>
+                    <li><a href="#">Crypto Coins Screener</a></li>
+                    <li><a href="#">Crypto Pairs Screener</a></li>
+                    <li><a href="#">DEX Pairs Screener</a></li>
+                    <li><a href="#">Stock Heatmap</a></li>
+                    <li><a href="#">ETF Heatmap</a></li>
+                    <li><a href="#">Crypto Heatmap</a></li>
+                    <li><a href="#">Economic Calendar</a></li>
+                    <li><a href="#">Earnings Calendar</a></li>
+                    <li><a href="#">Sparks</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">CryptoWatch Desktop</a></li>
+                    <li><a href="#">Mobile app</a></li>
+                    <li><a href="#">CME Group futures</a></li>
+                    <li><a href="#">Eurex futures</a></li>
+                    <li><a href="#">US stocks bundle</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 footer-community">
+                <h5 class="text-start">Company</h5>
+                <ul class="list-unstyled text-start">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Social network</a></li>
+                    <li><a href="#">Wall of Love</a></li>
+                    <li><a href="#">Athletes</a></li>
+                    <li><a href="#">Manifesto</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Security vulnerability</a></li>
+                    <li><a href="#">Status page</a></li>
+                    <li><a href="#">Terms of use</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Cookies policy</a></li>
+                    <li><a href="#">Media kit</a></li>
+                    <li><a href="#">Accessibility statement</a></li>
+                    <li><a href="#">Tarot cards for traders</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 footer-business">
+                <h5 class="text-start">Community</h5>
+                <ul class="list-unstyled text-start">
+                    <li><a href="#">Refer a friend</a></li>
+                    <li><a href="#">Ideas</a></li>
+                    <li><a href="#">Scripts</a></li>
+                    <li><a href="#">House rules</a></li>
+                    <li><a href="#">Moderators</a></li>
+                    <li><a href="#">Pine Script™ Wizards</a></li>
+                    <li><a href="#">Chat</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 footer-business">
+                <h5 class="text-start">For business</h5>
+                <ul class="list-unstyled text-start">
+                    <li><a href="#">Widgets</a></li>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Charting libraries</a></li>
+                    <li><a href="#">Lightweight Charts™</a></li>
+                    <li><a href="#">Advanced Charts</a></li>
+                    <li><a href="#">Trading Platform</a></li>
+                    <li><a href="#">Brokerage integration</a></li>
+                    <li><a href="#">Partner program</a></li>
+                    <li><a href="#">Education program</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+    <div class="row d-flex justify-content-center">
+        <div class="col">
+            <div class="store-logo">
+                <a href="#"><img src="images/app-store-badge-en.svg" alt="App Store" class="me-2"></a>
+                <a href="#"><img src="images/google-play-badge-en.svg" alt="Google Play" class="me-2"></a>
+                <a href="#"><img src="images/trade-on-tradingview-badges-en.svg" alt="Desktop App" class="me-2"></a>
+                <a href="#"><img src="images/desptok-app-tradingview.svg" alt="CryptoWatch" class="me-2"></a>
+            </div>
+        </div>
+        <div class="col text-center">
+            <p class="">Select market data provided by <a href="#">ICE Data Services</a></p>
+            <p>&copy; 2024 CryptoWatch, Inc.</p>
+        </div>
+        </div>
+    </div>
+    </div>
+</footer>
 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
