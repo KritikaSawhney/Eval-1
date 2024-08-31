@@ -4,801 +4,755 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crypto News</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="style/newss.css" class="css">
-    <link rel="stylesheet" href="style/styles.css" class="css">
-
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/newss.css">
+    <link rel="stylesheet" href="style/styles.css"> 
 </head>
-<header>
-    <nav class="navbar navbar-expand-lg container">
-        <!-- LOGO -->
-        <a class="navbar-brand" href="index.html">
-            <img src="Images/Layer 1 copy2.png" alt="logo"  id="logo">
-        </a>
-
-        <!-- Hamburger Menu Button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars text-light" ></i>
-        </button>
-
-        <!-- Navigation Links -->
-        <div class="collapse navbar-collapse bg-body-dark" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto" id="navLinks">
-
-                <!-- PRODUCTS -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle fw-semibold link-light" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Home
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+<body class="text-white">
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar navbar-expand-lg container">
+            <!-- LOGO -->
+            <a class="navbar-brand" href="index.html">
+                <img src="Images/Layer 1 copy2.png" alt="logo"  id="logo">
+            </a>
+    
+            <!-- Hamburger Menu Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars text-light" ></i>
+            </button>
+    
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse bg-body-dark" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto" id="navLinks">
+    
+                    <!-- PRODUCTS -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold link-light" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Home
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+    
+                    <!-- COMMUNITY -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold link-light" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          About
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <li><a class="dropdown-item" href="#">About us</a></li>
+                        </ul>
+                    </li>
+    
+                    <!-- MARKETS  -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold link-light" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Markets
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                            <li><a class="dropdown-item" href="market.html">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+    
+                    <!-- NEWS -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold link-light" href="#" id="navbarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          News
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+    
+                    <!-- MORE -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold link-light" href="#" id="navbarDropdown5" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Contact
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>   
+                <div class="navProfile d-flex ms-2">
+                    <ul class="navbar-nav gap-1">
+                        <li class="nav-item"><button class="btn btn-outline-dark fw-bold"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook" ></i></a></button></li>
+                        <li class="nav-item"><button class="btn btn-outline-dark fw-bold"><a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a></button></li>
+                        <li class="nav-item"><button class="btn btn-outline-dark fw-bold"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" ></i></a></button></li>
+                        <li class="nav-item"><button class="btn btn-outline-dark fw-bold"><a href="https://www.dribbble.com/"><i class="fa-brands fa-dribbble"></i></a></button></li>
                     </ul>
-                </li>
-
-                <!-- COMMUNITY -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle fw-semibold link-light" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      About
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                        <li><a class="dropdown-item" href="#">About us</a></li>
-                    </ul>
-                </li>
-
-                <!-- MARKETS  -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle fw-semibold link-light" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Markets
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                        <li><a class="dropdown-item" href="market.html">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-
-                <!-- NEWS -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle fw-semibold link-light" href="#" id="navbarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      News
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-
-                <!-- MORE -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle fw-semibold link-light" href="#" id="navbarDropdown5" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Contact
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-            </ul>   
-            <div class="navProfile d-flex ms-2">
-                <ul class="navbar-nav gap-1">
-                    <li class="nav-item"><button class="btn btn-outline-dark fw-bold"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook" ></i></a></button></li>
-                    <li class="nav-item"><button class="btn btn-outline-dark fw-bold"><a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a></button></li>
-                    <li class="nav-item"><button class="btn btn-outline-dark fw-bold"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" ></i></a></button></li>
-                    <li class="nav-item"><button class="btn btn-outline-dark fw-bold"><a href="https://www.dribbble.com/"><i class="fa-brands fa-dribbble"></i></a></button></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-
-<body class="bg-dark text-white">
-
-    <div class="container mt-5">
-        <div class="row">
-            <!-- Latest -->
-            <div class="col-md-4">
-                <h2 class="text-uppercase"><strong>Latest</strong></h2>
-                <div class="mb-3">
-                    <span class="badge bg-danger">Trending</span>
-                    <div class="d-flex gap-2 flex-wrap mt-2">
-                        <span class="badge bg-secondary">#Donald Trump</span>
-                        <span class="badge bg-secondary">#meme coin</span>
-                        <span class="badge bg-secondary">#Cardano</span>
-                    </div>
                 </div>
-
-                <ul class="list-unstyled">
-                    <li class="mb-3">
-                        <a href="#" class="text-white text-decoration-none"><strong> Korean hackers target crypto institutions via Chromium browser.</strong></a>
-                        <div class=""><small>13 hours ago</small></div>
-                    </li>
-                    <li class="mb-3">
-                        <a href="#" class="text-white text-decoration-none"><strong>Blockchain is poised to overhaul global payment systems.</strong></a>
-                        <div class=""><small>14 hours ago</small></div>
-                    </li>
-                    <li class="mb-3">
-                        <a href="#" class="text-white text-decoration-none"><strong> Ventures raises $75m for early-stage crypto fund.</strong></a>
-                        <div class=""><small>14 hours ago</small></div>
-                    </li>
-                    <li class="mb-3">
-                        <a href="#" class="text-white text-decoration-none"><strong>To support Cardano's Chang hard fork.</strong></a>
-                        <div class=""><small>17 hours ago</small></div>
-                    </li>
-                    <li class="mb-3">
-                        <a href="#" class="text-white text-decoration-none"><strong>Trump's crypto embrace is winning him votes, poll shows.</strong></a>
-                        <div class=""><small>19 hours ago</small></div>
-                    </li>
-                    <li class="mb-3">
-                        <a href="#" class="text-white text-decoration-none"><strong>Vitalik Buterin moves $2m in ETH to multisig wallet.</strong></a>
-                        <div class=""><small></small>17 hours ago</div>
-                    </li>
-                </ul>
             </div>
+        </nav>
+    </header>
 
-            <!-- Top Stories -->
-            <div class="col-md-4">
-                <h2 class="text-uppercase"><strong>TOP Stories</strong></h2>
-                <div class="card bg-dark text-white mb-4">
-                    <img src="Images/trump.webp" class="card-img" alt="Trump Image">
-                    <div class="card-img-overlay">
-                       
-                    </div>
-                    <p><strong><big>Trump's crypto embrace is winning him votes, poll shows.</big></strong></p>
-                </div>
-
-                <ul class="list-unstyled">
-                    <li class="mb-3">
-                        <a href="#" class="text-white text-decoration-none">Popcat price skids, yet open interest and charts indicate a rebound</a>
-                    </li>
-                    <li class="mb-3">
-                        <a href="#" class="text-white text-decoration-none">History and evolution of Bitcoin ATMs</a>
-                    </li>
-                    <li class="mb-3">
-                        <a href="#" class="text-white text-decoration-none">Binance to support Cardano's Chang hard fork</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Deep Dives -->
-            <div class="col-md-4">
-                <h2 class="text-uppercase"><strong>DEEP Dives</strong></h2>
-
+    <!-- MAIN SECTION -->
+    <main>
+        <!-- TOP NEWS -->
+        <section class="top-news">
+            <div class="container mt-5">
                 <div class="row">
-                    <div class="col-6 mb-4">
-                        <div class="card bg-dark text-white">
-                            <img src="Images/deep dives pic 1.webp" class="card-img" alt="MENA Crypto Future">
-                            <div class="card-body p-2">
-                                <span class="badge bg-primary">Opinion</span>
-                                <h6 class="card-title mt-2">Investing in MENA's crypto future: Opportunities and challenges</h6>
+                    <!-- Latest -->
+                    <div class="col-md-4">
+                        <h2 class="text-uppercase"><strong>Latest</strong></h2>
+                        <div class="mb-3">
+                            <span class="badge bg-danger">Trending</span>
+                            <div class="d-flex gap-2 flex-wrap mt-2">
+                                <span class="badge bg-secondary">#Donald Trump</span>
+                                <span class="badge bg-secondary">#meme coin</span>
+                                <span class="badge bg-secondary">#Cardano</span>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <a href="#" class="text-white text-decoration-none"><strong>Korean hackers target crypto institutions via Chromium browser.</strong></a>
+                                <div><small>13 hours ago</small></div>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-white text-decoration-none"><strong>Blockchain is poised to overhaul global payment systems.</strong></a>
+                                <div><small>14 hours ago</small></div>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-white text-decoration-none"><strong>Ventures raises $75m for early-stage crypto fund.</strong></a>
+                                <div><small>14 hours ago</small></div>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-white text-decoration-none"><strong>To support Cardano's Chang hard fork.</strong></a>
+                                <div><small>17 hours ago</small></div>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-white text-decoration-none"><strong>Trump's crypto embrace is winning him votes, poll shows.</strong></a>
+                                <div><small>19 hours ago</small></div>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-white text-decoration-none"><strong>Vitalik Buterin moves $2m in ETH to multisig wallet.</strong></a>
+                                <div><small>17 hours ago</small></div>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <!-- Top Stories -->
+                    <div class="col-md-4">
+                        <h2 class="text-uppercase"><strong>Top Stories</strong></h2>
+                        <div class="card bg-dark text-white mb-4">
+                            <img src="Images/trump.webp" class="card-img" alt="Trump Image">
+                            <div class="card-img-overlay">
+                                <p><strong><big>Trump's crypto embrace is winning him votes, poll shows.</big></strong></p>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <a href="#" class="text-white text-decoration-none">Popcat price skids, yet open interest and charts indicate a rebound</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-white text-decoration-none">History and evolution of Bitcoin ATMs</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-white text-decoration-none">Binance to support Cardano's Chang hard fork</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <!-- Deep Dives -->
+                    <div class="col-md-4">
+                        <h2 class="text-uppercase"><strong>Deep Dives</strong></h2>
+                        <div class="row d-flex justify-content-center align-items-stretch deep-dives-card">
+                            <div class="col-md-6 mb-4">
+                                <div class="card bg-dark text-white h-100">
+                                    <img src="Images/deep dives pic 1.webp" class="card-img-top" alt="MENA Crypto Future">
+                                    <div class="card-body">
+                                        <span class="badge bg-primary">Opinion</span>
+                                        <h6 class="card-title mt-2">Investing in MENA's crypto future: Opportunities and challenges</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="card bg-dark text-white h-100">
+                                    <img src="Images/deep dives pic 2.webp" class="card-img-top" alt="Toncoin Streisand Effect">
+                                    <div class="card-body">
+                                        <span class="badge bg-primary">Markets</span>
+                                        <h6 class="card-title mt-2">Pavel Durov's arrest unleashes the Streisand Effect on Toncoin</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="card bg-dark text-white h-100">
+                                    <img src="Images/deep dives pic 3.webp" class="card-img-top" alt="Sony Soneium Blockchain">
+                                    <div class="card-body">
+                                        <span class="badge bg-primary">Feature</span>
+                                        <h6 class="card-title mt-2">Sony's Soneium could set the blockchain pace — is BlackRock preparing to follow?</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4 ">
+                                <div class="card bg-dark text-white h-100">
+                                    <img src="Images/deep dives pic 4.webp" class="card-img-top" alt="Web2 and Web3 Overlap">
+                                    <div class="card-body">
+                                        <span class="badge bg-primary">Opinion</span>
+                                        <h6 class="card-title mt-2">Beware the crossroads: The dangerous overlap of web2 and web3</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <!-- New Tokens Section -->
+                            <div class="col-12 mb-4">
+                                <div class="d-flex flex-wrap gap-2">
+                                    <button class="btn btn-outline-light border">OP</button>
+                                    <button class="btn btn-outline-light border">USDC</button>
+                                    <button class="btn btn-outline-light border">GRT</button>
+                                    <button class="btn btn-outline-light border">LINK</button>
+                                    <button class="btn btn-outline-light border">MATIC</button>
+                                    <button class="btn btn-outline-light border">STX</button>
+                                </div>                                
+                                <div class="text-light mt-2">22 hours ago</div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>  
+        </section>
 
-                    <div class="col-6 mb-4">
-                        <div class="card bg-dark text-white">
-                            <img src="Images/deep dives pic 2.webp" class="card-img" alt="Toncoin Streisand Effect">
-                            <div class="card-body p-2">
-                                <span class="badge bg-primary">Markets</span>
-                                <h6 class="card-title mt-2">Pavel Durov's arrest unleashes the Streisand Effect on Toncoin</h6>
+        <!-- CAROUSEL 1  -->
+        <section class="carousel-1">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <h2 class="text-uppercase"><strong>Partner Content</strong></h2>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="Images/cr 1.webp" class="d-block w-100" alt="Image 1">
+                                <p class="text-center">Crypto whales are moving from Solana and XRP to this new crypto</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="Images/cr 2.webp" class="d-block w-100" alt="Image 2">
+                                <p class="text-center">Dogecoin and Shiba Inu investors flock to a promising new altcoin</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="Images/cr 3.webp" class="d-block w-100" alt="Image 3">
+                                <p class="text-center">SOL dips, TON faces latest hurdle as DTX Exchange sees investor interest</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="Images/cr 4.webp" class="d-block w-100" alt="Image 4">
+                                <p class="text-center">Bitcoin goes through final dip before a potential surge as SOL recovers</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="Images/cr 5.webp" class="d-block w-100" alt="Image 5">
+                                <p class="text-center">The meme games token ICO raises $400K as Paralympics get underway</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="Images/cr 7.webp" class="d-block w-100" alt="Image 5">
+                                <p class="text-center">The meme games token ICO raises $400K as Paralympics get underway</p>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-6 mb-4">
-                        <div class="card bg-dark text-white">
-                            <img src="Images/deep dives pic 3.webp" class="card-img" alt="Sony Soneium Blockchain">
-                            <div class="card-body p-2">
-                                <span class="badge bg-primary">Feature</span>
-                                <h6 class="card-title mt-2">Sony's Soneium could set the blockchain pace — is BlackRock preparing to follow?</h6>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="Images/cr 1.webp" class="d-block w-100" alt="Image 1">
+                                <p class="text-center">Crypto whales are moving from Solana and XRP to this new crypto</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="Images/cr 8.webp" class="d-block w-100" alt="Image 2">
+                                <p class="text-center">Analyst predicts this memecoin will soar like Brett when it lists next week</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="Images/cr 9.webp" class="d-block w-100" alt="Image 4">
+                                <p class="text-center">XRP and SHIB investors shift to new crypto forecasted as 2024’s top pick</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="Images/cr 10.webp" class="d-block w-100" alt="Image 5">
+                                <p class="text-center">Whales load up: Ripple, Intel Markets, Ethereum could explode</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="Images/cr 11.webp" class="d-block w-100" alt="Image 5">
+                                <p class="text-center">Whales load up: Ripple, Intel Markets, Ethereum could explode</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="Images/cr 12.webp" class="d-block w-100" alt="Image 5">
+                                <p class="text-center">Whales load up: Ripple, Intel Markets, Ethereum could explode</p>
                             </div>
                         </div>
                     </div>
-                    
+                </div>
 
-                    <div class="col-6 mb-4">
-                        <div class="card bg-dark text-white">
-                            <img src="Images/deep dives pic 4.webp" class="card-img" alt="Web2 and Web3 Overlap">
-                            <div class="card-body p-2">
-                                <span class="badge bg-primary">Opinion</span>
-                                <h6 class="card-title mt-2">Beware the crossroads: The dangerous overlap of web2 and web3</h6>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>            
+        </section>
+
+        <!-- NEWS GRID  -->
+        <section class="news-grid-section">
+            <div class="container-fluid">
+                <h2 class="text-uppercase fw-bold">Crypto Currency News</h2> 
+                <div class="news-grid">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 news-card">
+                                <img src="Images/news 1.webp" alt="News 1" class="img-fluid">
+                                <div class="news-content">
+                                    <span class="news-badge text-bg-light">NEWS</span>
+                                    <h3>North Korean hackers target crypto institutions via Chromium browser</h3>
+                                    <div class="news-time">19 hours ago</div>
+                                </div>
                             </div>
                             
+                            <div class="col-md-4 news-card">
+                                <img src="Images/news 2.webp" alt="News 2" class="img-fluid">
+                                <div class="news-content">
+                                    <span class="news-badge">NEWS</span>
+                                    <h3>North Korean hackers target crypto institutions via Chromium browser</h3>
+                                    <div class="news-time">13 hours ago</div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4 news-card">
+                                <img src="Images/news 3.webp" alt="History and evolution of Bitcoin ATMs">
+                                <div class="news-content">
+                                    <span class="news-badge">NEWS</span>
+                                    <h3>History and evolution of Bitcoin ATMs</h3>
+                                    <div class="crypto-tags"></div>
+                                    <div class="news-time">2 days ago</div>
+                                </div>
+                            </div> 
+
+                            <div class="col-md-4 news-card">
+                                <img src="Images/news 4.webp" alt="News 3" class="img-fluid">
+                                <div class="news-content">
+                                    <span class="news-badge">NEWS</span>
+                                    <h3>North Korean hackers target crypto institutions via Chromium browser</h3>
+                                    <div class="news-time">11 hours ago</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 news-card">
+                                <img src="Images/news 5.webp" alt="Binance to support Cardano’s Chang hard fork">
+                                <div class="news-content">
+                                    <span class="news-badge">NEWS</span>
+                                    <h3>Binance to support Cardano’s Chang hard fork</h3>
+                                    <div class="news-time">14 hours ago</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 news-card">
+                                <img src="Images/trump.webp" alt="Trump’s crypto embrace is winning him votes, poll shows">
+                                <div class="news-content">
+                                    <span class="news-badge">NEWS</span>
+                                    <h3>Trump’s crypto embrace is winning him votes, poll shows</h3>
+                                    <div class="news-time">4 days ago</div>
+                                </div>
+                            </div>
                         </div>
-                        
                     </div>
-                     <!-- New Tokens Section -->
-                     <div class="col-12 mb-4">
-                        <div class="d-flex flex-wrap gap-2">
-                    
-                            <span class="badge rounded-pill bg-dark border text-white">
-                                OP
-                            </span>
-                            <span class="badge rounded-pill bg-dark border text-white">
-                               USDC
-                            </span>
-                            <span class="badge rounded-pill bg-dark border text-white">
-                             GRT
-                            </span>
-                            <span class="badge rounded-pill bg-dark border text-white">
-                                LINK
-                            </span>
-                            <span class="badge rounded-pill bg-dark border text-white">
-                               MATIC
-                            </span>
-                            <span class="badge rounded-pill bg-dark border text-white">
-                               STX
-                            </span>
-                           
-                           
+                </div>
+            </div>
+        </section>
+
+        <!-- CAROUSEL 2 -->
+        <section class="carousel-2">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <h2 class="text-uppercase text-start fw-bold">PRESS RELEASES</h2>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="Images/pr 1.webp" class="d-block w-100" alt="Image 1">
+                                <p class="text-center">SHIB millionaire shifts focus to ETFSwap, sells off DOGE, WIF</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="Images/pr 2.webp" class="d-block w-100" alt="Image 2">
+                                <p class="text-center">MAD gears up to lead the memecoin trend on Solana</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="Images/pr 3.webp" class="d-block w-100" alt="Image 3">
+                                <p class="text-center">FATTY secures $3m in funding and onboards institutional investors</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="Images/pr 4.webp" class="d-block w-100" alt="Image 4">
+                                <p class="text-center">Solana surges ahead with POODL and friends in September’s top ICOs</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="Images/pr 5.webp" class="d-block w-100" alt="Image 5">
+                                <p class="text-center">B2BROKER and Spotware announce B2COPY & cTrader integration</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="Images/pr 7.webp" class="d-block w-100" alt="Image 1">
+                                <p class="text-center">SHIB millionaire shifts focus to ETFSwap, sells off DOGE, WIF</p>
+                            </div>
                         </div>
-                        <div class="text-muted mt-2">22 hours ago</div>
                     </div>
-                    <!-- End Tokens Section -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-                </div>
-            </div>
-            
-        </div>
-    </div>
-    
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel"><br>
-      <h2 class="text-uppercase"><strong>PARTNER CONTENT </strong></h2>
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="row">
-                    <div class="col-md-2">
-                        <img src="Images/cr 1.webp" class="d-block w-100" alt="Image 1">
-                        <p class="text-center">Crypto whales are moving from Solana and XRP to this new crypto</p>
-                    </div>
-                    <div class="col-md-2">
-                        <img src="Images/cr 2.webp" class="d-block w-100" alt="Image 2">
-                        <p class="text-center">Dogecoin and Shiba Inu investors flock to a promising new altcoin</p>
-                    </div>
-                    <div class="col-md-2">
-                        <img src="Images/cr 3.webp" class="d-block w-100" alt="Image 3">
-                        <p class="text-center">SOL dips, TON faces latest hurdle as DTX Exchange sees investor interest</p>
-                    </div>
-                    <div class="col-md-2">
-                        <img src="Images/cr 4.webp" class="d-block w-100" alt="Image 4">
-                        <p class="text-center">Bitcoin goes through final dip before a potential surge as SOL recovers</p>
-                    </div>
-                    <div class="col-md-2">
-                        <img src="Images/cr 5.webp" class="d-block w-100" alt="Image 5">
-                        <p class="text-center">The meme games token ICO raises $400K as Paralympics get underway</p>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="Images/pr 7.webp" class="d-block w-100" alt="Image 2">
+                                <p class="text-center">Dogizen the tap-to-earn hit confirms flood of gamers for early access</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="Images/cr 8.webp" class="d-block w-100" alt="Image 3">
+                                <p class="text-center">Gamdom unveils new Promo Code “CSGOBETTINGSS” and 15% rakeback deal</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="Images/cr 9.webp" class="d-block w-100" alt="Image 4">
+                                <p class="text-center">XRP and SHIB investors shift to new crypto forecasted as 2024’s top pick</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="Images/cr 10.webp" class="d-block w-100" alt="Image 5">
+                                <p class="text-center">Whales load up: Ripple, Intel Markets, Ethereum could explode</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="Images/cr 11.webp" class="d-block w-100" alt="Image 6">
+                                <p class="text-center">Another Press Release Example</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="Images/cr 12.webp" class="d-block w-100" alt="Image 1">
+                                <p class="text-center">Analyst predicts this memecoin will soar like Brett when it lists next week</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="carousel-item">
-                <div class="row">
-                  
-
-                    <div class="col-md-2">
-                        <img src="Images/cr 1.webp" class="d-block w-100" alt="Image 1">
-                        <p class="text-center">Crypto whales are moving from Solana and XRP to this new crypto</p>
-                    </div>
-                    <div class="col-md-2">
-                        <img src="Images/cr 7.webp" class="d-block w-100" alt="Image 2">
-                        <p class="text-center">Analyst predicts this memecoin will soar like Brett when it lists next week</p>
-                    </div>
-                    <div class="col-md-2">
-                        <img src="Images/cr 8.webp" class="d-block w-100" alt="Image 3">
-                        <p class="text-center">Ethereum and Solana traders eye new presale token</p>
-                    </div>
-                    <div class="col-md-2">
-                        <img src="Images/cr 9.webp" class="d-block w-100" alt="Image 4">
-                        <p class="text-center">XRP and SHIB investors shift to new crypto forecasted as 2024’s top pick</p>
-                    </div>
-                    <div class="col-md-2">
-                        <img src="Images/cr 10.webp" class="d-block w-100" alt="Image 5">
-                        <p class="text-center">Whales load up: Ripple, Intel Markets, Ethereum could explode</p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="row">
-                    <div class="col-md-2">
-                        <img src="Images/cr 11.webp" class="d-block w-100" alt="Image 1">
-                        <p class="text-center">Analyst predicts this memecoin will soar like Brett when it lists next week</p>
-                    </div>
-                    <div class="col-md-2">
-                        <img src="Images/cr 12.webp" class="d-block w-100" alt="Image 2">
-                        <p class="text-center">Ethereum and Solana traders eye new presale token</p>
-                    </div>
-                    <div class="col-md-2">
-                        <img src="Images/cr 13.webp" class="d-block w-100" alt="Image 3">
-                        <p class="text-center">XRP and SHIB investors shift to new crypto forecasted as 2024’s top pick</p>
-                    </div>
-                    <div class="col-md-2">
-                        <img src="Images/cr 14.webp" class="d-block w-100" alt="Image 4">
-                        <p class="text-center">Whales load up: Ripple, Intel Markets, Ethereum could explode</p>
-                    </div>
-                    <div class="col-md-2">
-                        <img src="Images/cr 15.webp" class="d-block w-100" alt="Image 5">
-                        <p class="text-center">ChatGPT 4.0 predicts which crypto could outperform ETH, SOL in next 12 months</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button></div><br>
-        <h2 class="text-uppercase"><strong>CRYPTO CURRENCY NEWS </strong></h2>
+        </section>
         
-        <div class="news-grid">
-            <div class="news-card">
-                <img src="Images/news 1.webp" alt="News 1">
-                <div class="news-content">
-                    <span class="news-badge">NEWS</span>
-                    <h3>North Korean hackers target crypto institutions via Chromium browser</h3>
-                    <div class="crypto-tags"></div>
-                    <div class="news-time">19 hours ago</div>
+        <!-- MARKET OUTLOOK -->
+        <section class="market-outlook-section">
+            <div class="market-outlook container-fluid">
+                <h2 class="text-uppercase text-start fw-bold">MARKET OUTLOOK</h2>
+                <div class="cards-container row d-flex flex-wrap justify-content-center align-items-stretch">
+                    <!-- Card 1 -->
+                    <div class="col mb-4 market-card">
+                        <div class="card">
+                            <img src="Images/mo 1.webp" alt="Bitcoin Image" class="card-img">
+                            <div class="card-content">
+                                <h3>Kaiko: Here's why Bitcoin price dropped in August</h3>
+                                <div class="tags">
+                                    <span>BTC</span>
+                                </div>
+                                <div class="time">14 hours ago</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col mb-4 market-card">
+                        <div class="card">
+                            <img src="Images/mo 2.webp" alt="Popcat Image" class="card-img">
+                            <div class="card-content">
+                                <h3>Popcat price skids, yet open interest and charts indicate a rebound</h3>
+                                <div class="tags">
+                                    <span>POPCAT</span>
+                                    <span>BTC</span>
+                                </div>
+                                <div class="time">18 hours ago</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col mb-4 market-card">
+                        <div class="card">
+                            <img src="Images/mo 3.webp" alt="Floki Image" class="card-img">
+                            <div class="card-content">
+                                <h3>Floki leads meme coin crash as dormant whale dumps 15b tokens</h3>
+                                <div class="tags">
+                                    <span>FLOKI</span>
+                                    <span>BTC</span>
+                                </div>
+                                <div class="time">19 hours ago</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col mb-4 market-card">
+                        <div class="card">
+                            <img src="Images/mo 4.webp" alt="Toncoin Image" class="card-img">
+                            <div class="card-content">
+                                <h3>Pavel Durov's arrest unleashes the Streisand Effect on Toncoin</h3>
+                                <div class="tags">
+                                    <span>TON</span>
+                                </div>
+                                <div class="time">23 hours ago</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="col mb-4 market-card">
+                        <div class="card">
+                            <img src="Images/mo 5.webp" alt="Bitcoin Price Rise" class="card-img">
+                            <div class="card-content">
+                                <h3>Bitcoin price could rise as exchange reserves hit 2024 lows</h3>
+                                <div class="tags">
+                                    <span>BTC</span>
+                                </div>
+                                <div class="time">10 days ago</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="col mb-4 market-card">
+                        <div class="card">
+                            <img src="Images/mo 6.webp" alt="APES goes parabolic" class="card-img">
+                            <div class="card-content">
+                                <h3>APES goes parabolic, but harsh reversal may be near</h3>
+                                <div class="tags">
+                                    <span>RAY</span>
+                                    <span>TON</span>
+                                    <span>DOGS</span>
+                                </div>
+                                <div class="time">4 days ago</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-all text-center">
+                    <a href="#">View All</a>
                 </div>
             </div>
-        
-            <div class="news-card">
-                <img src="Images/news 2.webp" alt="News 1">
-                <div class="news-content">
-                    <span class="news-badge">NEWS</span>
-                    <h3>North Korean hackers target crypto institutions via Chromium browser</h3>
-                    <div class="news-time">13 hours ago</div>
+        </section>
+
+
+        <section class="market-articles-section">
+            <div class="market-articles">
+                <h2 class="text-uppercase text-start fw-bold">MARKET ARTICLES</h2>
+                <div class="articles-container row d-flex flex-wrap">
+                    <!-- Article 1 -->
+                    <div class="col">
+                        <div class="article">
+                             <img src="Images/final n 1.webp" alt="Ethereum Image" class="article-img">
+                             <div class="article-content">
+                                 <h3>Ethereum ETFs outpace Bitcoin, but new entry BitNance offers an alternative</h3>
+                                 <p>As Ethereum ETFs gain traction and Bitcoin loses momentum, investors are turning to new and emerging tokens like BitNance (BTN).</p>
+                                 <div class="tags">
+                                     <span>NEWS</span>
+                                 </div>
+                                 <div class="time">1 day ago</div>
+                             </div>
+                        </div>
+                    </div>
+                    <!-- Article 2 -->
+                    <div class="col">
+                        <div class="article">
+                            <img src="Images/final n 2.webp" alt="LINE Image" class="article-img">
+                            <div class="article-content">
+                                <h3>LINE messenger to introduce mini dApps via Kaia blockchain</h3>
+                                <p>Japanese messaging giant LINE is gearing up to introduce mini-decentralized applications on its messaging app in collaboration with the Kaia...</p>
+                                <div class="tags">
+                                    <span>NOT</span>
+                                </div>
+                                <div class="time">7 days ago</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Article 3 -->
+                    <div class="col">
+                    <div class="article">
+                    <img src="Images/final n 3.webp" alt="DOGS Image" class="article-img">
+                    <div class="article-content">
+                        <h3>DOGS jumps 21% in last 24 hours, analysts assess community impact</h3>
+                        <p>TON-based meme coin DOGS has become the leading gainer among the top 100 cryptocurrencies by market cap, with a price...</p>
+                        <div class="tags">
+                            <span>DOGS</span>
+                        </div>
+                        <div class="time">4 days ago</div>
+                    </div>
+                    </div>
+                    </div>
+                    <!-- Article 4 -->
+                    <div class="col">
+                        <div class="article">
+                        <img src="Images/final n 4.webp" alt="Scammers Image" class="article-img">
+                        <div class="article-content">
+                            <h3>Crypto scammers target job hunters with fake TikTok ads</h3>
+                            <p>Crypto scammers are creating fake advertisements on TikTok to target job seekers, and one user has lost roughly $8,000. The...</p>
+                            <div class="tags">
+                                <span>USDT</span>
+                            </div>
+                            <div class="time">2 days ago</div>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- Article 5 -->
+                    <div class="col">
+                        <div class="article">
+                        <img src="Images/final n 5.webp" alt="Spot Bitcoin ETFs" class="article-img">
+                        <div class="article-content">
+                            <h3>Spot Bitcoin ETFs see outflows of $105.19m, Ether ETFs break 9-day outflow streak</h3>
+                            <p>Spot Bitcoin exchange-traded funds in the United States experienced their second consecutive outflow day on Aug. 28, while spot Ethereum...</p>
+                            <div class="tags">
+                                <span>USDT</span>
+                            </div>
+                            <div class="time">8 days ago</div>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- Article 6 -->
+                    <div class="col">
+                        <div class="article">
+                        <img src="Images/final n 6.webp" alt="OpenSea Wells Notice" class="article-img">
+                        <div class="article-content">
+                            <h3>Crypto community on OpenSea Wells Notice: ‘Welcome to the club’</h3>
+                            <p>Multiple pro-crypto voices weighed in against the Wells Notice issued to NFT Market OpenSea on Aug. 28, as the SEC’s...</p>
+                            <div class="tags">
+                                <span>DOGS</span>
+                            </div>
+                            <div class="time">4 days ago</div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            
-    
+            </div>            
+        </section>
+    </main>    
 
-        <div class="news-card">
-            <img src="Images/news 3.webp" alt="News 1">
-            <div class="news-content">
-                <span class="news-badge">NEWS</span>
-                <h3>North Korean hackers target crypto institutions via Chromium browser</h3>
-                <div class="news-time">11 hours ago</div>
-            </div>
-        </div>
-        
-    </div>
-
-
-    <div class="news-grid">
-        <div class="news-card">
-            <img src="Images/news 4.webp" alt="News 1">
-            <div class="news-content">
-                <span class="news-badge">NEWS</span>
-                <h3>History and evolution of Bitcoin ATMs</h3>
-                <div class="crypto-tags"></div>
-                <div class="news-time">2 days ago</div>
-            </div>
-        </div>
-    
-        <div class="news-card">
-            <img src="Images/news 5.webp" alt="News 1">
-            <div class="news-content">
-                <span class="news-badge">NEWS</span>
-                <h3>Binance to support Cardano’s Chang hard fork </h3>
-                <div class="news-time">14 hours ago</div>
-            </div>
-        </div>
-        
-
-
-    <div class="news-card">
-        <img src="Images/trump.webp" alt="News 1">
-        <div class="news-content">
-            <span class="news-badge">NEWS</span>
-            <h3>Trump’s crypto embrace is winning him votes, poll shows</h3>
-            <div class="news-time">4 days ago</div>
-        </div>
-    </div>
-    
-</div><br>
-
-
-<div id="carouselExample" class="carousel slide" data-bs-ride="carousel"><br>
-    <h2 class="text-uppercase"><strong>PRESS RELEASES</strong></h2>
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="container">
             <div class="row">
-                <div class="col-md-2">
-                    <img src="Images/pr 1.webp" class="d-block w-100" alt="Image 1">
-                    <p class="text-center">SHIB millionaire shifts focus to ETFSwap, sells off DOGE, WIF</p>
+                <div class="col-md-3">
+                    <div class="footer-logo">CryptoWatch</div>
+                    <p>Look first / Then leap.</p>
+                    <div class="footer-social-icons">
+                        <a href="#"><i class="bi bi-x"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-telegram"></i></a>
+                        <a href="#"><i class="bi bi-tiktok"></i></a>
+                        <a href="#"><i class="bi bi-reddit"></i></a>
+                        <a href="#"><i class="bi bi-discord"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                    <div class="mt-3">
+                        <select class="form-select form-select-sm" aria-label="Language">
+                            <option selected>English (India)</option>
+                            <option value="1">English (US)</option>
+                            <option value="2">English (UK)</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="col-md-2">
-                    <img src="Images/pr 2.webp" class="d-block w-100" alt="Image 2">
-                    <p class="text-center">MAD gears up to lead the memecoin trend on Solana
-                    </p>
+                <div class="col-md-3 footer-company">
+                    <h5 class="text-start">Products</h5>
+                    <ul class="list-unstyled text-start">
+                        <li><a href="#">Supercharts</a></li>
+                        <li><a href="#">Pine Script™</a></li>
+                        <li><a href="#">Stock Screener</a></li>
+                        <li><a href="#">ETF Screener</a></li>
+                        <li><a href="#">Forex Screener</a></li>
+                        <li><a href="#">Crypto Coins Screener</a></li>
+                        <li><a href="#">Crypto Pairs Screener</a></li>
+                        <li><a href="#">DEX Pairs Screener</a></li>
+                        <li><a href="#">Stock Heatmap</a></li>
+                        <li><a href="#">ETF Heatmap</a></li>
+                        <li><a href="#">Crypto Heatmap</a></li>
+                        <li><a href="#">Economic Calendar</a></li>
+                        <li><a href="#">Earnings Calendar</a></li>
+                        <li><a href="#">Sparks</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">CryptoWatch Desktop</a></li>
+                        <li><a href="#">Mobile app</a></li>
+                        <li><a href="#">CME Group futures</a></li>
+                        <li><a href="#">Eurex futures</a></li>
+                        <li><a href="#">US stocks bundle</a></li>
+                    </ul>
                 </div>
-                <div class="col-md-2">
-                    <img src="Images/pr 3.webp" class="d-block w-100" alt="Image 3">
-                    <p class="text-center">FATTY secures $3m in funding and onboards institutional investors</p>
+                <div class="col-md-2 footer-community">
+                    <h5 class="text-start">Company</h5>
+                    <ul class="list-unstyled text-start">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Social network</a></li>
+                        <li><a href="#">Wall of Love</a></li>
+                        <li><a href="#">Athletes</a></li>
+                        <li><a href="#">Manifesto</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Security vulnerability</a></li>
+                        <li><a href="#">Status page</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Cookies policy</a></li>
+                        <li><a href="#">Media kit</a></li>
+                        <li><a href="#">Accessibility statement</a></li>
+                        <li><a href="#">Tarot cards for traders</a></li>
+                    </ul>
                 </div>
-                <div class="col-md-2">
-                    <img src="Images/pr 4.webp" class="d-block w-100" alt="Image 4">
-                    <p class="text-center">Solana surges ahead with POODL and friends in September’s top ICOs</p>
+                <div class="col-md-2 footer-business">
+                    <h5 class="text-start">Community</h5>
+                    <ul class="list-unstyled text-start">
+                        <li><a href="#">Refer a friend</a></li>
+                        <li><a href="#">Ideas</a></li>
+                        <li><a href="#">Scripts</a></li>
+                        <li><a href="#">House rules</a></li>
+                        <li><a href="#">Moderators</a></li>
+                        <li><a href="#">Pine Script™ Wizards</a></li>
+                        <li><a href="#">Chat</a></li>
+                    </ul>
                 </div>
-                <div class="col-md-2">
-                    <img src="Images/pr 5.webp" class="d-block w-100" alt="Image 5">
-                    <p class="text-center">B2BROKER and Spotware announce B2COPY & cTrader integration</p>
+                <div class="col-md-2 footer-business">
+                    <h5 class="text-start">For business</h5>
+                    <ul class="list-unstyled text-start">
+                        <li><a href="#">Widgets</a></li>
+                        <li><a href="#">Advertising</a></li>
+                        <li><a href="#">Website & broker solutions</a></li>
+                        <li><a href="#">Lightweight Charting Library</a></li>
+                        <li><a href="#">Brokerage integration</a></li>
+                        <li><a href="#">Partner program</a></li>
+                        <li><a href="#">Content streams & RSS</a></li>
+                        <li><a href="#">Branding guidelines</a></li>
+                        <li><a href="#">Partner & broker awards</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-container text-center text-md-start">
+                    <span>© 2024 CryptoWatch, All rights reserved.</span>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#">Twitter</a></li>
+                        <li class="list-inline-item"><a href="#">LinkedIn</a></li>
+                        <li class="list-inline-item"><a href="#">GitHub</a></li>
+                        <li class="list-inline-item"><a href="#">Instagram</a></li>
+                        <li class="list-inline-item"><a href="#">Contact Us</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="carousel-item">
-            <div class="row">
-              
-
-                <div class="col-md-2">
-                    <img src="Images/pr 1.webp" class="d-block w-100" alt="Image 1">
-                    <p class="text-center">SHIB millionaire shifts focus to ETFSwap, sells off DOGE, WIF</p>
-                </div>
-                <div class="col-md-2">
-                    <img src="Images/pr 7.webp" class="d-block w-100" alt="Image 2">
-                    <p class="text-center">Dogizen the tap-to-earn hit confirms flood of gamers for early access</p>
-                </div>
-                <div class="col-md-2">
-                    <img src="Images/cr 8.webp" class="d-block w-100" alt="Image 3">
-                    <p class="text-center">Gamdom unveils new  Promo Code ” CSGOBETTINGSS ” and 15% rakeback deal</p>
-                </div>
-                <div class="col-md-2">
-                    <img src="Images/cr 9.webp" class="d-block w-100" alt="Image 4">
-                    <p class="text-center">XRP and SHIB investors shift to new crypto forecasted as 2024’s top pick</p>
-                </div>
-                <div class="col-md-2">
-                    <img src="Images/cr 10.webp" class="d-block w-100" alt="Image 5">
-                    <p class="text-center">Whales load up: Ripple, Intel Markets, Ethereum could explode</p>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="row">
-                <div class="col-md-2">
-                    <img src="Images/cr 11.webp" class="d-block w-100" alt="Image 1">
-                    <p class="text-center">Analyst predicts this memecoin will soar like Brett when it lists next week</p>
-                </div>
-                <div class="col-md-2">
-                    <img src="Images/cr 12.webp" class="d-block w-100" alt="Image 2">
-                    <p class="text-center">Ethereum and Solana traders eye new presale token</p>
-                </div>
-                <div class="col-md-2">
-                    <img src="Images/pr 13.webp" class="d-block w-100" alt="Image 3">
-                    <p class="text-center">Community honors Jen-Hsun Huang with JHH coin</p>
-                </div>
-                <div class="col-md-2">
-                    <img src="Images/pr 14.webp" class="d-block w-100" alt="Image 4">
-                    <p class="text-center">Community honors Jen-Hsun Huang with JHH coin</p>
-                </div>
-                <div class="col-md-2">
-                    <img src="Images/cr 15.webp" class="d-block w-100" alt="Image 5">
-                    <p class="text-center">ChatGPT 4.0 predicts which crypto could outperform ETH, SOL in next 12 months</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button></div><br>
-    
-
-    <div class="market-outlook">
-        <h2 class="text-uppercase"><strong>MARKET OUTLOOK</strong></h2><br>
-        <div class="cards-containerr">
-            <!-- Card 1 -->
-            <div class="cardss">
-                <img src="Images/mo 1.webp" alt="Bitcoin Image">
-                <div class="cardss-content">
-                    <h3>Kaiko: Here's why Bitcoin price dropped in August</h3>
-                    <div class="tags">
-                        <span>BTC</span>
-                    </div>
-                    <div class="time">14 hours ago</div>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="cardss">
-                <img src="Images/mo 2.webp" alt="Popcat Image">
-                <div class="cardss-content">
-                    <h3>Popcat price skids, yet open interest and charts indicate a rebound</h3>
-                    <div class="tags">
-                        <span>POPCAT</span>
-                        <span>BTC</span>
-                        <span>SHIB</span>
-                    </div>
-                    <div class="time">18 hours ago</div>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="cardss">
-                <img src="Images/mo 3.webp" alt="Floki Image">
-                <div class="cardss-content">
-                    <h3>Floki leads meme coin crash as dormant whale dumps 15b tokens</h3>
-                    <div class="tags">
-                        <span>FLOKI</span>
-                        <span>BTC</span>
-                        <span>POPCAT</span>
-                    </div>
-                    <div class="time">19 hours ago</div>
-                </div>
-            </div>
-            <!-- Card 4 -->
-            <div class="cardss">
-                <img src="Images/mo 4.webp" alt="Toncoin Image">
-                <div class="cardss-content">
-                    <h3>Pavel Durov's arrest unleashes the Streisand Effect on Toncoin</h3>
-                    <div class="tags">
-                        <span>TON</span>
-                    </div>
-                    <div class="time">23 hours ago</div>
-                </div>
-            </div>
-            <!-- Card 5 -->
-            <div class="cardss">
-                <img src="Images/mo 5.webp" alt="Bitcoin Price Rise">
-                <div class="cardss-content">
-                    <h3>Bitcoin price could rise as exchange reserves hit 2024 lows</h3>
-                    <div class="tags">
-                        <span>BTC</span>
-                    </div>
-                    <div class="time">10 days ago</div>
-                </div>
-            </div>
-            <!-- Card 6 -->
-            <div class="cardss">
-                <img src="Images/mo 6.webp" alt="APES goes parabolic">
-                <div class="cardss-content">
-                    <h3>APES goes parabolic, but harsh reversal may be near</h3>
-                    <div class="tags">
-                        <span>RAY</span>
-                        <span>TON</span>
-                        <span>DOGS</span>
-                    </div>
-                    <div class="time">4 days ago</div>
-                </div>
-            </div>
-        </div>
-        <div class="view-all">
-            <a href="#">View All</a>
-        </div>
-    </div>
-
-    <div class="market-articles">
-        <h2 class="text-uppercase"><strong>MARKET ARTICLES</strong></h2><BR>
-        <div class="articles-container">
-            <!-- Article 1 -->
-            <div class="article">
-                <img src="Images/final n 1.webp" alt="Ethereum Image">
-                <div class="article-content">
-                    <h3>Ethereum ETFs outpace Bitcoin, but new entry BitNance offers an alternative</h3>
-                    <p>As Ethereum ETFs gain traction and Bitcoin loses momentum, investors are turning to new and emerging tokens like BitNance (BTN).</p>
-                    <div class="tags">
-                        <span>NEWS</span>
-                    </div>
-                    <div class="time">1 day ago</div>
-                </div>
-            </div>
-            <!-- Article 2 -->
-            <div class="article">
-                <img src="Images/final n 2.webp" alt="LINE Image">
-                <div class="article-content">
-                    <h3>LINE messenger to introduce mini dApps via Kaia blockchain</h3>
-                    <p>Japanese messaging giant LINE is gearing up to introduce mini-decentralized applications on its messaging app in collaboration with the Kaia...</p>
-                    <div class="tags">
-                        <span>NOT</span>
-                    </div>
-                    <div class="time">7 days ago</div>
-                </div>
-            </div>
-            <!-- Article 3 -->
-            <div class="article">
-                <img src="Images/final n 3.webp" alt="DOGS Image">
-                <div class="article-content">
-                    <h3>DOGS jumps 21% in last 24 hours, analysts assess community impact</h3>
-                    <p>TON-based meme coin DOGS has become the leading gainer among the top 100 cryptocurrencies by market cap, with a price...</p>
-                    <div class="tags">
-                        <span>DOGS</span>
-                    </div>
-                    <div class="time">4 days ago</div>
-                </div>
-            </div>
-            <!-- Article 4 -->
-            <div class="article">
-                <img src="Images/final n 4.webp" alt="Scammers Image">
-                <div class="article-content">
-                    <h3>Crypto scammers target job hunters with fake TikTok ads</h3>
-                    <p>Crypto scammers are creating fake advertisements on TikTok to target job seekers, and one user has lost roughly $8,000. The...</p>
-                    <div class="tags">
-                        <span>USDT</span>
-                    </div>
-                    <div class="time">2 days ago</div>
-                </div>
-            </div>
-        
-
-
-        <!-- Article 3 -->
-        <div class="article">
-            <img src="Images/final n 6.webp" alt="DOGS Image">
-            <div class="article-content">
-                <h3>Crypto community on OpenSea Wells Notice: ‘Welcome to the club’</h3>
-                <p>Multiple pro-crypto voices weighed in against the Wells Notice issued to NFT Market OpenSea on Aug. 28, as the SEC’s...</p>
-                <div class="tags">
-                    <span>DOGS</span>
-                </div>
-                <div class="time">4 days ago</div>
-            </div>
-            </div>
-      
-        <!-- Article 4 -->
-        <div class="article">
-            <img src="Images/final n 5.webp" alt="Scammers Image">
-            <div class="article-content">
-                <h3>Spot Bitcoin ETFs see outflows of $105.19m, Ether ETFs break 9-day outflow streak</h3>
-                <p>Spot Bitcoin exchange-traded funds in the United States experienced their second consecutive outflow day on Aug. 28, while spot Ethereum...</p>
-                <div class="tags">
-                    <span>USDT</span>
-                </div>
-                <div class="time">8 days ago</div>
-            </div>
-        </div>
-    </div>
-    <br>
- <!-- FOOTER SECTION  -->
- <footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="footer-logo">CryptoWatch</div>
-                <p>Look first / Then leap.</p>
-                <div class="footer-social-icons">
-                    <a href="#"><i class="bi bi-x"></i></a>
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-youtube"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                    <a href="#"><i class="bi bi-telegram"></i></a>
-                    <a href="#"><i class="bi bi-tiktok"></i></a>
-                    <a href="#"><i class="bi bi-reddit"></i></a>
-                    <a href="#"><i class="bi bi-discord"></i></a>
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                </div>
-                <div class="mt-3">
-                    <select class="form-select form-select-sm" aria-label="Language">
-                        <option selected>English (India)</option>
-                        <option value="1">English (US)</option>
-                        <option value="2">English (UK)</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-md-3 footer-company">
-                <h5 class="text-start">Products</h5>
-                <ul class="list-unstyled text-start">
-                    <li><a href="#">Supercharts</a></li>
-                    <li><a href="#">Pine Script™</a></li>
-                    <li><a href="#">Stock Screener</a></li>
-                    <li><a href="#">ETF Screener</a></li>
-                    <li><a href="#">Forex Screener</a></li>
-                    <li><a href="#">Crypto Coins Screener</a></li>
-                    <li><a href="#">Crypto Pairs Screener</a></li>
-                    <li><a href="#">DEX Pairs Screener</a></li>
-                    <li><a href="#">Stock Heatmap</a></li>
-                    <li><a href="#">ETF Heatmap</a></li>
-                    <li><a href="#">Crypto Heatmap</a></li>
-                    <li><a href="#">Economic Calendar</a></li>
-                    <li><a href="#">Earnings Calendar</a></li>
-                    <li><a href="#">Sparks</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">CryptoWatch Desktop</a></li>
-                    <li><a href="#">Mobile app</a></li>
-                    <li><a href="#">CME Group futures</a></li>
-                    <li><a href="#">Eurex futures</a></li>
-                    <li><a href="#">US stocks bundle</a></li>
-                </ul>
-            </div>
-            <div class="col-md-2 footer-community">
-                <h5 class="text-start">Company</h5>
-                <ul class="list-unstyled text-start">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Social network</a></li>
-                    <li><a href="#">Wall of Love</a></li>
-                    <li><a href="#">Athletes</a></li>
-                    <li><a href="#">Manifesto</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Security vulnerability</a></li>
-                    <li><a href="#">Status page</a></li>
-                    <li><a href="#">Terms of use</a></li>
-                    <li><a href="#">Disclaimer</a></li>
-                    <li><a href="#">Privacy policy</a></li>
-                    <li><a href="#">Cookies policy</a></li>
-                    <li><a href="#">Media kit</a></li>
-                    <li><a href="#">Accessibility statement</a></li>
-                    <li><a href="#">Tarot cards for traders</a></li>
-                </ul>
-            </div>
-            <div class="col-md-2 footer-business">
-                <h5 class="text-start">Community</h5>
-                <ul class="list-unstyled text-start">
-                    <li><a href="#">Refer a friend</a></li>
-                    <li><a href="#">Ideas</a></li>
-                    <li><a href="#">Scripts</a></li>
-                    <li><a href="#">House rules</a></li>
-                    <li><a href="#">Moderators</a></li>
-                    <li><a href="#">Pine Script™ Wizards</a></li>
-                    <li><a href="#">Chat</a></li>
-                </ul>
-            </div>
-            <div class="col-md-2 footer-business">
-                <h5 class="text-start">For business</h5>
-                <ul class="list-unstyled text-start">
-                    <li><a href="#">Widgets</a></li>
-                    <li><a href="#">Advertising</a></li>
-                    <li><a href="#">Charting libraries</a></li>
-                    <li><a href="#">Lightweight Charts™</a></li>
-                    <li><a href="#">Advanced Charts</a></li>
-                    <li><a href="#">Trading Platform</a></li>
-                    <li><a href="#">Brokerage integration</a></li>
-                    <li><a href="#">Partner program</a></li>
-                    <li><a href="#">Education program</a></li>
-                </ul>
-            </div>
-        </div>
-        <hr>
-    <div class="row d-flex justify-content-center">
-        <div class="col">
-            <div class="store-logo">
-                <a href="#"><img src="images/app-store-badge-en.svg" alt="App Store" class="me-2"></a>
-                <a href="#"><img src="images/google-play-badge-en.svg" alt="Google Play" class="me-2"></a>
-                <a href="#"><img src="images/trade-on-tradingview-badges-en.svg" alt="Desktop App" class="me-2"></a>
-                <a href="#"><img src="images/desptok-app-tradingview.svg" alt="CryptoWatch" class="me-2"></a>
-            </div>
-        </div>
-        <div class="col text-center">
-            <p class="">Select market data provided by <a href="#">ICE Data Services</a></p>
-            <p>&copy; 2024 CryptoWatch, Inc.</p>
-        </div>
-        </div>
-    </div>
-    </div>
-</footer>
-
-
+    </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-</html>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
