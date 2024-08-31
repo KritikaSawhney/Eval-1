@@ -1,105 +1,59 @@
-.navbar-brand img {
-    max-height: 30px;
-}
-
-.navbar-nav nav-link {
-    color: black;
-    margin-right: 20px;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #fff;
-}
-
-.navbar-nav.ms-3 .nav-link img {
-    max-height: 20px;
-}
-
-.navbar {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-.navbar-dark .navbar-toggler-icon {
-    background-image: url("https://img.icons8.com/ios-glyphs/30/ffffff/menu--v1.png");
-}
-.hero-section {
-    background-color: #000;
-    background-image: linear-gradient(to right, #000, #111);
-    margin-top: 10px;
-}
-
-.pricing-card {
-    background-color: #111;
-}
-
-.display-3, .display-4 {
-    font-weight: bold;
-}
-
-.btn-primary {
-    background-color: #3f51b5;
-    border-color: #3f51b5;
-    background-image: linear-gradient(90deg, #00b5e2, #a81bc2);
-}
-
-.btn-primary:hover {
-    background-color: #2a3eb1;
-    border-color: #2a3eb1;
-}
-
-p.lead {
-    color: #ccc;
-}
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
 /* GLOBAL STYLE */
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: "Golos Text", sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
-    min-height: 100vh;
+
+/* PROGRESS-BAR */
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    z-index: 1000;
 }
 
-
-/* NAV BAR */
-header{
+/* HEADER & NAVBAR */
+header {
     background-color: black;
-    position: fixed;
-    display: block;
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 999;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-#navLinks  li{
+#navLinks li {
     padding: 0px 8px;
 }
 
-.nav-item a{
-    color: white;
-}
-.nav-item button{
+.nav-item a {
     color: white;
 }
 
+.nav-item button {
+    color: white;
+}
 
-/* DROPDOWN */
+/* DROPDOWN MENU */
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
     background-color: rgb(0, 0, 0);
@@ -110,21 +64,18 @@ ul{
     display: none;
 }
 
-.nav-link{
-  font-weight: bold;  
+.nav-link {
+    font-weight: bold;
 }
 
-
-/* NAVPROFILE BUTTONS  */
-
-
-.navProfile ul li button{
+/* NAV PROFILE BUTTONS */
+.navProfile ul li button {
     border: none;
 }
 
 /* HAMBURGER MENU STYLING */
 .navbar-toggler {
-    border: none; 
+    border: none;
 }
 
 @media (max-width: 991px) {
@@ -133,8 +84,32 @@ ul{
         text-align: start;
     }
 }
+
+#logo {
+    width: 344px;
+}
+
+@media screen and (max-width: 600px) {
+    #logo {
+        width: 250px;
+    }
+    .hero-section {
+        min-height: 50vh;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-collapse {
+        background-color: black;
+        border: 0px solid;
+        border-radius: 20px;
+        padding: 20px;
+    }
+}
+
+/* FOOTER */
 .footer {
-    background-color: #111;
+    background-color: black;
     color: #fff;
     padding: 40px 0;
 }

@@ -1,272 +1,213 @@
-    .section-container {
-        display: flex;
-        flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
-        justify-content: center; /* Center items horizontally */
-        align-items: center;
-        padding: 2rem; /* Adjust padding as needed */
-        background-color: #ffffff;
-        margin: 1rem auto; /* Space above and below the container */
-    }
+body{
+    background-color: black;
+}
+h1{
+    color: white;
+}
+.section-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+    padding: 2rem; /* Adjust padding as needed */
+    background-color: #ffffff;
+    margin: 1rem auto; /* Space above and below the container */
+}
 
-    .section-item {
-        text-align: center;
-        margin: 1rem auto; /* Space above and below the container */
-        padding: 0 1rem;
-    }
+.section-item {
+    text-align: center;
+    margin: 1rem auto; /* Space above and below the container */
+    padding: 0 1rem;
+}
 
-    .section-item img {
-        width: 8rem;
-        height: 8rem;
-        margin-bottom: 0.5rem;
-    }
+.section-item img {
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 0.5rem;
+}
 
-    .section-item h3 {
-        font-size: 1.2rem;
-        margin-bottom: 0.25rem;
-    }
+.section-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+}
 
-    .section-item a {
-        text-decoration: none;
-        color: #0066cc;
-        font-size: 1rem;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+.section-item a {
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    .section-item a:hover {
-        color: #003366;
-    }
+.section-item a:hover {
+    color: #003366;
+}
 
-    .arrow {
-        margin-left: 0.25rem;
-        transition: transform 0.3s;
-    }
+.arrow {
+    margin-left: 0.25rem;
+    transition: transform 0.3s;
+}
 
-    .section-item a:hover .arrow {
-        transform: translateX(0.25rem);
-    }
+.section-item a:hover .arrow {
+    transform: translateX(0.25rem);
+}
 
-    .crypto-container {
-        display: flex;
-        flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
-        gap: 1rem; /* Space between the two cards */
-        justify-content: space-between;
-        margin: 1rem auto; /* Space above and below the container */
-        padding: 0 1rem; /* Padding on the left and right sides */
-        max-width: 1200px; /* Maximum width of the container */
-    }
+.crypto-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
+    gap: 1rem; /* Space between the two cards */
+    justify-content: space-between;
+    margin: 1rem auto; /* Space above and below the container */
+    padding: 0 1rem; /* Padding on the left and right sides */
+    max-width: 1200px; /* Maximum width of the container */
+}
 
-    .crypto-card {
-        display: flex;
-        flex-direction: column;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        width: 48%; /* Ensures the cards take up nearly half the container each */
-    }
+.crypto-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 48%; /* Ensures the cards take up nearly half the container each */
+}
 
-    .image-link img {
-        width: 100%;
-        height: auto;
-    }
+.image-link img {
+    width: 100%;
+    height: auto;
+}
 
-    .crypto-content {
-        padding: 0.75rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+.crypto-content {
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-    .label {
-        font-size: 0.75rem;
-        color: #666;
-    }
+.label {
+    font-size: 0.75rem;
+    color: #666;
+}
 
-    .title-link {
-        text-decoration: none;
-        color: #000;
-        display: block;
-        margin: 0.5rem 0;
-    }
+.title-link {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    margin: 0.5rem 0;
+}
 
-    .title-link strong {
-        font-size: 1.2rem;
-    }
+.title-link strong {
+    font-size: 1.2rem;
+}
 
-    .title-link:hover {
-        color: #0056b3;
-    }
+.title-link:hover {
+    color: #0056b3;
+}
 
-    p {
-        color: #555;
-        font-size: 0.875rem; /* Adjust font size as needed */
-    }
+p {
+    color: #555;
+    font-size: 0.875rem; /* Adjust font size as needed */
+}
 
-    .guides-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem; /* Space between the cards */
-        margin: 1rem auto; /* Space above and below the container */
-        padding: 0 1rem; /* Padding on the left and right sides */
-        max-width: 1200px; /* Maximum width of the container */
-    }
+.guides-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Space between the cards */
+    margin: 1rem auto; /* Space above and below the container */
+    padding: 0 1rem; /* Padding on the left and right sides */
+    max-width: 1200px; /* Maximum width of the container */
+}
 
-    .guide-card {
-        display: flex;
-        flex-direction: column;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        width: 23%;
-        /* Ensures the cards take up about 23% each to fit 4 cards in one row */
+.guide-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 23%;
+    /* Ensures the cards take up about 23% each to fit 4 cards in one row */
 
-        text-align: center;
-    }
-    .image-link img {
-        width: 100%;
-        height: auto;
-    }
+    text-align: center;
+}
+.image-link img {
+    width: 100%;
+    height: auto;
+}
 
-    .guide-content {
-        padding: 0.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+.guide-content {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-    .guide-label {
-        font-size: 0.75rem;
-        color: #666;
-    }
+.guide-label {
+    font-size: 0.75rem;
+    color: #666;
+}
 
-    .guide-title-link {
-        text-decoration: none;
-        color: #000;
-        display: block;
-        margin: 0.5rem 0;
-    }
+.guide-title-link {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    margin: 0.5rem 0;
+}
 
-    .guide-title-link strong {
-        font-size: 1rem;
-        display: inline-block;
-        line-height: 1.4;
-    }
+.guide-title-link strong {
+    font-size: 1rem;
+    display: inline-block;
+    line-height: 1.4;
+}
 
-    .guide-title-link:hover {
-        color: #0056b3;
-    }
+.guide-title-link:hover {
+    color: #0056b3;
+}
 
-    .crypto-button {
-        background-color: #007bff;
-        color: #ffffff;
-        padding: 0.5rem 1rem;
-        text-decoration: none;
-        font-size: 1rem;
-        font-weight: bold;
-        border-radius: 5px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        transition: background-color 0.3s, box-shadow 0.3s;
-    }
+.crypto-button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
 
-    .crypto-button:hover {
-        background-color: #0056b3;
-        box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
-    }
+.crypto-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
 
-    .terms {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+.terms {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-    .terms li {
-        margin: 0.5rem;
-    }
+.terms li {
+    margin: 0.5rem;
+}
 
-    .terms a {
-        text-decoration: none;
-        padding: 0.5rem;
-        background-color: #f0f0f0;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
+.terms a {
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
-    button {
-        padding: 0.5rem 1rem;
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    .footer {
-        background-color: #111;
-        color: #fff;
-        padding: 2rem 0;
-    }
-
-    .footer a {
-        color: #fff;
-        text-decoration: none;
-    }
-
-    .footer a:hover {
-        text-decoration: underline;
-    }
-
-    .footer .footer-logo {
-        font-size: 1.5rem;
-        font-weight: bold;
-        margin-bottom: 1rem;
-    }
-
-    .footer .footer-social-icons a {
-        margin-right: 0.75rem;
-        font-size: 1.25rem;
-    }
-
-    .footer .footer-company,
-    .footer .footer-community,
-    .footer .footer-business {
-        margin-bottom: 1rem;
-    }
-
-    /* Media query for smaller screens */
-    @media (max-width: 768px) {
-        .section-container {
-            justify-content: center;
-        }
-
-        .crypto-card {
-            width: 100%;
-        }
-        
-        .guides-container {
-            justify-content: center;
-        }
-
-        .guide-card {
-            width: 45%;
-        }
-
-        .footer .footer-social-icons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-    }
-    @media (max-width: 766px) {
-        .youtube-container {
-            display: none;
-        }
-    }
-    
-
-    
+button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

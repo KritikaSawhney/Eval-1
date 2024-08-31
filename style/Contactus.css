@@ -1,42 +1,23 @@
-body {
-    font-family: Arial, sans-serif;
+body {  
     background-color: black;
     color: white;
-}
-header{
-    background-color: black;
 }
 
 /* Header Section */
 .header-section {
-    background-color: white;
-    padding: 80px 0px;
-    background-image: url('/Images/X-first-banner.png');
+    background-image: url('images/textured\ background.jpg');
     background-size: cover;
 }
-.header-section h1 {
-    font-size: 2.5rem;
-}
-
 
 .card {
+
     border: 1px solid white;
     transition: transform 0.2s;
 }
 
 .card:hover {
     transform: translateY(-10px);
-}
-
-
-.btn-dark {
-    background-color: #000;
-    border: none;
-    color: black;
-}
-
-.btn-dark:hover {
-    background-color: #333;
+    transition: 0.5s ease;
 }
 
 /* More Resources Section */
@@ -66,4 +47,36 @@ header{
 
 .resource-box a:hover {
     text-decoration: underline;
+}
+
+.form-control{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 0px;
+    color: white;
+    font-size: 2rem;
+}
+
+.form-control::placeholder{
+    color: white;
+}
+.form-control:focus{
+    background-color: transparent;  
+    color: white;
+    border-bottom: 2px solid white;
+    box-shadow: none; 
+}
+
+form{
+    position: relative;
+}
+
+.search-icon {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: white;
 }

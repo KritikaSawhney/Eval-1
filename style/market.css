@@ -1,0 +1,76 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.CrytoPricesSection{
+    margin: 20px 0px;
+}
+
+.category-filters-group button{
+    margin: 2px;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+/* .table td img {
+    max-width: 100px;
+} */
+
+.table {
+    text-align: start;
+    border-spacing: 0 15px; 
+    border-collapse: separate;
+}
+.crypto-graph{
+    min-width: 100px;
+    filter: hue-rotate(300deg) saturate(210%) brightness(0.7) contrast(170%);    
+}
+
+.up{
+    filter: hue-rotate(85deg) saturate(80%) brightness(0.85);
+} 
+
+.crypto-logo{
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+}
+small{
+    margin-left: 5px;
+    font-size: 0.80rem;
+    font-weight: 500;
+}
+
+@media (max-width: 375px) {
+    .form-check{
+        display: none;
+    }
+}
+.Top-Widgets{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.card {
+    display: flex;
+    flex-direction: column; 
+    height: 100%; 
+}
+.card-body {
+    flex: 1; /* Allows the card body to grow and fill the available space */
+}

@@ -4,22 +4,28 @@
     margin: 0;
     padding: 0;
     font-family: "Golos Text", sans-serif;
-
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-body {
-    min-height: 100vh;
+
+/* PROGRESS-BAR */
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    z-index: 1000;
 }
 
 /* HEADER & NAVBAR */
 header {
     background-color: black;
     position: sticky;
-    display: block;
     top: 0;
     width: 100%;
     z-index: 999;

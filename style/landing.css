@@ -1,6 +1,15 @@
+/* UPDATED HEADER & NAVBAR FOR LANDING PAGE */
+header {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
 /* HERO SECTION */
 .hero-section {
-    background-image: url(Images/caite-look.webp);
+    background-image: url(./Images/caite-look.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
