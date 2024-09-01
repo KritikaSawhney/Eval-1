@@ -4,12 +4,12 @@ body {
 }
 
 .text-primary {
-    color: #0000ff; /* Coinbase blue */
+    color: #BB86FC; /* A purple hue that stands out on a dark background */
 }
 
 .btn-primary {
-    background-color: #0000ff; /* Coinbase blue */
-    border-color: #0000ff; /* Coinbase blue */
+    background-color: #BB86FC;
+    border-color: #BB86FC;
 }
 
 .form-control::placeholder {
@@ -19,17 +19,26 @@ body {
 
 .form-control {
     border-radius: .375rem;
+    background-color: #1F1F1F;
+    color: #ffffff;
 }
 
 a {
     text-decoration: none;
-    color: #0000ff; /* Coinbase blue */
-}
-/*hello*/
-.card {
-    border: none;
+    color: #BB86FC;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    background-color: #1F1F1F;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 .card-title {
     font-size: 1.25rem;
     font-weight: bold;
@@ -47,12 +56,6 @@ ul li {
 .card-text small {
     color: #6c757d;
 }
-/*second*/
-.card {
-    border-radius: 8px;
-    border: 2px solid ;
-    background-color: #fff;
-}
 
 .display-5 {
     font-size: 2.5rem;
@@ -60,21 +63,11 @@ ul li {
 }
 
 .text-primary {
-    color: #007bff !important;
-}
-
-.form-control {
-    border-radius: 0.375rem;
-}
-
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    border-radius: 0.375rem;
+    color: #BB86FC !important;
 }
 
 a {
-    color: #007bff;
+    color: #BB86FC;
 }
 
 a:hover {

@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding-right: 20px;
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 7px; /* White heading color */
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    font-weight: bold;
+    color: #ffffff; /* White heading color */
+}
+
+/* Image Section */
+
+
+.img-fluid {
+    border-radius: 10px;
+    width: 1000px;
+}
+
+/* Definition Box */
+.definition-box {
+    background-color: #1e1e1e; /* Dark box background */
+    color: #e0e0e0; /* Light text color */
+    border-radius: 10px;
+    border-left: 5px solid #6200ea; /* Accent border color */
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.definition-box h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #bb86fc; /* Light purple for headings */
+}
+
+.definition-box p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* List Styles */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #e0e0e0; /* Light text color */
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #e0e0e0; /* Light text color */
+}
+
+/* Sidebar Styles */
+.fixed-sidebar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    z-index: 1000;
+}
+
+.card {
+    border: none;
+}
+
+.card-body {
+    background-color: #1e1e1e;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    margin-bottom: 0;
+}
+
+.position-sticky {
+    position: sticky;
+    top: 20px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.card.bg-light.text-dark {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.card.bg-light.text-dark h5 {
+    color: #212529;
+    margin-bottom: 10px;
+}
+
+.card.bg-light.text-dark p {
+    margin-bottom: 10px;
+}
