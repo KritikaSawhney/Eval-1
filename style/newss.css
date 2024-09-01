@@ -158,7 +158,7 @@ ul {
     margin-top: 10px;
 }
 .market-card{
-    flex: 1 1 250px;
+    flex: 1 1 200px;
 }
 .market-outlook .card-img {
     width: 100%;
@@ -239,7 +239,7 @@ ul {
     gap: 20px;
 }
 .articles-container .col{
-    flex: 1 1 750px;
+    flex: 1 1 500px;
 }
 .article {
     display: flex;

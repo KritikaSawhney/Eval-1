@@ -1,175 +1,139 @@
 body {
-    background-color: #000; /* Set the background color */
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+    background-color: #000;
 }
+
 header{
     background-color: transparent;
-}
-#content-section{
-    padding: 100px;
-}
-/* Fullscreen Video Background */
-.video-background {
     position: fixed;
+    top: 0;
+    display: block;
+}
+
+
+/* HERO SECTION  */
+.hero-sec, .stats-section, .feature-section {
+    color: white;
+}
+
+.hero-sec {
+    min-height: 100vh;
+    position: relative;
+    text-align: start;
+    overflow: hidden;
+    display: flex;
+    align-items: end;
+}
+
+
+/* Video Background */
+.video-background {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 86vh;
-    overflow: hidden;
+    height: 100%;
     z-index: -1;
 }
 
 #background-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    
     width: 100%;
-    height: 86vh;
+    height: 100%;
     object-fit: cover;
-    transform: translate(-50%, -50%);
 }
 
-/* Content Container */
-.content-contain {
-    height: 67vh;
-    z-index: 1;
+/* Content Section */
+#content-section {
     position: relative;
-    padding: 20px;
+    margin: 0 auto;
+    padding: 150px 20px;
 }
 
-/* Text Styling */
-h1 {
-    font-weight: bold;
-}
-
-.lead {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
+#transparentButton:hover{
+    background-color: transparent;
+    color: white;
 }
 
 .btn-group .btn {
     margin: 0 10px;
     padding: 10px 20px;
     font-size: 1.2rem;
-    border-radius: 50px;
-}
-.hero-sec h1 {
-    font-size: 50px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.hero-sec p {
-    font-size: 20px;
-    margin-bottom: 30px;
 }
 
 .stats-section {
-    background-color: #1a1a1a;
     padding: 50px 0;
+    background-color: black;
+    border-radius: 40px;
 }
 
-.stats-section h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
+.stats-section .container{
+    /* padding: 50px 0; */
+    background-color: transparent;
+    border-radius: 40px ;
 }
 
-.stats-section p {
-    font-size: 18px;
-    color: #888;
+.stats-section .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.stats-section .row .col{
+    flex: 1 1 280px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgb(18, 17, 17);
 }
 
 .feature-section {
-    background-color: #111;
-    padding: 50px 0;
+    background-color: black;
     color: #fff;
 }
 
-.feature-section h3 {
-    font-size: 45px;
-    margin-bottom: 30px;
+.feature-section .row{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.feature-section p {
-    font-size: 30px;
-    color: #ccc;
+.feature-section .col{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    flex: 1 1 500px;
+    justify-content: center;
 }
 
-.build-section {
-    padding: 50px 0;
-    background-color: #222;
-}
-
-.build-section h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-.build-section p {
-    font-size: 18px;
-    margin-bottom: 40px;
-}
-
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    font-size: 18px;
-    padding: 10px 30px;
-}
-
-.btn-outline-light {
-    font-size: 18px;
-    padding: 10px 30px;
-}
-.feature-section {
-    padding: 30px 50px;
-    background-color: #111;
+.feature-section .col img{
+    width: 100%;
+    max-height: 400px;
+    max-width: 400px;
+    margin: auto;
     
 }
 
-.feature-section h3 {
-    font-size: 22px;
-    color: #007bff;
-    margin-bottom: 10px;
+.feature-section .col video{
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    border: 2px solid rgb(58, 53, 53);
+    box-shadow: #222;
+    border-radius: 20px;
 }
 
-.feature-section h2 {
-    font-size: 45px;
-    margin-bottom: 20px;
+.build-section {
+    padding: 50px 0;
+    background-color: black;
 }
 
-.feature-section p {
-    font-size: 25px;
-    color: #ccc;
+.feature-section {
+    padding: 30px 50px;
+    background-color: black;
+    
 }
 
 .build-section {
     padding: 50px 0;
     background-color: #222;
-}
-
-.build-section h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.build-section p {
-    font-size: 18px;
-    margin-bottom: 40px;
-}
-
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    font-size: 18px;
-    padding: 10px 30px;
-}
-
-.btn-outline-light {
-    font-size: 18px;
-    padding: 10px 30px;
 }
 
 .icons-contain img {
