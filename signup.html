@@ -3,80 +3,301 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up Page </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/styles.css">
+    <!-- <link rel="stylesheet" href="style/signin.css"> -->
     <link rel="stylesheet" href="style/signup.css">
-    <title>Sign up Page</title>
-
 </head>
 <body>
-    <div class="container">
-        <!-- Left Section with Video -->
-        <div class="left-section">
-            <video autoplay muted loop class="video-bg">
-                <source src="images crypto/tradingview.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar navbar-expand-lg container">
+            <!-- LOGO -->
+            <a class="navbar-brand" href="#">
+                <img src="Images/Layer 1 copy2.png" alt="logo" id="logo">
+            </a>
 
-            <div class="caption">
-                <h1><b>Look first /
-                    <br>
-                     Then leap.</b></h1>
+            <!-- Hamburger Menu Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars text-light"></i>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse bg-body-dark" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto" id="navLinks">
+                    <!-- Home -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold link-light" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- About -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold link-light" href="about.html" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <li><a class="dropdown-item" href="about.html">About us</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Markets -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold link-light" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Markets
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- News -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold link-light" href="#" id="navbarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            News
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold link-light" href="#" id="navbarDropdown5" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contact
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>   
+                <div class="navProfile d-flex ms-2">
+                    <ul class="navbar-nav gap-1">
+                        <li class="nav-item">
+                            <button class="btn btn-outline-dark fw-bold">
+                                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-dark fw-bold">
+                                <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-dark fw-bold">
+                                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-dark fw-bold">
+                                <a href="https://www.dribbble.com/"><i class="fa-brands fa-dribbble"></i></a>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        
-        </div>
+        </nav>
+    </header>
 
+    <!-- MAIN SECTION  -->
+    <main>
+        <div class="container-fluid">
+            <div class="row no-gutters">
 
-        <!-- Right Section with Form -->
-        <div class="right-section">
-            <img src="Images/Logo.png" alt="TradingView Logo" height="100px"  >
-            <div class="container d-flex justify-content-center align-items-center vh-100">
-                <form class="bg-light p-4 rounded shadow signup-form">
-                    <h2 class="text-center mb-4">Sign Up</h2>
-                    <p class="text-center mb-4">Let's get started with your 30 days free trial</p>
-                    
-                    <div class="mb-3">
-                        <label for="firstName" class="form-label">First name</label>
-                        <input type="text" class="form-control" id="firstName" required>
+                <!-- Right Section: Form -->                
+                <div class="col-lg-6 col-md-12 form-section ">
+
+                    <div class="login-form rounded-3">
+                        <h2 class="mb-3 text-center">Sign up </h2>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control mb-3" placeholder="Name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control mb-3" placeholder="Username" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" class="form-control mb-3" placeholder="Email or Username" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="password" class="form-control mb-3" placeholder="Password" required>
+                            </div>
+
+                            <button type="submit" class="btn w-100 btn-outline-dark">Sign up</button>
+                        </form>
+                        <p class="sign-up-text">Already have an account? <a href="signin.html">Sign in</a></p>
+
+                        <div class="divider position-relative text-center">
+                            <hr class="my-4 z-n1">
+                            <p class="position-absolute top-50 start-50 translate-middle z-2 bg-white ">or</p>
+                        </div>
+                        <div class="d-flex gap-2 flex-column">
+                        <button type="submit" class="btn w-100 btn-outline-dark"><i class="fa-brands fa-google fa-lg me-2"></i>Sign up with Google</button>
+                        <button type="submit" class="btn w-100 btn-outline-dark"><i class="fa-brands fa-apple fa-xl me-2"></i>Sign up with Apple</button>
+                        </div>
+                        <p class="mt-3 text-center">By signing up to create an account I accept Company's <a href="Terms_and_conditions.html">Terms of Use and Privacy Policy.</a></p>
                     </div>
-                    <div class="mb-3">
-                        <label for="lastName" class="form-label">Last name</label>
-                        <input type="text" class="form-control" id="lastName" required>
+                </div>
+
+                <!-- Left Section: Video -->
+                <div class="col-lg-6 d-none d-lg-block d-flex justify-content-center align-item-end">
+                    <video autoplay muted loop class="video-bg left-section">
+                        <source src="Images/alex-climbing-short.avc.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="overlay-text ">
+                        <h1 class="text-dark display-2 fw-bolder">Look first / <br> Then leap.</h1>
+                        <p class="fs-4">Alex Honnold<br>TV Athlete</p>
                     </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="birthDate" class="form-label">Birth date</label>
-                        <input type="date" class="form-control" id="birthDate" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="phoneNumber" class="form-label">Phone number</label>
-                        <input type="tel" class="form-control" id="phoneNumber" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="password" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="confirmPassword" class="form-label">Confirm password</label>
-                        <input type="password" class="form-control" id="confirmPassword" required>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary w-100 mb-3">Sign Up</button>
-                    <div class="text-center">
-                        <a href="#" class="text-decoration-none">Already have an account? Log In</a>
-                    </div>
-                    <div class="text-center mt-3">
-                        <p>or</p>
-                        <button type="button" class="btn btn-light border w-100"><img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google Icon"> Sign up with Google</button>
-                    </div>
-                    
-                    <p class="text-center mt-3 small">
-                        By signing up to create an account I accept Company's <a href="#" class="text-decoration-none">Terms of Use</a> and <a href="#" class="text-decoration-none">Privacy Policy</a>.
-                    </p>
-                </form>
-            </div>
+                </div>
                 
-              
+
+            </div>
+        </div>                
+    </main> 
+    
+    <!-- FOOTER SECTION  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-logo">CryptoWatch</div>
+                    <p>Look first / Then leap.</p>
+                    <div class="footer-social-icons">
+                        <a href="#"><i class="bi bi-x"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-telegram"></i></a>
+                        <a href="#"><i class="bi bi-tiktok"></i></a>
+                        <a href="#"><i class="bi bi-reddit"></i></a>
+                        <a href="#"><i class="bi bi-discord"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                    <div class="mt-3">
+                        <select class="form-select form-select-sm" aria-label="Language">
+                            <option selected>English (India)</option>
+                            <option value="1">English (US)</option>
+                            <option value="2">English (UK)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3 footer-company">
+                    <h5 class="text-start">Products</h5>
+                    <ul class="list-unstyled text-start">
+                        <li><a href="#">Supercharts</a></li>
+                        <li><a href="#">Pine Script™</a></li>
+                        <li><a href="#">Stock Screener</a></li>
+                        <li><a href="#">ETF Screener</a></li>
+                        <li><a href="#">Forex Screener</a></li>
+                        <li><a href="#">Crypto Coins Screener</a></li>
+                        <li><a href="#">Crypto Pairs Screener</a></li>
+                        <li><a href="#">DEX Pairs Screener</a></li>
+                        <li><a href="#">Stock Heatmap</a></li>
+                        <li><a href="#">ETF Heatmap</a></li>
+                        <li><a href="#">Crypto Heatmap</a></li>
+                        <li><a href="#">Economic Calendar</a></li>
+                        <li><a href="#">Earnings Calendar</a></li>
+                        <li><a href="#">Sparks</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">CryptoWatch Desktop</a></li>
+                        <li><a href="#">Mobile app</a></li>
+                        <li><a href="#">CME Group futures</a></li>
+                        <li><a href="#">Eurex futures</a></li>
+                        <li><a href="#">US stocks bundle</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 footer-community">
+                    <h5 class="text-start">Company</h5>
+                    <ul class="list-unstyled text-start">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Social network</a></li>
+                        <li><a href="#">Wall of Love</a></li>
+                        <li><a href="#">Athletes</a></li>
+                        <li><a href="#">Manifesto</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Security vulnerability</a></li>
+                        <li><a href="#">Status page</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Cookies policy</a></li>
+                        <li><a href="#">Media kit</a></li>
+                        <li><a href="#">Accessibility statement</a></li>
+                        <li><a href="#">Tarot cards for traders</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 footer-business">
+                    <h5 class="text-start">Community</h5>
+                    <ul class="list-unstyled text-start">
+                        <li><a href="#">Refer a friend</a></li>
+                        <li><a href="#">Ideas</a></li>
+                        <li><a href="#">Scripts</a></li>
+                        <li><a href="#">House rules</a></li>
+                        <li><a href="#">Moderators</a></li>
+                        <li><a href="#">Pine Script™ Wizards</a></li>
+                        <li><a href="#">Chat</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 footer-business">
+                    <h5 class="text-start">For business</h5>
+                    <ul class="list-unstyled text-start">
+                        <li><a href="#">Widgets</a></li>
+                        <li><a href="#">Advertising</a></li>
+                        <li><a href="#">Charting libraries</a></li>
+                        <li><a href="#">Lightweight Charts™</a></li>
+                        <li><a href="#">Advanced Charts</a></li>
+                        <li><a href="#">Trading Platform</a></li>
+                        <li><a href="#">Brokerage integration</a></li>
+                        <li><a href="#">Partner program</a></li>
+                        <li><a href="#">Education program</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        <div class="row d-flex justify-content-center">
+            <div class="col">
+                <div class="store-logo">
+                    <a href="#"><img src="images/app-store-badge-en.svg" alt="App Store" class="me-2"></a>
+                    <a href="#"><img src="images/google-play-badge-en.svg" alt="Google Play" class="me-2"></a>
+                    <a href="#"><img src="images/trade-on-tradingview-badges-en.svg" alt="Desktop App" class="me-2"></a>
+                    <a href="#"><img src="images/desptok-app-tradingview.svg" alt="CryptoWatch" class="me-2"></a>
+                </div>
+            </div>
+            <div class="col text-center">
+                <p class="">Select market data provided by <a href="#">ICE Data Services</a></p>
+                <p>&copy; 2024 CryptoWatch, Inc.</p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
 </body>
 </html>

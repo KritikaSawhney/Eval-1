@@ -11,9 +11,6 @@
     <link rel="stylesheet" href="style/signin.css">
 </head>
 <body>
-    <!-- PROGRESS BAR -->
-    <div id="progress-bar"></div>
-
     <!-- HEADER -->
     <header>
         <nav class="navbar navbar-expand-lg container">
@@ -119,50 +116,51 @@
             </div>
         </nav>
     </header>
+
+    <!-- MAIN SECTION -->
     <main>
         <div class="container-fluid">
             <div class="row no-gutters">
                 <!-- Left Section: Video -->
                 <div class="col-lg-6 d-none d-lg-block d-flex justify-content-center align-item-end">
-                    <video autoplay muted loop class="video-bg">
-                        <source src="images crypto/tradingview.mp4" type="video/mp4">
+                    <video autoplay muted loop class="video-bg left-section">
+                        <source src="Images/tradingview.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <div class="overlay-text ">
-                        <h1 class="text-dark display-4 fw-bolder">Look first / <br> Then leap.</h1>
-                        <p>Alex Honnold<br>TV Athlete</p>
+                        <h1 class="text-dark display-2 fw-bolder">Look first / <br> Then leap.</h1>
+                        <p class="fs-4">Alex Honnold<br>TV Athlete</p>
                     </div>
                 </div>
                 
-                <!-- Right Section: Form -->
-                 
-                <div class="col-lg-6 col-md-12 form-section">
-                    <div class="login-form">
-                        <h2>Sign in with email</h2>
+                <!-- Right Section: Form -->                
+                <div class="col-lg-6 col-md-12 form-section ">
+                    <div class="login-form rounded-3">
+                        <h2 class="mb-3 text-center">Sign in with email</h2>
                         <form>
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email or Username" required>
+                                <input type="email" class="form-control mb-3" placeholder="Email or Username" required>
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control" placeholder="Password" required>
+                                <input type="password" class="form-control mb-3" placeholder="Password" required>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group mx-2">
                                 <a href="#" class="forgot-password">I forgot password or can't sign in</a>
                             </div>
                             <div class="form-group">
                                 <input type="checkbox" id="rememberMe">
-                                <label for="rememberMe">Remember me</label>
+                                <label for="rememberMe" class="mb-3">Remember me</label>
                             </div>
-                            <button type="submit" class="btn btn-dark btn-block">Sign in</button>
+                            <button type="submit" class="btn w-100 btn-outline-dark">Sign in</button>
                         </form>
-                        <p class="sign-up-text">Do not have an account? <a href="#">Sign up</a></p>
+                        <p class="sign-up-text">Do not have an account? <a href="signup.html">Sign up</a></p>
                     </div>
                 </div>
             </div>
         </div>
-        </main>
+    </main>
 
-        <!-- FOOTER SECTION  -->
+    <!-- FOOTER SECTION  -->
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -282,11 +280,7 @@
         </div>
     </footer>
 
-    <script src="js/progress-bar.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
 </body>
 </html>
     
