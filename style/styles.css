@@ -86,12 +86,13 @@ ul {
 }
 
 #logo {
-    width: 344px;
+    width: 300px;
 }
 
 @media screen and (max-width: 600px) {
     #logo {
-        width: 250px;
+        width: 200px;
+        margin-left: 10px;
     }
     .hero-section {
         min-height: 50vh;
