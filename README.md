@@ -54,8 +54,8 @@ To run Crypto Watch locally, follow these steps:
 ## Team members
 Thank you to all the members who have helped make this project better!
 - **Naman Nayak** - [GitHub Profile](https://github.com/Namann-14)
-- **Kritika Sawhney**
-- **Kartik Sharma**
-- **Muskaan Aggrawal**
+- **Kritika Sawhney** - [GitHub Profile](https://github.com/KritikaSawhney)
+- **Kartik Sharma** - [GitHub Profile](https://github.com/Kartik2004sharma)
+- **Muskaan Aggrawal** - [GitHub Profile](https://github.com/musagg)
   
    
