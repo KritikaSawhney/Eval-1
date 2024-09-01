@@ -1,141 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
-/* GLOBAL STYLE */
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Golos Text", sans-serif;
+.hero-sectio {
+    background-color: #000;
+    background-image: linear-gradient(to right, #000, #111);
+    padding: 160px 0px;
 }
 
-html {
-    scroll-behavior: smooth;
+.pricing-card {
+    background-color: #111;
 }
 
-
-/* PROGRESS-BAR */
-#progress-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 3px;
-    background-color: white;
-    z-index: 1000;
-}
-
-/* HEADER & NAVBAR */
-header {
-    background-color: black;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-ul {
-    list-style: none;
-}
-
-#navLinks li {
-    padding: 0px 8px;
-}
-
-.nav-item a {
-    color: white;
-}
-
-.nav-item button {
-    color: white;
-}
-
-/* DROPDOWN MENU */
-.nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-    background-color: rgb(0, 0, 0);
-    color: white;
-}
-
-.nav-link.dropdown-toggle::after {
-    display: none;
-}
-
-.nav-link {
+.display-3, .display-4 {
     font-weight: bold;
 }
 
-/* NAV PROFILE BUTTONS */
-.navProfile ul li button {
-    border: none;
+.btn-primary {
+    background-color: #3f51b5;
+    border-color: #3f51b5;
+    background-image: linear-gradient(90deg, #00b5e2, #a81bc2);
 }
 
-/* HAMBURGER MENU STYLING */
-.navbar-toggler {
-    border: none;
+.btn-primary:hover {
+    background-color: #2a3eb1;
+    border-color: #2a3eb1;
 }
 
-@media (max-width: 991px) {
-    .navbar-nav {
-        margin-left: 0;
-        text-align: start;
-    }
-}
-
-#logo {
-    width: 344px;
-}
-
-@media screen and (max-width: 600px) {
-    #logo {
-        width: 250px;
-    }
-    .hero-section {
-        min-height: 50vh;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .navbar-collapse {
-        background-color: black;
-        border: 0px solid;
-        border-radius: 20px;
-        padding: 20px;
-    }
-}
-
-/* FOOTER */
-.footer {
-    background-color: black;
-    color: #fff;
-    padding: 40px 0;
-}
-
-.footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer a:hover {
-    text-decoration: underline;
-}
-
-.footer .footer-logo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.footer .footer-social-icons a {
-    margin-right: 15px;
-    font-size: 20px;
-}
-
-.footer .footer-company,
-.footer .footer-community,
-.footer .footer-business {
-    margin-bottom: 20px;
+p.lead {
+    color: #ccc;
 }

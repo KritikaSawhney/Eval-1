@@ -1,9 +1,3 @@
-body{
-    background-color: black;
-}
-h1{
-    color: white;
-}
 .section-container {
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
@@ -210,4 +204,61 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .footer-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer .footer-social-icons a {
+    margin-right: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.footer .footer-company,
+.footer .footer-community,
+.footer .footer-business {
+    margin-bottom: 1rem;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .section-container {
+        justify-content: center;
+    }
+
+    .crypto-card {
+        width: 100%;
+    }
+
+    .guides-container {
+        justify-content: center;
+    }
+
+    .guide-card {
+        width: 45%;
+    }
+
+    .footer .footer-social-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

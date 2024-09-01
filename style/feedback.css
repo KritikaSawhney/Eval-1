@@ -1,17 +1,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    font-family: "Merriweather", serif;
+}
+header{
+    background-color: black;
+}
 .feedback-section{
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 90vh;
+    padding: 150px 0px;
 }
 .feedback-section .container{
     background-color: white;
     padding: 50px;
     border: 0px solid;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 .feedback-section .row{
     display: flex;

@@ -1,3 +1,4 @@
+/* GLOBAL STYLE */
 *{
     margin: 0;
     padding: 0;
@@ -15,14 +16,13 @@ body{
 
 /* NAV BAR */
 header{
-    background-color: black;
+    background-color: transparent;
     position: sticky;
     display: block; 
     top: 0;
     width: 100%;
     z-index: 999;
 }
-
 nav{
     display: flex;
     justify-content: space-between;
