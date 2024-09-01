@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Ethereum</title>
+    <title>Welcome to CryptoWatch</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
@@ -14,6 +14,11 @@
     
 </head>
 <body>
+
+    <!-- PROGRESS BAR -->
+    <div id="progress-bar"></div>
+
+    <!-- HEADER -->
     <header>
         <nav class="navbar navbar-expand-lg container">
             <!-- LOGO -->
@@ -116,236 +121,249 @@
         </nav>
     </header>
 
-    <section class="main-header">
-        <div class="container-fluid text-center">
-            <img src="Images/download.avif" class="img-fluid main-illustration" alt="Illustration">
-        </div>
-    </section>
-
-    <section class="welcome-section text-center">
-        <div class="container">
-            <h1>Welcome to CryptoWatch</h1>
-            <p>Your ultimate platform for tracking cryptocurrency prices, analyzing market trends, and managing your portfolio.</p>
-            <button class="btn btn-warning btn-lg">Explore CryptoWatch</button>
-        </div>
-    </section>
-    <section class="get-started-section text-white py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2>Get started</h2>
-                    <p>CryptoWatch offers real-time data, in-depth analysis, and powerful tools for crypto enthusiasts and investors. Here’s how to begin your journey.</p>
-                </div>
-                <div class="col-lg-6 text-center">
-                    <img src="Images/download-2.avif" alt="Get Started Illustration" class="img-fluid">
-                </div>
+    <!-- MAIN SECTION -->
+    <main>
+        <section class="main-header">
+            <div class="container-fluid text-center">
+                <img src="Images/download.avif" class="img-fluid main-illustration" alt="Illustration">
             </div>
-            <body class="bg-dark text-light">
+        </section>
 
-                <div class="container py-5">
-                    <div class="row">
-                        <!-- Card 1 -->
-                        <div class="col-md-6 mb-4">
-                            <div class="card bg-dark text-light border-0 h-100">
-                                <img src="Images/download-3.avif" class="card-img-top" alt="Pick a Wallet">
-                                <div class="card-body">
-                                    <h5 class="card-title">Track Prices</h5>
-                                    <p class="card-text">Monitor real-time prices of all major cryptocurrencies with our comprehensive tracking tool.</p>
+        <section class="welcome-section text-center">
+            <div class="container">
+                <h1 class="h1 display-1 fw-bold">Welcome to CryptoWatch</h1>
+                <p class="fs-5">Your ultimate platform for tracking cryptocurrency prices, analyzing market trends, and managing your portfolio.</p>
+                <a href="market.html" class="btn btn-outline-light btn-lg text-decoration-none ">Explore CryptoWatch</a>
+            </div>
+        </section>
+
+        <section class="get-started-section text-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center">
+                        <h2 class="h2 display-3 fw-semibold">Get started</h2>
+                        <p>CryptoWatch offers real-time data, in-depth analysis, and powerful tools for crypto enthusiasts and investors. Here’s how to begin your journey.</p>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <img src="Images/download-2.avif" alt="Get Started Illustration" class="img-fluid">
+                    </div>
+                </div>
+                    <div class="container py-5">
+                        <div class="row gap-0">
+                            <!-- Card 1 -->
+                            <div class="col rounded border-colored">
+                                <div class="card bg-dark text-light border-0 h-100">
+                                    <img src="Images/download-3.avif" class="card-img-top" alt="Pick a Wallet">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Track Prices</h5>
+                                        <p class="card-text">Monitor real-time prices of all major cryptocurrencies with our comprehensive tracking tool.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="col border-colored">
+                                <div class="card bg-dark text-light border-0 h-100">
+                                    <img src="Images/download-last.avif" class="card-img-top" alt="Get ETH">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Manage Portfolio</h5>
+                                        <p class="card-text">Keep track of your investments and monitor your portfolio performance with ease.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="col border-colored">
+                                <div class="card bg-dark text-light border-0 h-100">
+                                    <img src="Images/download-5.avif" class="card-img-top" alt="Use a Dapp">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Analyze Markets</h5>
+                                        <p class="card-text">Get detailed charts, technical analysis, and insights to help you make informed decisions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 4 -->
+                            <div class="col border-colored">
+                                <div class="card bg-dark text-light border-0 h-100">
+                                    <img src="Images/download-6.avif" class="card-img-top" alt="Start Building">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Stay Informed</h5>
+                                        <p class="card-text">Access the latest news, trends, and updates from the world of cryptocurrency.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Card 2 -->
-                        <div class="col-md-6 mb-4">
-                            <div class="card bg-dark text-light border-0 h-100">
-                                <img src="Images/download-last.avif" class="card-img-top" alt="Get ETH">
-                                <div class="card-body">
-                                    <h5 class="card-title">Manage Portfolio</h5>
-                                    <p class="card-text">Keep track of your investments and monitor your portfolio performance with ease.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card 3 -->
-                        <div class="col-md-6 mb-4">
-                            <div class="card bg-dark text-light border-0 h-100">
-                                <img src="Images/download-5.avif" class="card-img-top" alt="Use a Dapp">
-                                <div class="card-body">
-                                    <h5 class="card-title">Analyze Markets</h5>
-                                    <p class="card-text">Get detailed charts, technical analysis, and insights to help you make informed decisions.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card 4 -->
-                        <div class="col-md-6 mb-4">
-                            <div class="card bg-dark text-light border-0 h-100">
-                                <img src="Images/download-6.avif" class="card-img-top" alt="Start Building">
-                                <div class="card-body">
-                                    <h5 class="card-title">Stay Informed</h5>
-                                    <p class="card-text">Access the latest news, trends, and updates from the world of cryptocurrency.</p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                </div>
-            </section>
-    
-    <section class="what-is-ethereum-section text-white py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <img src="Images/download-7.avif" alt="Ethereum Image" class="img-fluid">
-                </div>
-                <div class="col-md-6">
-                    <h2>What is CryptoWatch?</h2>
-                    <p>CryptoWatch is a powerful tool designed for crypto enthusiasts, traders, and investors. With real-time data, insightful analysis, and a user-friendly interface, we make it easy to navigate the fast-paced world of cryptocurrencies.</p>
-                    <button class="btn btn-warning mr-3">Discover CryptoWatch</button>
-                    <button class="btn btn-outline-light">Learn More</button>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+        
+        <section class="what-is-ethereum-section text-white">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <img src="Images/download-7.avif" alt="Ethereum Image" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="h2 display-3 fw-semibold">What is CryptoWatch?</h2>
+                            <p class="fs-5">CryptoWatch is a powerful tool designed for crypto enthusiasts, traders, and investors. With real-time data, insightful analysis, and a user-friendly interface, we make it easy to navigate the fast-paced world of cryptocurrencies.</p>
+                            <a href="feature.html" class="btn btn-pink btn-lg text-decoration-none ">Discover CryptoWatch</a>
+                            <a href="about.html" class="btn btn-outline-light btn-lg text-decoration-none ">Learn more</a>
 
-    <section class="financial-system-section text-white py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h2>A fairer financial system</h2>
-                    <p>Millions of people face barriers to accessing traditional financial services. CryptoWatch’s decentralized finance (DeFi) tools offer a transparent and accessible financial ecosystem. With just an internet connection, you can trade, invest, earn interest, and manage your finances globally, without intermediaries.</p>
-                    <button class="btn btn-warning">Explore DeFi Tools</button>
-                </div>
-                <div class="col-md-6 text-center">
-                    <img src="Images/download-8.avif" alt="Ethereum Hands Image" class="img-fluid">
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="what-is-ethereum-section text-white py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <img src="Images/download-9.avif" alt="Ethereum Image" class="img-fluid">
-                </div>
-                <div class="col-md-6">
-                    <h2>What is CryptoWatch?</h2>
-                    <p>CryptoWatch is your gateway to the world of digital assets, real-time market data, and decentralized finance. Whether you're an investor, trader, or enthusiast, our platform offers the tools and insights you need to navigate the dynamic world of cryptocurrencies, available to everyone, everywhere.</p>
-                    <button class="btn btn-warning mr-3">Learn About CryptoWatch</button>
-                    <button class="btn btn-outline-light">Discover Digital Assets</button>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    
-    <section class="financial-system-section text-white py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h2>A Transparent Financial System</h2>
-                    <p>Millions of people face barriers to accessing traditional financial services. CryptoWatch’s decentralized finance (DeFi) tools offer a transparent and accessible financial ecosystem. With just an internet connection, you can trade, invest, earn interest, and manage your finances globally, without intermediaries.</p>
-                    <button class="btn btn-warning">Explore DeFi Tools</button>
-                </div>
-                <div class="col-md-6 text-center">
-                    <img src="Images/download-10.avif" alt="Ethereum Hands Image" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="container py-5">
-        <h1 class="text-center mb-5">The Latest Network Statistics</h1>
-        <div class="row">
-            <div class="col-lg-6 mb-4">
-                <div class="card bg-secondary text-white p-3 stats-card">
-                    <h4>TOTAL ETH STAKED</h4>
-                    <p>The total amount of currently being staked and securing the network.</p>
-                    <h2>34.21M</h2>
-                    <div class="d-flex justify-content-end">
-                        <button class="btn btn-sm btn-outline-light me-2">30d</button>
-                        <button class="btn btn-sm btn-outline-light">90d</button>
+        </section>
+
+        <section class="financial-system-section text-white py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h2 class="h2 display-3 fw-semibold">A fairer financial system</h2>
+                        <p class="fs-5">Millions of people face barriers to accessing traditional financial services. CryptoWatch’s decentralized finance (DeFi) tools offer a transparent and accessible financial ecosystem. With just an internet connection, you can trade, invest, earn interest, and manage your finances globally, without intermediaries.</p>
+                        <a href="crypto-converter.html" class="btn btn-blue btn-lg text-decoration-none ">Explore DeFi Tools</a>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="Images/download-8.avif" alt="Ethereum Hands Image" class="img-fluid">
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 mb-4">
-                <div class="card bg-secondary text-white p-3 stats-card">
-                    <h4>TRANSACTIONS TODAY</h4>
-                    <p>The number of transactions successfully processed on the network in the last 24 hours.</p>
-                    <h2>1.133M</h2>
-                    <div class="d-flex justify-content-end">
-                        <button class="btn btn-sm btn-outline-light me-2">30d</button>
-                        <button class="btn btn-sm btn-outline-light">90d</button>
+        </section>
+
+        <section class="what-is-ethereum-section-2 text-white py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="Images/download-9.avif" alt="Ethereum Image" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="h2 display-3 fw-bold">What is CryptoWatch?</h2>
+                        <p class="fs-5">CryptoWatch is your gateway to the world of digital assets, real-time market data, and decentralized finance. Whether you're an investor, trader, or enthusiast, our platform offers the tools and insights you need to navigate the dynamic world of cryptocurrencies, available to everyone, everywhere.</p>
+                        <a href="learn.html" class="btn btn-green btn-lg text-decoration-none ">Learn about CryptoWatch</a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 mb-4">
-                <div class="card bg-secondary text-white p-3 stats-card">
-                    <h4>VALUE LOCKED IN DEFI (USD)</h4>
-                    <p>The amount of money in decentralized finance (DeFi) applications, the Ethereum digital economy.</p>
-                    <h2>$96.58B</h2>
-                    <div class="d-flex justify-content-end">
-                        <button class="btn btn-sm btn-outline-light me-2">30d</button>
-                        <button class="btn btn-sm btn-outline-light">90d</button>
+        </section>
+        
+        <section class="financial-system-section text-white py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h2 class="h2 display-3 fw-bold ">A Transparent Financial System</h2>
+                        <p class="fs-5">Millions of people face barriers to accessing traditional financial services. CryptoWatch’s decentralized finance (DeFi) tools offer a transparent and accessible financial ecosystem. With just an internet connection, you can trade, invest, earn interest, and manage your finances globally, without intermediaries.</p>
+                        <a href="pricing.html" class="btn btn-pink btn-lg text-decoration-none ">Explore Premium Features</a>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="Images/download-10.avif" alt="Ethereum Hands Image" class="img-fluid">
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 mb-4">
-                <div class="card bg-secondary text-white p-3 stats-card">
-                    <h4>NODES</h4>
-                    <p>Ethereum is run by thousands of volunteers around the globe, known as nodes.</p>
-                    <h2>4,847</h2>
-                    <div class="d-flex justify-content-end">
-                        <button class="btn btn-sm btn-outline-light me-2">30d</button>
-                        <button class="btn btn-sm btn-outline-light">90d</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
+
         <div class="container py-5">
-            <h1 class="text-white text-center mb-5">Explore CryptoWatch.com</h1>
+            <div class="container d-flex justify-content-center gap-4 flex-wrap mb-5">
+                <h1 class="text-center display-1 fw-bold text-light">The Latest </h1>
+                <h1 class="text-center display-1 fw-bold mt-0" id="colored-h1"> Network Statistics</h1>
+            </div>
             <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="card card-custom">
-                        <img src="images/download-11.avif" class="card-img-top" alt="Upgrade Knowledge">
-                        <div class="card-body">
-                            <h5 class="card-title">Level up your knowledge</h5>
-                            <p class="card-text">Stay informed with the latest updates in the crypto world. CryptoWatch provides the resources to help you understand market trends and make informed decisions.</p>
+                <div class="col-lg-6 mb-4">
+                    <div class="card bg-dark text-white p-4 stats-card h-100">
+                        <h4>ETH STAKED ON NETWORK</h4>
+                        <p>Total Ethereum staked to secure the network, providing stability and security.</p>
+                        <h2>34.21M</h2>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-sm btn-outline-light me-2">30 Days</button>
+                            <button class="btn btn-sm btn-outline-light">90 Days</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card card-custom">
-                        <img src="images/download-12.avif" class="card-img-top" alt="Ethereum for Enterprise">
-                        <div class="card-body">
-                            <h5 class="card-title">CryptoWatch for Business</h5>
-                            <p class="card-text">Discover how CryptoWatch can unlock new opportunities, streamline operations, and prepare your business for the future with crypto integration.</p>
+                <div class="col-lg-6 mb-4">
+                    <div class="card bg-dark text-white p-4 stats-card h-100">
+                        <h4>DAILY TRANSACTIONS</h4>
+                        <p>Total number of transactions processed on the Ethereum network today.</p>
+                        <h2>1.133M</h2>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-sm btn-outline-light me-2">30 Days</button>
+                            <button class="btn btn-sm btn-outline-light">90 Days</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card card-custom">
-                        <img src="images/download-7.avif" class="card-img-top" alt="Ethereum Community">
-                        <div class="card-body">
-                            <h5 class="card-title">Join the Community</h5>
-                            <p class="card-text">CryptoWatch thrives on its community of enthusiasts and professionals. Explore how you can connect, share insights, and grow together.Making the revolution in the world</p>
+                <div class="col-lg-6 mb-4">
+                    <div class="card bg-dark text-white p-4 stats-card h-100">
+                        <h4>DEFI VALUE LOCKED</h4>
+                        <p>Total value locked in DeFi applications on the CryptoWatch network.</p>
+                        <h2>$96.58B</h2>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-sm btn-outline-light me-2">30 Days</button>
+                            <button class="btn btn-sm btn-outline-light">90 Days</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card bg-dark text-white p-4 stats-card h-100">
+                        <h4>NETWORK NODES</h4>
+                        <p>Number of nodes maintaining the CryptoWatch network across the globe.</p>
+                        <h2>4,847</h2>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-sm btn-outline-light me-2">30 Days</button>
+                            <button class="btn btn-sm btn-outline-light">90 Days</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-            <div class="financial-system-section container-fluid py-5">
-        <div class="row">
-            <div class="col-lg-6 d-flex flex-column justify-content-center text-white">
-                <h1 class="mb-4">Contribute to CryptoWatch</h1>
-                <p class="mb-4">CryptoWatch is a community-driven platform. Whether you want to suggest improvements, contribute new features, or help resolve issues, your input is invaluable.</p>
-                <div class="d-flex">
-                    <a href="#" class="btn btn-warning me-2">More on contributing</a>
-                    <a href="#" class="btn btn-outline-light">GitHub <i class="bi bi-github"></i></a>
+                        
+            <div class="container py-5">
+                <h1 class="text-white text-center mb-5 display-3 fw-semibold">Explore CryptoWatch.com</h1>
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="card card-custom">
+                            <img src="images/download-11.avif" class="card-img-top" alt="Upgrade Knowledge">
+                            <div class="card-body">
+                                <h5 class="card-title fs-3">Level up your knowledge</h5>
+                                <p class="card-text ">Stay informed with the latest updates in the crypto world. CryptoWatch provides the resources to help you understand market trends and make informed decisions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card card-custom">
+                            <img src="images/download-12.avif" class="card-img-top" alt="CryptoWatch for Enterprise">
+                            <div class="card-body">
+                                <h5 class="card-title fs-3">CryptoWatch for Business</h5>
+                                <p class="card-text">Discover how CryptoWatch can unlock new opportunities, streamline operations, and prepare your business for the future with crypto integration.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card card-custom">
+                            <img src="images/download-7.avif" class="card-img-top" alt="CryptoWatch Community">
+                            <div class="card-body">
+                                <h5 class="card-title fs-3">Join the Community</h5>
+                                <p class="card-text">CryptoWatch thrives on its community of enthusiasts and professionals. Explore how you can connect, share insights, and grow together. Making the revolution in the world</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <img src="images/download-14.avif" class="img-fluid" alt="Ethereum Contribution">
-            </div>
-        </div>
-    </div>
-</div>
 
+
+            <div class="financial-system-section container-fluid py-5">
+            <div class="row">
+                <div class="col-lg-6 d-flex flex-column justify-content-center text-white">
+                    <h1 class="mb-4 display-1 fw-semibold">Contribute to CryptoWatch</h1>
+                    <p class="mb-4 fs-5">CryptoWatch is a community-driven platform. Whether you want to suggest improvements, contribute new features, or help resolve issues, your input is invaluable.</p>
+                    <div class="d-flex">
+                        <a href="feedback.html" class="btn btn-green me-2">More on contributing</a>
+                        <a href="https://github.com/KritikaSawhney/Eval-1" class="btn btn-outline-light d-flex align-items-center fs-5">GitHub <i class="bi bi-github ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/download-14.avif" class="img-fluid" alt="CryptoWatch Contribution">
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- FOOTER  -->
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -438,9 +456,7 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/progress-bar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

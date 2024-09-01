@@ -1,81 +1,78 @@
 /* styles.css */
 body {
-    font-family: 'Rubik', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
+    background: rgb(0,0,0);
 }
 
-.main-header {
-    background-color: #fff;
-    padding: 20px 0;
+/* PROGRESS-BAR */
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(130,169,248,1) 77%, rgba(133,207,200,1) 94%);
+    z-index: 1000;
 }
 
+#colored-h1{
+    background: rgb(48,82,250);
+    background: linear-gradient(90deg, rgba(48,82,250,1) 0%, rgba(190,75,233,1) 90%);
+    color: transparent;
+    background-clip: text;
+}
+
+.main-header img{
+    margin: 0px;
+    border: 0px solid;
+    border-radius: 40px;
+}
 .main-illustration {
     max-width: 100%;
     height: auto;
 }
 
 .welcome-section {
-    background-color: #333;
+    background-color: black;
     color: white;
     padding: 60px 0;
 }
 
-.welcome-section h1 {
-    font-weight: 700;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.welcome-section p {
-    font-weight: 400;
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-}
 
 .welcome-section .btn {
     font-weight: 500;
     color: #fff;
 }
 
-.btn-warning {
-    background-color: #ff7f3d;
-    border-color: #ff7f3d;
+.welcome-section .btn:hover {
+    font-weight: 500;
+    color: black;
 }
 
-.btn-warning:hover {
-    background-color: #ff8f52;
-    border-color: #ff8f52;
-}
+
 .get-started-section {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(130,169,248,1) 77%, rgba(133,207,200,1) 94%);
+}
+
+.get-started-section .container {
     background-color: #121212;
-}
-
-.what-is-ethereum-section {
-    background-color: #333;
-}
-
-.financial-system-section {
-    background-color: #121212;
-}
-
-h2 {
-    font-weight: 700;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-p {
-    font-weight: 400;
-    font-size: 1.2rem;
-    margin-bottom: 40px;
+    border-radius: 40px;
+    padding: 30px;
 }
 
 .card {
-    border: none;
-    background-color: #202020;
+    margin: 0px;
     color: white;
+    border-radius: 20px;
+
+}
+.border-colored{
+    border: 2px solid #a5fcf4;
+    padding: 0px;
+    border-radius: 10px;
+    margin: 10px;
+    flex: 1 1 400px;
 }
 
 .card-img-top {
@@ -83,89 +80,65 @@ p {
     object-fit: contain;
 }
 
-.btn-warning {
-    background-color: #ff7f3d;
-    border-color: #ff7f3d;
-    color: white;
-}
-
-.btn-warning:hover {
-    background-color: #ff8f52;
-    border-color: #ff8f52;
-}
-
-.btn-outline-light {
-    color: white;
-    border-color: white;
-}
-
-.btn-outline-light:hover {
-    background-color: white;
-    color: black;
-}
 .what-is-ethereum-section {
-    background-color: #1a1a1a;
+    background: rgba(133,207,200,1);
+    background: linear-gradient(180deg, rgba(133,207,200,1)0%, rgba(0,0,0,1) 50%);
+    margin: 0px 0px 0px;
+
 }
+
+.what-is-ethereum-section-2{
+    background: rgba(133,207,200,1);
+    background: linear-gradient(180deg, rgba(133,207,200,1)0%, rgba(0,0,0,1) 85%);
+    margin: 0px 0px 0px;
+    border-radius: 40px 40px 0px 0px;
+}
+
+
+.what-is-ethereum-section .container-fluid{
+    background-color: black;
+    border: 5px solid #ceb0fa;
+    border-radius: 40px;
+}
+
+.btn-pink{
+    background-color: #8978a0;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.btn-pink:hover{
+    border: 2px solid #ceb0fa;
+    background-color: transparent;
+}
+
+.btn-blue{
+    background-color: #82a9f8;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.btn-blue:hover{
+    border: 2px solid #82a9f8;
+    background-color: transparent;
+}
+
+.btn-green{
+    background-color: #a5fcf4;
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+}
+
+.btn-green:hover{
+    border: 2px solid #a5fcf4;
+    background-color: transparent;
+}
+
 
 .financial-system-section {
-    background-color: #333;
+    border-radius: 40px 40px;
 }
 
-h2 {
-    font-weight: 700;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-p {
-    font-weight: 400;
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-}
-
-.btn-warning {
-    background-color: #ff7f3d;
-    border-color: #ff7f3d;
-    color: white;
-}
-
-.btn-warning:hover {
-    background-color: #ff8f52;
-    border-color: #ff8f52;
-}
-
-.btn-outline-light {
-    color: white;
-    border-color: white;
-}
-
-.btn-outline-light:hover {
-    background-color: white;
-    color: black;
-}
-
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
-.card {
-    background-color: #2a2c30;
-    border-radius: 10px;
-}
-
-.card-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.card-text {
-    font-size: 1rem;
-}
-
-.card img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
 /*helll*/
 
 .card {
@@ -209,16 +182,16 @@ p {
     color: #000;
 }
 .card-custom {
-    background-color: #222;
-    border: 1px solid #ff9b4e;
+    background-color: black;
+    border: 2px solid #6e87f6;
 }
 
 .card-custom .card-body {
-    background-color: #333;
+    border-radius: 20px;
 }
 
 .card-custom .card-title {
-    color: #ff9b4e;
+    color:  #ceb0fa;
     font-weight: bold;
 }
 
