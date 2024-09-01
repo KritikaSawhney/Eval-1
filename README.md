@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/3a65ce9f-349b-4a20-9d44-51b88a2132a9)
+<img width="1267" alt="Screenshot 2024-09-02 024008" src="https://github.com/user-attachments/assets/3066c13e-0d1c-4e26-9867-dfaa974151a3">
 
 # Crypto Watch
 
