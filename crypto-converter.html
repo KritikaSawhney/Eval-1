@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style/crypto-converter.css">
 
     <script defer src="./js/Crypto Convertor/script.js"></script>
+    <script defer src="./js/Crypto Convertor/renderImage.js"></script>
   </head>
   <body>
 
@@ -138,7 +139,8 @@
                     <hr>
 
                     <!-- FROM AMOUNT -->
-                    <div class="form-floating mb-3 d-flex">
+                    <div class="form-floating mb-3 d-flex position-relative">
+                        <span id="source-icon" class="position-absolute"><img src="" alt="" height="35px" id="source-img" style="background-color: white;"></span>
                         <input type="number" class="form-control" id="fromAmount" placeholder="From">
                         <label for="fromCurrency">From</label>
                         <div class="d-flex flex-grow-1">
@@ -146,7 +148,8 @@
                             class="form-select "
                             aria-label="select example"
                             id="fromCurrency"
-                            ></select>
+                            >
+                        </select>
                         </div>
                     </div>
 
@@ -157,7 +160,8 @@
                     </div>
                     
                     <!-- TO AMOUNT  -->
-                    <div class="form-floating mb-3 d-flex">
+                    <div class="form-floating mb-3 d-flex position-relative">
+                        <span id="destination-icon" class="position-absolute"><img src="" alt="" height="35px" id="target-img" style="background-color: white;"></span>
                         <input type="number" class="form-control" id="toAmount" placeholder="From">
                         <label for="toCurrency">To</label>
                         <div class="d-flex flex-grow-1">
