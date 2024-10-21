@@ -74,3 +74,13 @@ small{
 .card-body {
     flex: 1; /* Allows the card body to grow and fill the available space */
 }
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(130,169,248,1) 77%, rgba(133,207,200,1) 94%);
+    z-index: 1000;
+}

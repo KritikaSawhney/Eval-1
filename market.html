@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="shortcut icon" href="Images/favicon-bird-modified.png" type="image/x-icon">
-    <link rel="stylesheet" href="style/market.css">
     <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/market.css">
 </head>
 
 <body>
+    <!-- PROGRESS BAR -->
+    <div id="progress-bar"></div>
 
     <!-- HEADER -->
     <header>
@@ -119,7 +121,6 @@
 
     <!-- MAIN SECTION  -->
     <main>
-
         <section class="CrytoPricesSection">
             <div class="container">
                 <!-- Header Section -->
@@ -185,9 +186,8 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fa-solid fa-circle-exclamation"></i> Fear & Greed Index</h5>
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <img src="Images/fear-greed.png" alt="" height="130px">
-                                </div>
+                                <div class="d-flex flex-column justify-content-center align-items-center text-center p-4 border rounded shadow-sm" id="fearGreed">
+                                </div>                                
                             </div>
                         </div>
                     </div>
@@ -195,7 +195,6 @@
             </div>
         </section>
         
-
         <!-- Filters Section -->
         <section class="filterSection">
             <div class="container">
@@ -218,522 +217,23 @@
             </div>
         </section>
 
-
         <!-- Prices Table Section -->
         <section class="pricingTableSection">
             <div class="container table-responsive">
                 <table class="table table-hover">
-                    <!-- Table headings -->
                     <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Price</th>
-                            <th scope="col">1h</th>
-                            <th scope="col">24h</th>
-                            <th scope="col">7d</th>
-                            <th scope="col">Market Cap</th>
-                            <th scope="col">Volume(24h)</th>
-                            <th scope="col">Circulating Supply</th>
-                            <th scope="col">Last 7 Days</th>
-                        </tr>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">24h</th>
+                        <th scope="col">ATH</th>
+                        <th scope="col">Market Cap</th>
+                        <th scope="col">Volume (24h)</th>
+                        <th scope="col">Circulating Supply</th>
+                      </tr>
                     </thead>
-
                     <tbody class="table_body">
-                        <!-- BITCOIN -->
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>
-                                <img src="Images/market/coins/64x64/1.png" alt="" class="img-fluid crypto-logo">
-                                Bitcoin <small class="text-secondary">BTC</small>
-                            </td>
-                            <td>$59,103.52</td>
-                            <td class="text-success">+0.01%</td>
-                            <td class="text-danger">-0.66%</td>
-                            <td class="text-danger">-7.99%</td>
-                            <td>$1,167,147,025,361</td>
-                            <td>$27,776,897,995</td>
-                            <td>19,747,503 BTC</td>
-                            <td>
-                                <img src="Images/market/graphs/1.svg" alt="graph" class="crypto-graph">
-                            </td>
-                        </tr>
-                    
-                        <!-- ETHEREUM -->
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>
-                                <img src="Images/market/coins/64x64/2.png" alt="" class="img-fluid crypto-logo">
-                                Ethereum <small class="text-secondary">ETH</small>
-                            </td>
-                            <td>$2,521.60</td>
-                            <td class="text-success">+0.08%</td>
-                            <td class="text-danger">-0.05%</td>
-                            <td class="text-danger">-8.69%</td>
-                            <td>$303,357,204,839</td>
-                            <td>$13,733,881,330</td>
-                            <td>120,303,365 ETH</td>
-                            <td>
-                                <img src="Images/market/graphs/2.svg" alt="graph" class="img-fluid crypto-graph up">
-                            </td>
-                        </tr>
-                    
-                        <!-- TETHER -->
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>
-                                <img src="Images/market/coins/64x64/3.png" alt="" class="img-fluid crypto-logo">
-                                Tether <small class="text-secondary">USDT</small>
-                            </td>
-                            <td>$0.9999</td>
-                            <td class="text-success">+0.00%</td>
-                            <td class="text-danger">-0.06%</td>
-                            <td class="text-danger">-0.07%</td>
-                            <td>$118,219,933,094</td>
-                            <td>$47,215,580,737</td>
-                            <td>118,225,843,081 USDT</td>
-                            <td>
-                                <img src="Images/market/graphs/3.svg" alt="graph" class="img-fluid crypto-graph">
-                            </td>
-                        </tr>
-                    
-                        <!-- BNB -->
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>
-                                <img src="Images/market/coins/64x64/4.png" alt="" class="img-fluid crypto-logo">
-                                BNB <small class="text-secondary">BNB</small>
-                            </td>
-                            <td>$537.24</td>
-                            <td class="text-success">+0.29%</td>
-                            <td class="text-danger">-0.42%</td>
-                            <td class="text-danger">-7.37%</td>
-                            <td>$78,402,549,755</td>
-                            <td>$1,556,600,660</td>
-                            <td>2,905,211 BNB</td>
-                            <td>
-                                <img src="Images/market/graphs/4.svg" alt="graph" class="img-fluid crypto-graph">
-                            </td>
-                        </tr>
-                    
-                        <!-- SOLANA -->
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>
-                                <img src="Images/market/coins/64x64/5.png" alt="" class="img-fluid crypto-logo">
-                                Solana <small class="text-secondary">SOL</small>
-                            </td>
-                            <td>$137.54</td>
-                            <td class="text-danger">-0.13%</td>
-                            <td class="text-danger">-1.56%</td>
-                            <td class="text-danger">-11.20%</td>
-                            <td>$64,154,636,355</td>
-                            <td>$2,301,009,349</td>
-                            <td>16,714,059 SOL</td>
-                            <td>
-                                <img src="Images/market/graphs/5.svg" alt="graph" class="img-fluid crypto-graph up">
-                            </td>
-                        </tr>
-                    
-                        <!-- USDC -->
-                        <tr>
-                            <th scope="row">6</th>
-                            <td>
-                                <img src="Images/market/coins/64x64/6.png" alt="" class="img-fluid crypto-logo">
-                                USDC <small class="text-secondary">USDC</small>
-                            </td>
-                            <td>$0.9999</td>
-                            <td class="text-danger">-0.01%</td>
-                            <td class="text-danger">-0.05%</td>
-                            <td class="text-danger">-0.01%</td>
-                            <td>$34,719,372,777</td>
-                            <td>$5,077,285,140</td>
-                            <td>34,723,409,604 USDC</td>
-                            <td>
-                                <img src="Images/market/graphs/6.svg" alt="graph" class="img-fluid crypto-graph">
-                            </td>
-                        </tr>
-                    
-                        <!-- XRP -->
-                        <tr>
-                            <th scope="row">7</th>
-                            <td>
-                                <img src="Images/market/coins/64x64/7.png" alt="" class="img-fluid crypto-logo">
-                                XRP <small class="text-secondary">XRP</small>
-                            </td>
-                            <td>$0.5675</td>
-                            <td class="text-success">+0.06%</td>
-                            <td class="text-success">+0.44%</td>
-                            <td class="text-danger">-6.74%</td>
-                            <td>$31,923,781,452</td>
-                            <td>$922,560,230</td>
-                            <td>56,251,561,168 XRP</td>
-                            <td>
-                                <img src="Images/market/graphs/7.svg" alt="graph" class="img-fluid crypto-graph">
-                            </td>
-                        </tr>
-                    
-                        <!-- DOGECOIN -->
-                        <tr>
-                            <th scope="row">8</th>
-                            <td>
-                                <img src="Images/market/coins/64x64/8.png" alt="" class="img-fluid crypto-logo">
-                                Dogecoin <small class="text-secondary">DOGE</small>
-                            </td>
-                            <td>$0.1011</td>
-                            <td class="text-danger">-0.08%</td>
-                            <td class="text-success">0.00%</td>
-                            <td class="text-danger">-9.91%</td>
-                            <td>$14,733,098,037</td>
-                            <td>$564,228,816</td>
-                            <td>145,759,246,384 DOGE</td>
-                            <td>
-                                <img src="Images/market/graphs/8.svg" alt="graph" class="img-fluid crypto-graph">
-                            </td>
-                        </tr>
-                    
-                        <!-- TRON -->
-                        <tr>
-                            <th scope="row">9</th>
-                            <td>
-                                <img src="Images/market/coins/64x64/9.png" alt="" class="img-fluid crypto-logo">
-                                TRON <small class="text-secondary">TRX</small>
-                            </td>
-                            <td>$0.1574</td>
-                            <td class="text-danger">-0.16%</td>
-                            <td class="text-danger">-2.53%</td>
-                            <td class="text-danger">-1.82%</td>
-                            <td>$13,663,200,483</td>
-                            <td>$461,977,900</td>
-                            <td>86,782,121,240 TRX</td>
-                            <td>
-                                <img src="Images/market/graphs/9.svg" alt="graph" class="img-fluid crypto-graph">
-                            </td>
-                        </tr>
-                    
-                        <!-- TONCOIN -->
-                        <tr>
-                            <th scope="row">10</th>
-                            <td>
-                                <img src="Images/market/coins/64x64/10.png" alt="" class="img-fluid crypto-logo">
-                                Toncoin <small class="text-secondary">TON</small>
-                            </td>
-                            <td>$5.34</td>
-                            <td class="text-danger">-0.21%</td>
-                            <td class="text-danger">-1.69%</td>
-                            <td class="text-danger">-20.61%</td>
-                            <td>$13,543,958,655</td>
-                            <td>$240,352,995</td>
-                            <td>2,534,869,649 TON</td>
-                            <td>
-                                <img src="Images/market/graphs/10.svg" alt="graph" class="img-fluid crypto-graph up">
-                            </td>
-                        </tr>
-                    
-                        <!-- CARDANO -->
-                        <tr>
-                            <th scope="row">11</th>
-                            <td>
-                                <img src="Images/market/coins/64x64/11.png" alt="" class="img-fluid crypto-logo">
-                                Cardano <small class="text-secondary">ADA</small>
-                            </td>
-                            <td>$0.3482</td>
-                            <td class="text-danger">-0.22%</td>
-                            <td class="text-danger">-2.68%</td>
-                            <td class="text-danger">-10.47%</td>
-                            <td>$12,519,965,844</td>
-                            <td>$277,182,000</td>
-                            <td>35,918,904,528 ADA</td>
-                            <td>
-                                <img src="Images/market/graphs/11.svg" alt="graph" class="img-fluid crypto-graph">
-                            </td>
-                        </tr>
-
-                        <!-- AVALANCHE -->
-                        <tr>
-                            <th scope="row">12</th>
-                            <td>
-                                <img src="Images/market/coins/64x64/12.png" alt="" class="img-fluid crypto-logo">
-                                Avalanche <small class="text-secondary">AVAX</small>
-                            </td>
-                            <td>$22.88</td>
-                            <td class="text-danger">-0.61%</td>
-                            <td class="text-danger">-2.77%</td>
-                            <td class="text-danger">-13.91%</td>
-                            <td>$9,264,054,864</td>
-                            <td>$215,529,067</td>
-                            <td>404,921,174 AVAX</td>
-                            <td>
-                                <img src="Images/market/graphs/12.svg" alt="graph" class="crypto-graph">
-                            </td>
-                        </tr>
-
-                        <!-- SHIBA INU -->
-                        <tr>
-                            <th scope="row">13</th>
-                            <td>
-                                <img src="Images/market/coins/64x64/13.png" alt="" class="img-fluid crypto-logo">
-                                Shiba Inu <small class="text-secondary">SHIB</small>
-                            </td>
-                            <td>$0.00001383</td>
-                            <td class="text-danger">-0.59%</td>
-                            <td class="text-danger">-1.93%</td>
-                            <td class="text-danger">-9.41%</td>
-                            <td>$8,148,671,964</td>
-                            <td>$177,045,530</td>
-                            <td>589,270,138,079,305 SHIB</td>
-                            <td>
-                                <img src="Images/market/graphs/13.svg" alt="graph" class="crypto-graph">
-                            </td>
-                        </tr>
-
-                        <!-- CHAINLINK -->
-                        <tr>
-                            <th scope="row">14</th>
-                            <td>
-                                <img src="Images/market/coins/64x64/14.png" alt="" class="img-fluid crypto-logo">
-                                Chainlink <small class="text-secondary">LINK</small>
-                            </td>
-                            <td>$11.07</td>
-                            <td class="text-danger">-0.65%</td>
-                            <td class="text-danger">-0.74%</td>
-                            <td class="text-danger">-8.01%</td>
-                            <td>$6,729,579,906</td>
-                            <td>$185,215,427</td>
-                            <td>608,099,970 LINK</td>
-                            <td>
-                                <img src="Images/market/graphs/14.svg" alt="graph" class="crypto-graph">
-                            </td>
-                        </tr>
-
-                        <!-- BITCOIN CASH -->
-                        <tr>
-                            <th scope="row">15</th>
-                            <td>
-                                <img src="Images/market/coins/64x64/15.png" alt="" class="img-fluid crypto-logo">
-                                Bitcoin Cash <small class="text-secondary">BCH</small>
-                            </td>
-                            <td>$322.43</td>
-                            <td class="text-danger">-0.63%</td>
-                            <td class="text-danger">-0.92%</td>
-                            <td class="text-danger">-10.82%</td>
-                            <td>$6,369,453,595</td>
-                            <td>$156,164,854</td>
-                            <td>19,754,297 BCH</td>
-                            <td>
-                                <img src="Images/market/graphs/15.svg" alt="graph" class="crypto-graph">
-                            </td>
-                        </tr>
-
-                        <!-- POLKADOT -->
-                        <tr>
-                            <th scope="row">16</th>
-                            <td>
-                                <img src="Images/market/coins/64x64/16.gif" alt="" class="img-fluid crypto-logo">
-                                Polkadot <small class="text-secondary">DOT</small>
-                            </td>
-                            <td>$4.28</td>
-                            <td class="text-danger">-0.33%</td>
-                            <td class="text-danger">-0.87%</td>
-                            <td class="text-danger">-12.74%</td>
-                            <td>$6,363,188,308</td>
-                            <td>$93,474,580</td>
-                            <td>1,487,711,601 DOT</td>
-                            <td>
-                                <img src="Images/market/graphs/16.svg" alt="graph" class="crypto-graph">
-                            </td>
-                        </tr>
-                        
-                        <!-- DAI -->
-                        <tr>
-                            <th scope="row">17</th>
-                            <td>
-                                <img src="Images/market/coins/64x64/17.png" alt="" class="img-fluid crypto-logo">
-                                Dai <small class="text-secondary">DAI</small>
-                            </td>
-                            <td>$0.9999</td>
-                            <td class="text-success">+0.01%</td>
-                            <td class="text-danger">0.0%</td>
-                            <td class="text-danger">-0.03%</td>
-                            <td>$5,364,990,522</td>
-                            <td>$90,434,116</td>
-                            <td>5,365,382,703 DAI</td>
-                            <td>
-                                <img src="Images/market/graphs/17.svg" alt="graph" class="crypto-graph">
-                            </td>
-                        </tr>
-                        
-                        <!-- UNUS SED LEO -->
-                        <tr>
-                            <th scope="row">18</th>
-                            <td>
-                                <img src="Images/market/coins/64x64/18.png" alt="" class="img-fluid crypto-logo">
-                                UNUS SED LEO <small class="text-secondary">LEO</small>
-                            </td>
-                            <td>$5.79</td>
-                            <td class="text-success">+0.09%</td>
-                            <td class="text-danger">-3.83%</td>
-                            <td class="text-danger">-5.28%</td>
-                            <td>$5,362,446,363</td>
-                            <td>$2,388,517</td>
-                            <td>925,600,327 LEO</td>
-                            <td>
-                                <img src="Images/market/graphs/18.svg" alt="graph" class="crypto-graph up">
-                            </td>
-                        </tr>
-                        
-                        <!-- LITECOIN -->
-                        <tr>
-                            <th scope="row">19</th>
-                            <td>
-                                <img src="Images/market/coins/64x64/19.png" alt="" class="img-fluid crypto-logo">
-                                Litecoin <small class="text-secondary">LTC</small>
-                            </td>
-                            <td>$65.38</td>
-                            <td class="text-danger">-0.32%</td>
-                            <td class="text-danger">-3.45%</td>
-                            <td class="text-danger">-1.88%</td>
-                            <td>$4,898,313,465</td>
-                            <td>$338,172,874</td>
-                            <td>74,928,074 LTC</td>
-                            <td>
-                                <img src="Images/market/graphs/19.svg" alt="graph" class="crypto-graph">
-                            </td>
-                        </tr>
-
-                        <!-- NEAR PROTOCOL -->
-                        <tr>
-                            <th scope="row">20</th>
-                            <td>
-                                <img src="Images/market/coins/64x64/20.png" alt="" class="img-fluid crypto-logo">
-                                NEAR Protocol <small class="text-secondary">NEAR</small>
-                            </td>
-                            <td>$4.08</td>
-                            <td class="text-danger">-0.10%</td>
-                            <td class="text-danger">-4.98%</td>
-                            <td class="text-danger">-17.00%</td>
-                            <td>$4,573,044,765</td>
-                            <td>$199,958,265</td>
-                            <td>1,120,602,500 NEAR</td>
-                            <td>
-                                <img src="Images/market/graphs/20.svg" alt="graph" class="crypto-graph">
-                            </td>
-                        </tr>
-
-                        <!-- POLYGON -->
-                        <tr>
-                            <th scope="row">21</th>
-                            <td>
-                                <img src="Images/market/coins/64x64/21.png" alt="" class="img-fluid crypto-logo">
-                                Polygon <small class="text-secondary">MATIC</small>
-                            </td>
-                            <td>$0.4199</td>
-                            <td class="text-success">+0.04%</td>
-                            <td class="text-danger">-1.21%</td>
-                            <td class="text-danger">-21.38%</td>
-                            <td>$4,192,782,296</td>
-                            <td>$230,297,350</td>
-                            <td>9,986,226,288 MATIC</td>
-                            <td>
-                                <img src="Images/market/graphs/21.svg" alt="graph" class="crypto-graph up">
-                            </td>
-                        </tr>
-
-                        <!-- KASPA -->
-                        <tr>
-                            <th scope="row">22</th>
-                            <td>
-                                <img src="Images/market/coins/64x64/22.png" alt="" class="img-fluid crypto-logo">
-                                Kaspa <small class="text-secondary">KAS</small>
-                            </td>
-                            <td>$0.1651</td>
-                            <td class="text-danger">-0.65%</td>
-                            <td class="text-danger">-1.76%</td>
-                            <td class="text-danger">-3.80%</td>
-                            <td>$4,058,176,292</td>
-                            <td>$64,062,192</td>
-                            <td>24,578,906,234 KAS</td>
-                            <td>
-                                <img src="Images/market/graphs/22.svg" alt="graph" class="crypto-graph">
-                            </td>
-                        </tr>
-                        
-                        <!-- UNISWAP -->
-                        <tr>
-                            <th scope="row">23</th>
-                            <td>
-                                <img src="Images/market/coins/64x64/23.png" alt="" class="img-fluid crypto-logo">
-                                Uniswap <small class="text-secondary">UNI</small>
-                            </td>
-                            <td>$5.9</td>
-                            <td class="text-danger">-1.43%</td>
-                            <td class="text-success">+1.47%</td>
-                            <td class="text-danger">-15.79%</td>
-                            <td>$3,538,936,278</td>
-                            <td>$79,635,086</td>
-                            <td>600,126,150 UNI</td>
-                            <td>
-                                <img src="Images/market/graphs/23.svg" alt="graph" class="crypto-graph">
-                            </td>
-                        </tr>
-                     
-                        <!-- INTERNET COMPUTER -->
-                        <tr>
-                            <th scope="row">24</th>
-                            <td>
-                                <img src="Images/market/coins/64x64/24.png" alt="" class="img-fluid crypto-logo">
-                                Internet Computer <small class="text-secondary">ICP</small>
-                            </td>
-                            <td>$7.57</td>
-                            <td class="text-danger">-0.68%</td>
-                            <td class="text-danger">-3.15%</td>
-                            <td class="text-danger">-11.07%</td>
-                            <td>$3,554,461,875</td>
-                            <td>$64,940,376</td>
-                            <td>469,291,941 ICP</td>
-                            <td>
-                                <img src="Images/market/graphs/24.svg" alt="graph" class="crypto-graph">
-                            </td>
-                        </tr>
-                        
-                        <!-- APTOS -->
-                        <tr>
-                            <th scope="row">25</th>
-                            <td>
-                                <img src="Images/market/coins/64x64/25.png" alt="" class="img-fluid crypto-logo">
-                                Aptos <small class="text-secondary">APT</small>
-                            </td>
-                            <td>$6.68</td>
-                            <td class="text-danger">-0.72%</td>
-                            <td class="text-danger">-4.17%</td>
-                            <td class="text-danger">-6.19%</td>
-                            <td>$3,243,649,420</td>
-                            <td>$141,430,077</td>
-                            <td>485,632,351 APT</td>
-                            <td>
-                                <img src="Images/market/graphs/25.svg" alt="graph" class="crypto-graph">
-                            </td>
-                        </tr>
-                        
-                        <!-- PEPE -->
-                        <tr>
-                            <th scope="row">26</th>
-                            <td>
-                                <img src="Images/market/coins/64x64/26.png" alt="" class="img-fluid crypto-logo">
-                                Pepe <small class="text-secondary">PEPE</small>
-                            </td>
-                            <td>$0.057638</td>
-                            <td class="text-danger">-0.66%</td>
-                            <td class="text-danger">-6.91%</td>
-                            <td class="text-danger">-20.83%</td>
-                            <td>$3,225,110,497</td>
-                            <td>$181,111,845</td>
-                            <td>139,071,892,923 PEPE</td>
-                            <td>
-                                <img src="Images/market/graphs/26.svg" alt="graph" class="crypto-graph">
-                            </td>
-                        </tr>
-                        
                     </tbody>
                 </table>
             </div>
@@ -834,5 +334,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/Markets/script.js"></script>
+    <script src="./js/progress-bar.js"></script>
 </body>
 </html>
