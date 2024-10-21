@@ -285,5 +285,93 @@ ul {
     font-size: 12px;
     color: #bbb;
 }
+#cryptoCarousel {
+    max-height: 300px; /* Adjust this value to your preferred height */
+    overflow: hidden;
+}
+.carousel-item img {
+    height: 300px; /* Match this with the carousel's max-height */
+    object-fit: cover;
+    width: 100%;
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+/* Card container */
+.news-item .card {
+    width: 350px;  /* Adjusted width for better alignment */
+    height: 450px; /* Increased height for proportional design */
+    background-color: #1c1c1e;  /* Dark theme matching the sample image */
+    color: white;  /* White text to stand out */
+    border: none;
+    border-radius: 12px; /* Rounded corners for a modern look */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+/* Image container to ensure correct image handling */
+.image-container {
+    width: 100%;
+    height: 220px; /* Adjusted height for balanced layout */
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle divider */
+}
+
+/* Image handling to prevent distortion */
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers container */
+    object-position: center; /* Centers the image */
+}
+
+/* Add spacing between cards */
+#newsRow .news-item {
+    padding: 10px;
+}
+
+/* Card body styling */
+.news-item .card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* News badge styling */
+.badge {
+    align-self: flex-start;
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+
+/* Card title */
+.card-title {
+    font-size: 1.25rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Card text (timestamp) */
+.card-text {
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-top: auto; /* Push timestamp to the bottom */
+    text-align: left;
+}
+.card-img-top{
+    max-height: 224px;
+}
 
