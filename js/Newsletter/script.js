@@ -1,5 +1,5 @@
-const accountSid = 'AC5d64f4cd95772e122053397cd4c435c9'; 
-const authToken = '1a5e2f2be61984eadab5b9856ff06706';    
+const accountSid = 'SidCode'; 
+const authToken = 'AuthCode';    
 
 const phoneInput = document.querySelector('.phoneInput');
 const subButton = document.querySelector('.subscribeButton');
