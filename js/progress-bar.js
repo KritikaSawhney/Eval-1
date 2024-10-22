@@ -1,4 +1,3 @@
-
 window.onscroll = function() {scrollProgress()};
 
 function scrollProgress() {
@@ -7,4 +6,3 @@ const height = document.documentElement.scrollHeight - document.documentElement.
 const scrolled = (winScroll / height) * 100;
 document.getElementById("progress-bar").style.width = scrolled + "%";
 }
-
