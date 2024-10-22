@@ -19,13 +19,98 @@
             <a class="navbar-brand" href="index.html">
                 <img src="Images/real-logo-cryptowatch.png" alt="logo" id="logo">
             </a>
+
             <!-- Hamburger Menu Button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars text-light"></i>
             </button>
+
             <!-- Navigation Links -->
             <div class="collapse navbar-collapse bg-body-dark" id="navbarNavDropdown">
-                <!-- (nav items code) -->
+                <ul class="navbar-nav ms-auto" id="navLinks">
+                    <!-- Home -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold link-light" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <li><a class="dropdown-item" href="index.html">Home</a></li>
+                            <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- About -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold link-light" href="about.html" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <li><a class="dropdown-item" href="about.html">About us</a></li>
+                            <li><a class="dropdown-item" href="learn.html">FAQ</a></li>
+                            <li><a class="dropdown-item" href="feature.html">Features</a></li>
+                            <li><a class="dropdown-item" href="Terms_and_conditions.html">Terms and Conditions</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Markets -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold link-light" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Markets
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                            <li><a class="dropdown-item" href="market.html">Market</a></li>
+                            <li><a class="dropdown-item" href="crypto-converter.html">Crypto Converter</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- News -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold link-light" href="#" id="navbarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            News
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                            <li><a class="dropdown-item" href="news.html">News</a></li>
+                            <li><a class="dropdown-item" href="newsletter.html">Newsletter</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold link-light" href="#" id="navbarDropdown5" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contact
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                            <li><a class="dropdown-item" href="Contactus.html">Contact Us</a></li>
+                            <li><a class="dropdown-item" href="feedback.html">Feedback</a></li>
+                            <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+                            <li><a class="dropdown-item" href="signin.html">Sign In</a></li>
+                        </ul>
+                    </li>
+                </ul>   
+                <div class="navProfile d-flex ms-2">
+                    <ul class="navbar-nav gap-1">
+                        <li class="nav-item">
+                            <button class="btn btn-outline-dark fw-bold">
+                                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-dark fw-bold">
+                                <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-dark fw-bold">
+                                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-dark fw-bold">
+                                <a href="signup.html"><i class="fa-regular fa-user"></i></a>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -34,29 +119,29 @@
     <main>
         <div class="container-fluid">
             <div class="row no-gutters">
-                <!-- Right Section: Form -->
+                <!-- Left Section: Video -->
                 <div class="col-lg-6 col-md-12 form-section">
                     <div class="login-form rounded-3">
                         <h2 class="mb-3 text-center">Sign up</h2>
                         <form id="signup-form">
                             <div class="form-group">
-                                <input type="text" id="signup-name" class="form-control mb-3" placeholder="Name" required>
                                 <small class="text-danger" id="name-error"></small>
+                                <input type="text" id="signup-name" class="form-control mb-3" placeholder="Name" >
                             </div>
 
                             <div class="form-group">
-                                <input type="text" id="signup-username" class="form-control mb-3" placeholder="Username" required>
                                 <small class="text-danger" id="username-error"></small>
+                                <input type="text" id="signup-username" class="form-control mb-3" placeholder="Username" >
                             </div>
 
                             <div class="form-group">
-                                <input type="email" id="signup-email" class="form-control mb-3" placeholder="Email" required>
                                 <small class="text-danger" id="email-error"></small>
+                                <input type="email" id="signup-email" class="form-control mb-3" placeholder="Email" >
                             </div>
 
                             <div class="form-group">
-                                <input type="password" id="signup-password" class="form-control mb-3" placeholder="Password" required>
                                 <small class="text-danger" id="password-error"></small>
+                                <input type="password" id="signup-password" class="form-control mb-3" placeholder="Password" >
                             </div>
 
                             <button type="submit" class="btn w-100 btn-outline-dark">Sign up</button>
@@ -65,10 +150,18 @@
                     </div>
                 </div>
 
-                <!-- Left Section: Video -->
+                <!-- Right Section: Form -->
                 <div class="col-lg-6 d-none d-lg-block d-flex justify-content-center align-item-end">
-                    <!-- Your video section code here -->
+                    <video autoplay muted loop class="video-bg left-section">
+                        <source src="Images/alex-climbing-short.avc.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="overlay-text ">
+                        <h1 class="text-dark display-2 fw-bolder">Look first / <br> Then leap.</h1>
+                        <p class="fs-4">Alex Honnold<br>TV Athlete</p>
+                    </div>
                 </div>
+
             </div>
         </div>
     </main>
@@ -166,63 +259,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
-    <script>
-        // JavaScript for storing signup data in localStorage with validation
-        document.querySelector('#signup-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            // Get values from the signup form
-            const name = document.querySelector('#signup-name').value.trim();
-            const username = document.querySelector('#signup-username').value.trim();
-            const email = document.querySelector('#signup-email').value.trim();
-            const password = document.querySelector('#signup-password').value.trim();
-
-            // Validation flags
-            let isValid = true;
-
-            // Clear previous error messages
-            document.querySelector('#name-error').textContent = '';
-            document.querySelector('#username-error').textContent = '';
-            document.querySelector('#email-error').textContent = '';
-            document.querySelector('#password-error').textContent = '';
-
-            // Validate Name
-            if (name.length < 2) {
-                document.querySelector('#name-error').textContent = 'Name must be at least 2 characters.';
-                isValid = false;
-            }
-
-            // Validate Username
-            if (username.length < 3) {
-                document.querySelector('#username-error').textContent = 'Username must be at least 3 characters.';
-                isValid = false;
-            }
-
-            // Validate Email
-            const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,6}$/;
-            if (!emailPattern.test(email)) {
-                document.querySelector('#email-error').textContent = 'Enter a valid email address.';
-                isValid = false;
-            }
-
-            // Validate Password
-            if (password.length < 6) {
-                document.querySelector('#password-error').textContent = 'Password must be at least 6 characters.';
-                isValid = false;
-            }
-
-            // If all validations pass, store data in localStorage
-            if (isValid) {
-                localStorage.setItem('userName', name);
-                localStorage.setItem('userUsername', username);
-                localStorage.setItem('userEmail', email);
-                localStorage.setItem('userPassword', password);
-
-                alert('Sign-up successful! Data saved locally.');
-                window.location.href = 'signin.html';
-            }
-        });
-    </script>
+    <script src="./js/Signup-Signin/signup.js"></script>
 </body>
 </html>
