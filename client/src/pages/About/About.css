@@ -1,0 +1,82 @@
+body{
+    background-color: black;
+    color: white;
+}
+#logo{
+    width: 344px;
+}
+@media screen and (max-width: 600px){
+    #logo{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-collapse {
+    background-color: black; 
+    border: 0px solid;
+    border-radius: 20px;
+    padding: 20px;
+}     
+}
+    
+.mainContent {
+    padding: 100px 0px;
+}
+
+.mainContent h1{
+    font-size: 8vw;
+    color: white;           
+}
+#colored-h1{
+    background: rgb(48,82,250);
+    background: linear-gradient(90deg, rgba(48,82,250,1) 0%, rgba(190,75,233,1) 90%);
+    color: transparent;
+    background-clip: text;
+    margin: 0px 0px 50px;
+}
+video{
+    border: 0px solid;
+    border-radius: 5%;    
+    width: 100%;
+    height: auto;
+}
+#exploreFeatures{
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 2% 3%;
+}
+.loveCryto{
+    padding: 80px 0px;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+}
+.box{
+    flex: 1 1 320px;
+    padding: 20px;
+}
+.box h2{
+    font-weight: bold;
+}
+.box p{
+    font-weight: n;
+}
+.cols{
+    flex: 1 1 350px;
+    border: 1px solid rgb(52, 48, 48);
+    border-radius: 20px;
+}
+.codeofhonor .cols{
+    padding: 50px;
+}
+
+.icon-cols{
+    margin-bottom: 50px;
+    font-size: 120px;
+}

@@ -1,0 +1,223 @@
+/* styles.css */
+body {
+  background: rgb(0, 0, 0);
+}
+
+/* PROGRESS-BAR */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(130, 169, 248, 1) 77%,
+    rgba(133, 207, 200, 1) 94%
+  );
+  z-index: 1000;
+}
+
+
+main{
+    background-color: #000;
+}
+
+#colored-h1 {
+  background: rgb(48, 82, 250);
+  background: linear-gradient(
+    90deg,
+    rgba(48, 82, 250, 1) 0%,
+    rgba(190, 75, 233, 1) 90%
+  );
+  color: transparent;
+  background-clip: text;
+}
+
+.main-header img {
+  margin: 0px;
+  border: 0px solid;
+  border-radius: 40px;
+}
+.main-illustration {
+  max-width: 100%;
+  height: auto;
+}
+
+.welcome-section {
+  background-color: black;
+  color: white;
+  padding: 60px 0;
+}
+
+.welcome-section .btn {
+  font-weight: 500;
+  color: #fff;
+}
+
+.welcome-section .btn:hover {
+  font-weight: 500;
+  color: black;
+}
+
+.get-started-section {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(130, 169, 248, 1) 77%,
+    rgba(133, 207, 200, 1) 94%
+  );
+}
+
+.get-started-section .container {
+  background-color: #121212;
+  border-radius: 40px;
+  padding: 30px;
+}
+
+.card {
+  margin: 0px;
+  color: white;
+  background-color: transparent;
+  border-radius: 20px;
+}
+.border-colored {
+  border: 2px solid #a5fcf4;
+  padding: 0px;
+  border-radius: 10px;
+  margin: 10px;
+  flex: 1 1 400px;
+}
+
+.card-img-top {
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.what-is-ethereum-section {
+  background: rgba(133, 207, 200, 1);
+  background: linear-gradient(
+    180deg,
+    rgba(133, 207, 200, 1) 0%,
+    rgba(0, 0, 0, 1) 50%
+  );
+  margin: 0px 0px 0px;
+}
+
+.what-is-ethereum-section-2 {
+  background: rgba(133, 207, 200, 1);
+  background: linear-gradient(
+    180deg,
+    rgba(133, 207, 200, 1) 0%,
+    rgba(0, 0, 0, 1) 85%
+  );
+  margin: 0px 0px 0px;
+  border-radius: 40px 40px 0px 0px;
+}
+
+.what-is-ethereum-section .container-fluid {
+  background-color: black;
+  border: 5px solid #ceb0fa;
+  border-radius: 40px;
+}
+
+.btn-pink {
+  background-color: #8978a0;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.btn-pink:hover {
+  border: 2px solid #ceb0fa;
+  background-color: transparent;
+}
+
+.btn-blue {
+  background-color: #82a9f8;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.btn-blue:hover {
+  border: 2px solid #82a9f8;
+  background-color: transparent;
+}
+
+.btn-green {
+  background-color: #a5fcf4;
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+}
+
+.btn-green:hover {
+  border: 2px solid #a5fcf4;
+  background-color: transparent;
+}
+
+.financial-system-section {
+  background-color: #000;
+  /* border-radius: 40px 40px; */
+}
+
+/*helll*/
+
+.card {
+  background-color: rgba(44, 44, 44, 0.8);
+  border: none;
+}
+
+.stats-card {
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.stats-card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.stats-card h4,
+.stats-card p,
+.stats-card h2,
+.btn-outline-light {
+  position: relative;
+  z-index: 2;
+}
+
+.btn-outline-light {
+  border-color: #fff;
+  color: #fff;
+}
+
+.btn-outline-light:hover {
+  background-color: #fff;
+  color: #000;
+}
+.card-custom {
+  background-color: #000;
+  border: 2px solid #6e87f6;
+}
+
+.card-custom .card-body {
+  border-radius: 20px;
+}
+
+.card-custom .card-title {
+  color: #ceb0fa;
+  font-weight: bold;
+}
+
+.card-custom .card-text {
+  color: #ddd;
+}

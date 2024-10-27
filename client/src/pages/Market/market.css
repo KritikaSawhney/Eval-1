@@ -1,0 +1,92 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.CrytoPricesSection{
+    margin: 20px 0px;
+}
+
+.category-filters-group button{
+    margin: 2px;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+/* .table td img {
+    max-width: 100px;
+} */
+
+.table {
+    text-align: start;
+    border-spacing: 0 15px; 
+    border-collapse: separate;
+}
+.crypto-graph{
+    min-width: 100px;
+    filter: hue-rotate(300deg) saturate(210%) brightness(0.7) contrast(170%);    
+}
+
+.up{
+    filter: hue-rotate(85deg) saturate(80%) brightness(0.85);
+} 
+
+.crypto-logo{
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+}
+small{
+    margin-left: 5px;
+    font-size: 0.80rem;
+    font-weight: 500;
+}
+
+@media (max-width: 375px) {
+    .form-check{
+        display: none;
+    }
+}
+.Top-Widgets {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1; 
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(130,169,248,1) 77%, rgba(133,207,200,1) 94%);
+    z-index: 1000;
+}
