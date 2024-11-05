@@ -12,6 +12,13 @@ import CryptoConverter from './pages/Crypto Converter/CryptoConverter';
 import Feedback from './pages/Feedback/Feedback';
 import About from './pages/About/About';
 import Feature from './pages/Feature/Feature';
+import News from './pages/News/News';
+import Learn from '/pages/Learn/Learn';
+import Signin from '/pages/Signin/Signin';
+import Signup from '/pages/Signup/Signup';
+
+
+
 
 function App() {
   return (
@@ -24,6 +31,10 @@ function App() {
         <Route path='/CryptoConvertor' element={<CryptoConverter />} />
         <Route path='/Feedback' element={<Feedback />} />
         <Route path='/market' element={<Market />} />
+        <Route path='/News' element={<News />} />
+        <Route path='/Learn' element={<Learn />} />
+        <Route path='/Signin' element={<Signin />} />
+        <Route path='/Signup' element={<Signup />} />
       </Routes>
       <Footer />
     </Router>

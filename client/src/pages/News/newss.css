@@ -1,0 +1,377 @@
+/* BODY */
+body {
+    background-color: black
+}
+
+/* CARDS */
+.card {
+    border: none;
+}
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+}
+
+/* TOP-NEWS */
+.top-news .card-title {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.list-unstyled li a:hover {
+    text-decoration: underline;
+    text-align: left;
+}
+
+
+/* New CSS for the tokens section */
+.token-icon {
+    width: 20px;  
+    height: 20px;
+    object-fit: contain; 
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.badge {
+    display: inline-flex;  /* Use inline-flex to ensure proper alignment */
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+}
+
+.badge.rounded-pill {
+    padding: 5px 10px;
+    border-radius: 50px;
+    background-color: solid black;
+    border: 1px solid black;
+}
+.carousel {
+    background-color: black;
+    padding: 0 5%; /* Responsive padding on LHS and RHS */
+}
+.carousel-item {
+    color: white;
+    padding: 5px 10px;
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: white;
+    border-radius: 50%;
+}
+.carousel-indicators button {
+    background-color: white;
+}
+.carousel-indicators .active {
+    background-color: white;
+}
+.carousel p {
+    margin-top: 10px;
+    color: white;
+}
+
+.container-fluid{
+    padding: 2vw 6vw;
+}
+.news-grid {
+    padding: 1rem 0;
+}
+
+.news-card {
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    overflow: hidden; 
+}
+.news-card img {
+    width: 100%;
+    height: auto;
+}
+.news-content {
+    padding: 1rem;
+}
+
+.news-badge {
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.news-content h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.news-time {
+    font-size: 0.875rem;
+    color: #6c757d; /* Bootstrap secondary color */
+}
+
+/* Ensure responsiveness */
+@media (max-width: 767.98px) {
+    .news-card {
+        margin-bottom: 1.5rem; /* Extra space between cards on small screens */
+    }
+}
+
+.card-content {
+    padding: 15px;
+    flex: 1; /* Ensures the content takes up remaining space */
+}
+
+.crypto-tags {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.crypto-tags span {
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.news-time {
+    font-size: 12px;
+    color: #bbb;
+    margin-top: 10px;
+}
+.market-card{
+    flex: 1 1 200px;
+}
+.market-outlook .card-img {
+    width: 100%;
+    height: auto;
+}
+
+.market-outlook .card-content {
+    padding: 15px;
+}
+
+.market-outlook .card{
+    background-color: rgb(34, 32, 32);
+    height: 100%;
+}
+
+.market-outlook .card-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.tags {
+    margin-bottom: 10px;
+}
+
+.tags span {
+    display: inline-block;
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 0.9rem;
+}
+
+.time {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .card {
+        width: calc(50% - 20px); /* 2 cards per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%; /* 1 card per row on small screens */
+    }
+}
+
+.view-all a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.view-all {
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+}
+.view-all a {
+    color: #00A0E3;
+    text-decoration: none;
+}
+.market-articles {
+    padding: 20px;
+}
+.market-articles h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.articles-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.articles-container .col{
+    flex: 1 1 500px;
+}
+.article {
+    display: flex;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.article img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.article-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.article-content h3 {
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+.article-content p {
+    font-size: 14px;
+    color: #bbb;
+    margin: 0 0 10px;
+}
+.article-content .tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.article-content .tags span {
+    background-color: #333;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+.article-content .time {
+    font-size: 12px;
+    color: #bbb;
+}
+#cryptoCarousel {
+    max-height: 300px; /* Adjust this value to your preferred height */
+    overflow: hidden;
+}
+.carousel-item img {
+    height: 300px; /* Match this with the carousel's max-height */
+    object-fit: cover;
+    width: 100%;
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+/* Card container */
+.news-item .card {
+    width: 350px;  /* Adjusted width for better alignment */
+    height: 450px; /* Increased height for proportional design */
+    background-color: #1c1c1e;  /* Dark theme matching the sample image */
+    color: white;  /* White text to stand out */
+    border: none;
+    border-radius: 12px; /* Rounded corners for a modern look */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Image container to ensure correct image handling */
+.image-container {
+    width: 100%;
+    height: 220px; /* Adjusted height for balanced layout */
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle divider */
+}
+
+/* Image handling to prevent distortion */
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers container */
+    object-position: center; /* Centers the image */
+}
+
+/* Add spacing between cards */
+#newsRow .news-item {
+    padding: 10px;
+}
+
+/* Card body styling */
+.news-item .card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* News badge styling */
+.badge {
+    align-self: flex-start;
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+
+/* Card title */
+.card-title {
+    font-size: 1.25rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Card text (timestamp) */
+.card-text {
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-top: auto; /* Push timestamp to the bottom */
+    text-align: left;
+}
+.card-img-top{
+    max-height: 224px;
+}
+
