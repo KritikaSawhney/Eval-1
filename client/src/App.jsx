@@ -12,11 +12,10 @@ import CryptoConverter from './pages/Crypto Converter/CryptoConverter';
 import Feedback from './pages/Feedback/Feedback';
 import About from './pages/About/About';
 import Feature from './pages/Feature/Feature';
-import Newsletter from './pages/Newsletter/Newsletter';
-// import News from './pages/News/News';
-// import Learn from './pages/Learn/Learn';
-// import Signin from './pages/Signin/Signin';
-// import Signup from './pages/Signup/Signup';
+import News from './pages/News/News';
+import Learn from './pages/Learn/Learn';
+import Signin from './pages/Signin/Signin';
+import Signup from './pages/Signup/Signup';
 
 
 // import Learn from '/pages/Learn/Learn';
@@ -38,10 +37,10 @@ function App() {
         <Route path='/Newsletter' element={<Newsletter />} />
 
 
-        {/* <Route path='/News' element={<News />} /> */}
-        {/* <Route path='/Learn' element={<Learn />} /> */}
-        {/* <Route path='/Signin' element={<Signin />} /> */}
-        {/* <Route path='/Signup' element={<Signup />} /> */}
+        {<Route path='/News' element={<News />} />}
+        {<Route path='/Learn' element={<Learn />} />}
+        {<Route path='/Signin' element={<Signin />} />}
+        {<Route path='/Signup' element={<Signup />} />}
       </Routes>
       <Footer />
     </Router>
