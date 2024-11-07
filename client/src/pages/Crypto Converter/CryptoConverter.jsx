@@ -1,7 +1,159 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './CryptoConverter.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRightArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 const CryptoConverter = () => {
+    useEffect(() => {
+        const cryptoList = {
+            BTC: "Bitcoin",
+            ETH: "Ethereum",
+            USD: "USD",
+            USDT: "Tether",
+            BNB: "Binance Coin",
+            XRP: "Ripple",
+            ADA: "Cardano",
+            SOL: "Solana",
+            DOT: "Polkadot",
+            DOGE: "Dogecoin",
+            LTC: "Litecoin",
+            BCH: "Bitcoin Cash",
+            MATIC: "Polygon",
+            TRX: "Tron",
+            FIL: "Filecoin",
+            VET: "VeChain",
+            LINK: "Chainlink",
+            XMR: "Monero",
+            ALGO: "Algorand",
+            THETA: "Theta",
+            HBAR: "Hedera",
+            ZEC: "Zcash",
+            EOS: "EOS",
+            MKR: "Maker",
+            AAVE: "Aave",
+            DAI: "Dai",
+            UNI: "Uniswap",
+            SUSHI: "SushiSwap",
+            BAT: "Basic Attention Token",
+            ICP: "Internet Computer",
+            FTT: "FTX Token",
+            ENJ: "Enjin Coin",
+            NEO: "Neo",
+            QTUM: "Qtum",
+            XTZ: "Tezos",
+            CAKE: "PancakeSwap",
+            ZRX: "0x",
+            COMP: "Compound",
+            SNX: "Synthetix",
+            CHZ: "Chiliz",
+            LUNA: "Terra",
+            HT: "Huobi Token",
+            HNT: "Helium",
+            STX: "Stacks",
+            RPL: "Rocket Pool",
+            GRT: "The Graph",
+            CEL: "Celsius",
+            FTM: "Fantom",
+            IMX: "Immutable X",
+            LDO: "Lido DAO",
+            HFT: "Holo",
+            CVX: "Convex Finance",
+            REN: "Ren",
+            OMG: "OmiseGO",
+            DCR: "Decred",
+            AXS: "Axie Infinity",
+            SAND: "The Sandbox",
+            INJ: "Injective Protocol",
+            SRM: "Serum",
+            CTSI: "Cartesi",
+            LRC: "Loopring",
+            RUNE: "Thorchain",
+            STMX: "StormX",
+            REEF: "Reef"
+        };
+
+        const fromCurrencySelect = document.querySelector("#fromCurrency");
+        const toCurrencySelect = document.querySelector("#toCurrency");
+        const convertBtn = document.querySelector('#convertBtn');
+        const URL = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false";
+        const sourceImg = document.querySelector('#source-img');
+        const targetImg = document.querySelector('#target-img');
+        let apiData = null;
+
+        const makeOption = () => {
+            for (let key in cryptoList) {
+                const fromOption = document.createElement("option");
+                fromOption.innerText = cryptoList[key];
+                fromOption.value = key;
+                if (key === "BTC") fromOption.selected = true;
+                fromCurrencySelect.appendChild(fromOption);
+
+                const toOption = document.createElement("option");
+                toOption.innerText = cryptoList[key];
+                toOption.value = key;
+                if (key === "ETH") toOption.selected = true;
+                toCurrencySelect.appendChild(toOption);
+            }
+        };
+
+        const convert = async () => {
+            const sourceCurrency = cryptoList[fromCurrencySelect.value].toLowerCase();
+            const targetCurrency = toCurrencySelect.value.toLowerCase();
+            const amount = document.querySelector('#fromAmount').value;
+            if (isNaN(amount) || amount <= 0) {
+              alert("Please enter a valid amount.");
+              return; 
+            }
+          
+            const URL = `https://api.coingecko.com/api/v3/simple/price?ids=${sourceCurrency}&vs_currencies=${targetCurrency}`;
+          
+            let response = await fetch(URL);
+            let data = await response.json();
+          
+            const conversionRate = data[sourceCurrency][targetCurrency];
+            const result = amount * conversionRate;
+          
+            document.querySelector('#toAmount').value = result;
+        }
+
+        const toggleRotate = () => {
+            const icon = document.querySelector('.swap-icon');
+            icon.classList.toggle('rotated');
+            [fromCurrencySelect.value, toCurrencySelect.value] = [toCurrencySelect.value, fromCurrencySelect.value];
+        };
+
+        (async function fetchData() {
+            let response = await fetch(URL);
+            apiData = await response.json(); 
+            renderImg(); 
+          })();
+          
+        const renderImg = () => {
+            let selectedSource = fromCurrencySelect.value.toLowerCase();
+            let selectedTarget = toCurrencySelect.value.toLowerCase();
+        
+            for (let key of apiData) {
+                let apiSymbol = key.symbol;
+                
+                if (selectedSource === apiSymbol) {
+                    sourceImg.src = key.image;
+                }
+                
+                if (selectedTarget === apiSymbol) {
+                    targetImg.src = key.image;
+                }
+            }
+        };
+
+        convertBtn.addEventListener('click', convert);
+        makeOption();
+
+
+        return () => {
+            convertBtn.removeEventListener('click', convert);
+        };
+    }, []);
+    
   return (
     <>
         <section className="Index_converter">
@@ -20,7 +172,6 @@ const CryptoConverter = () => {
                 <a href="signup.html">
                     <button
                     className="btn btn-lg btn-outline-light mt-4"
-                    id="exploreFeatures"
                     >
                     Sign Up
                     </button>
@@ -42,7 +193,7 @@ const CryptoConverter = () => {
                     </span>
                     <input
                     type="number"
-                    className="form-control"
+                    className="form-control text-light"
                     id="fromAmount"
                     placeholder="From"
                     />
@@ -56,8 +207,8 @@ const CryptoConverter = () => {
                     </div>
                 </div>
                 {/* SWAP ICON */}
-                <div className="swap-icon" onclick="toggleRotate()">
-                    <i className="fa-solid fa-arrow-right-arrow-left fa-rotate-90 fa-xl mb-3" />
+                <div className="swap-icon" onclick="toggleRotate">
+                    <FontAwesomeIcon icon={faArrowRightArrowLeft} rotation={90} size="xl"  className='my-0'/>
                 </div>
                 {/* TO AMOUNT  */}
                 <div className="form-floating mb-3 d-flex position-relative">
@@ -72,7 +223,7 @@ const CryptoConverter = () => {
                     </span>
                     <input
                     type="number"
-                    className="form-control"
+                    className="form-control text-light"
                     id="toAmount"
                     placeholder="From"
                     />

@@ -1,5 +1,5 @@
 import React from 'react'
-import './newss.css'
+// import './newss.css'
 
 export default function CryptoWatch() {
   const [newsData, setNewsData] = useState([]);
