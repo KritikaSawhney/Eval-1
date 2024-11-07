@@ -1,10 +1,6 @@
-<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 import './newss.css';
-=======
-import React from 'react'
-// import './newss.css'
->>>>>>> 25c3bd4616bdadbdd4bbeea5dfc2226ce0e1bd26
+
 
 export default function CryptoWatch() {
   const [newsData, setNewsData] = useState([]);
