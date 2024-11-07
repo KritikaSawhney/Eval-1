@@ -2,9 +2,6 @@ body{
     background-color: black;
     color: white;
 }
-#logo{
-    width: 344px;
-}
 @media screen and (max-width: 600px){
     #logo{
         width: 250px;

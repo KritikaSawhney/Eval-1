@@ -1,5 +1,5 @@
 import React from 'react';
-import { 
+import {
   BrowserRouter as Router,
   Routes,
   Route
@@ -12,18 +12,16 @@ import CryptoConverter from './pages/Crypto Converter/CryptoConverter';
 import Feedback from './pages/Feedback/Feedback';
 import About from './pages/About/About';
 import Feature from './pages/Feature/Feature';
-import News from './pages/News/News';
-<<<<<<< HEAD
-import Learn from './pages/Learn/Learn';
-import Signin from './pages/Signin/Signin';
-import Signup from './pages/Signup/Signup';
+import Newsletter from './pages/Newsletter/Newsletter';
+// import News from './pages/News/News';
+// import Learn from './pages/Learn/Learn';
+// import Signin from './pages/Signin/Signin';
+// import Signup from './pages/Signup/Signup';
 
 
-=======
 // import Learn from '/pages/Learn/Learn';
 // import Signin from '/pages/Signin/Signin';
 // import Signup from '/pages/Signup/Signup';
->>>>>>> 25c3bd4616bdadbdd4bbeea5dfc2226ce0e1bd26
 
 
 function App() {
@@ -37,6 +35,9 @@ function App() {
         <Route path='/CryptoConvertor' element={<CryptoConverter />} />
         <Route path='/Feedback' element={<Feedback />} />
         <Route path='/market' element={<Market />} />
+        <Route path='/Newsletter' element={<Newsletter />} />
+
+
         {/* <Route path='/News' element={<News />} /> */}
         {/* <Route path='/Learn' element={<Learn />} /> */}
         {/* <Route path='/Signin' element={<Signin />} /> */}
