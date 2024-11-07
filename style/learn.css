@@ -1,37 +1,39 @@
-body{
+body {
     background-color: black;
 }
-h1{
+
+.heading-primary {
     color: white;
 }
-.section-container {
+
+.section-wrapper {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
-    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    padding: 2rem; /* Adjust padding as needed */
+    padding: 2rem;
     background-color: #ffffff;
-    margin: 1rem auto; /* Space above and below the container */
+    margin: 1rem auto;
 }
 
-.section-item {
+.section-element {
     text-align: center;
-    margin: 1rem auto; /* Space above and below the container */
+    margin: 1rem auto;
     padding: 0 1rem;
 }
 
-.section-item img {
+.section-element img {
     width: 8rem;
     height: 8rem;
     margin-bottom: 0.5rem;
 }
 
-.section-item h3 {
+.section-heading {
     font-size: 1.2rem;
     margin-bottom: 0.25rem;
 }
 
-.section-item a {
+.section-link {
     text-decoration: none;
     color: #0066cc;
     font-size: 1rem;
@@ -41,86 +43,86 @@ h1{
     justify-content: center;
 }
 
-.section-item a:hover {
+.section-link:hover {
     color: #003366;
 }
 
-.arrow {
+.section-arrow {
     margin-left: 0.25rem;
     transition: transform 0.3s;
 }
 
-.section-item a:hover .arrow {
+.section-link:hover .section-arrow {
     transform: translateX(0.25rem);
 }
 
-.crypto-container {
+.crypto-card-container {
     display: flex;
-    flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
-    gap: 1rem; /* Space between the two cards */
+    flex-wrap: wrap;
+    gap: 1rem;
     justify-content: space-between;
-    margin: 1rem auto; /* Space above and below the container */
-    padding: 0 1rem; /* Padding on the left and right sides */
-    max-width: 1200px; /* Maximum width of the container */
+    margin: 1rem auto;
+    padding: 0 1rem;
+    max-width: 1200px;
 }
 
-.crypto-card {
+.crypto-info-card {
     display: flex;
     flex-direction: column;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 48%; /* Ensures the cards take up nearly half the container each */
+    width: 48%;
 }
 
-.image-link img {
+.image-wrapper img {
     width: 100%;
     height: auto;
 }
 
-.crypto-content {
+.crypto-info-content {
     padding: 0.75rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.label {
+.crypto-label {
     font-size: 0.75rem;
     color: #666;
 }
 
-.title-link {
+.crypto-title-link {
     text-decoration: none;
     color: #000;
     display: block;
     margin: 0.5rem 0;
 }
 
-.title-link strong {
+.crypto-title-link strong {
     font-size: 1.2rem;
 }
 
-.title-link:hover {
+.crypto-title-link:hover {
     color: #0056b3;
 }
 
-p {
+.description-text {
     color: #555;
-    font-size: 0.875rem; /* Adjust font size as needed */
+    font-size: 0.875rem;
 }
 
-.guides-container {
+.guides-section {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem; /* Space between the cards */
-    margin: 1rem auto; /* Space above and below the container */
-    padding: 0 1rem; /* Padding on the left and right sides */
-    max-width: 1200px; /* Maximum width of the container */
+    gap: 1rem;
+    margin: 1rem auto;
+    padding: 0 1rem;
+    max-width: 1200px;
 }
 
-.guide-card {
+.guide-info-card {
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -128,16 +130,15 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: 23%;
-    /* Ensures the cards take up about 23% each to fit 4 cards in one row */
-
     text-align: center;
 }
-.image-link img {
+
+.guide-image img {
     width: 100%;
     height: auto;
 }
 
-.guide-content {
+.guide-info-content {
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -166,7 +167,7 @@ p {
     color: #0056b3;
 }
 
-.crypto-button {
+.primary-button {
     background-color: #007bff;
     color: #ffffff;
     padding: 0.5rem 1rem;
@@ -178,12 +179,12 @@ p {
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.crypto-button:hover {
+.primary-button:hover {
     background-color: #0056b3;
     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
 }
 
-.terms {
+.terms-list {
     list-style: none;
     padding: 0;
     display: flex;
@@ -191,11 +192,11 @@ p {
     justify-content: center;
 }
 
-.terms li {
+.terms-item {
     margin: 0.5rem;
 }
 
-.terms a {
+.terms-link {
     text-decoration: none;
     padding: 0.5rem;
     background-color: #f0f0f0;
@@ -203,7 +204,7 @@ p {
     border-radius: 5px;
 }
 
-button {
+.custom-button {
     padding: 0.5rem 1rem;
     background-color: #007bff;
     color: #fff;

@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
-import "./signin.css";
+import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
-
+import "./signin.css";
 
 export default function SignIn() {
   const [email, setEmail] = useState('');
@@ -10,11 +9,13 @@ export default function SignIn() {
   const [passwordError, setPasswordError] = useState('');
   const navigate = useNavigate();
 
+  // Email validation regex
   const validateEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   };
 
+  // Password validation check
   const validatePassword = (password) => {
     return password.length >= 6;
   };
@@ -26,16 +27,19 @@ export default function SignIn() {
     setEmailError('');
     setPasswordError('');
 
+    // Email validation
     if (!validateEmail(email)) {
       formIsValid = false;
       setEmailError("Please enter a valid email address.");
     }
 
+    // Password validation
     if (!validatePassword(password)) {
       formIsValid = false;
       setPasswordError("Password must be at least 6 characters long.");
     }
 
+    // If the form is valid, check credentials from localStorage
     if (formIsValid) {
       const storedEmail = localStorage.getItem('userEmail');
       const storedPassword = localStorage.getItem('userPassword');
@@ -53,12 +57,12 @@ export default function SignIn() {
     <main>
       <div className="container-fluid">
         <div className="row no-gutters">
-          <div className="col-lg-6 d-none d-lg-block d-flex justify-content-center align-item-end">
+          <div className="col-lg-6 d-none d-lg-block d-flex justify-content-center align-items-end">
             <video autoPlay muted loop className="video-bg left-section">
               <source src="/Images/tradingview.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            <div className="overlay-text ">
+            <div className="overlay-text">
               <h1 className="text-dark display-2 fw-bolder">Look first / <br /> Then leap.</h1>
               <p className="fs-4">Alex Honnold<br />TV Athlete</p>
             </div>
@@ -76,6 +80,7 @@ export default function SignIn() {
                     placeholder="Email or Username"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                    aria-describedby="signin-email-error"
                   />
                 </div>
                 <div className="form-group">
@@ -87,6 +92,7 @@ export default function SignIn() {
                     placeholder="Password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
+                    aria-describedby="signin-password-error"
                   />
                 </div>
                 <div className="form-group mx-2">

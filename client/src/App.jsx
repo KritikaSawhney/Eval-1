@@ -13,9 +13,9 @@ import Feedback from './pages/Feedback/Feedback';
 import About from './pages/About/About';
 import Feature from './pages/Feature/Feature';
 import News from './pages/News/News';
-import Learn from '/pages/Learn/Learn';
-import Signin from '/pages/Signin/Signin';
-import Signup from '/pages/Signup/Signup';
+import Learn from './pages/Learn/Learn';
+import Signin from './pages/Signin/Signin';
+import Signup from './pages/Signup/Signup';
 
 
 

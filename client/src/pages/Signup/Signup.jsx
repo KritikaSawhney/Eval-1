@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./signup.css";
 
 export default function SignUp() {
@@ -16,6 +17,7 @@ export default function SignUp() {
   });
   const navigate = useNavigate();
 
+  // Handle input changes
   const handleChange = (e) => {
     const { id, value } = e.target;
     setFormData(prevState => ({
@@ -24,6 +26,7 @@ export default function SignUp() {
     }));
   };
 
+  // Validate form fields
   const validateForm = () => {
     let isValid = true;
     const newErrors = { name: '', username: '', email: '', password: '' };
@@ -53,6 +56,7 @@ export default function SignUp() {
     return isValid;
   };
 
+  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
@@ -124,16 +128,16 @@ export default function SignUp() {
 
                 <button type="submit" className="btn w-100 btn-outline-dark">Sign up</button>
               </form>
-              <p className="sign-up-text">Already have an account? <a href="signin.html">Sign in</a></p>
+              <p className="sign-up-text">Already have an account? <a href="/signin">Sign in</a></p>
             </div>
           </div>
 
-          <div className="col-lg-6 d-none d-lg-block d-flex justify-content-center align-item-end">
+          <div className="col-lg-6 d-none d-lg-block d-flex justify-content-center align-items-end">
             <video autoPlay muted loop className="video-bg left-section">
               <source src="Images/alex-climbing-short.avc.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            <div className="overlay-text ">
+            <div className="overlay-text">
               <h1 className="text-dark display-2 fw-bolder">Look first / <br /> Then leap.</h1>
               <p className="fs-4">Alex Honnold<br />TV Athlete</p>
             </div>

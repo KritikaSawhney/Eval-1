@@ -1,5 +1,5 @@
-import React from 'react'
-import './newss.css'
+import React, { useState, useEffect } from 'react';
+import './newss.css';
 
 export default function CryptoWatch() {
   const [newsData, setNewsData] = useState([]);
@@ -38,26 +38,6 @@ export default function CryptoWatch() {
 
   return (
     <div className="text-white">
-      <header>
-        <nav className="navbar navbar-expand-lg container">
-          <a className="navbar-brand" href="index.html">
-            <img src="Images/real-logo-cryptowatch.png" alt="logo" id="logo" />
-          </a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <i className="fa-solid fa-bars text-light"></i>
-          </button>
-          <div className="collapse navbar-collapse bg-body-dark" id="navbarNavDropdown">
-            {/* Navigation links */}
-            <ul className="navbar-nav ms-auto" id="navLinks">
-              {/* Add navigation items here */}
-            </ul>
-            <div className="navProfile d-flex ms-2">
-              {/* Add social media buttons here */}
-            </div>
-          </div>
-        </nav>
-      </header>
-
       <main>
         <section className="top-news">
           {/* Top News section content */}
@@ -90,7 +70,7 @@ export default function CryptoWatch() {
 
         <section className="news-grid-section">
           <div className="container-fluid">
-            <h2 className="text-uppercase fw-bold text-center mb-4">Crypto Currency News</h2> 
+            <h2 className="text-uppercase fw-bold text-center mb-4">Crypto Currency News</h2>
             <div className="news-grid">
               <div className="container">
                 <div id="newsRow" className="row">
@@ -124,13 +104,6 @@ export default function CryptoWatch() {
           {/* Market Articles section */}
         </section>
       </main>
-
-      <footer className="footer">
-        {/* Footer content */}
-      </footer>
     </div>
   );
 }
-
-
-
