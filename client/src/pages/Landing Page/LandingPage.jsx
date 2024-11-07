@@ -2,7 +2,7 @@ import React from "react";
 import "./LandingPage.css";
 const LandingPage = () => {
   return (
-    <main>
+    <>
       <section className="main-header">
         <div className="container-fluid text-center">
           <img
@@ -245,183 +245,183 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-      <div className="container py-5">
-        <div className="container d-flex justify-content-center gap-4 flex-wrap mb-5">
-          <h1 className="text-center display-1 fw-bold text-light">
-            The Latest{" "}
-          </h1>
-          <h1 className="text-center display-1 fw-bold mt-0" id="colored-h1">
-            {" "}
-            Network Statistics
-          </h1>
-        </div>
-        <div className="row">
-          <div className="col-lg-6 mb-4">
-            <div className="card bg-dark text-white p-4 stats-card h-100">
-              <h4>ETH STAKED ON NETWORK</h4>
-              <p>
-                Total Ethereum staked to secure the network, providing stability
-                and security.
-              </p>
-              <h2>34.21M</h2>
-              <div className="d-flex justify-content-end">
-                <button className="btn btn-sm btn-outline-light me-2">
-                  30 Days
-                </button>
-                <button className="btn btn-sm btn-outline-light">
-                  90 Days
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-6 mb-4">
-            <div className="card bg-dark text-white p-4 stats-card h-100">
-              <h4>DAILY TRANSACTIONS</h4>
-              <p>
-                Total number of transactions processed on the Ethereum network
-                today.
-              </p>
-              <h2>1.133M</h2>
-              <div className="d-flex justify-content-end">
-                <button className="btn btn-sm btn-outline-light me-2">
-                  30 Days
-                </button>
-                <button className="btn btn-sm btn-outline-light">
-                  90 Days
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-6 mb-4">
-            <div className="card bg-dark text-white p-4 stats-card h-100">
-              <h4>DEFI VALUE LOCKED</h4>
-              <p>
-                Total value locked in DeFi applications on the CryptoWatch
-                network.
-              </p>
-              <h2>$96.58B</h2>
-              <div className="d-flex justify-content-end">
-                <button className="btn btn-sm btn-outline-light me-2">
-                  30 Days
-                </button>
-                <button className="btn btn-sm btn-outline-light">
-                  90 Days
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-6 mb-4">
-            <div className="card bg-dark text-white p-4 stats-card h-100">
-              <h4>NETWORK NODES</h4>
-              <p>
-                Number of nodes maintaining the CryptoWatch network across the
-                globe.
-              </p>
-              <h2>4,847</h2>
-              <div className="d-flex justify-content-end">
-                <button className="btn btn-sm btn-outline-light me-2">
-                  30 Days
-                </button>
-                <button className="btn btn-sm btn-outline-light">
-                  90 Days
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
         <div className="container py-5">
-          <h1 className="text-white text-center mb-5 display-3 fw-semibold">
-            Explore CryptoWatch.com
-          </h1>
+          <div className="container d-flex justify-content-center gap-4 flex-wrap mb-5">
+            <h1 className="text-center display-1 fw-bold text-light">
+              The Latest{" "}
+            </h1>
+            <h1 className="text-center display-1 fw-bold mt-0" id="colored-h1">
+              {" "}
+              Network Statistics
+            </h1>
+          </div>
           <div className="row">
-            <div className="col-lg-4 mb-4">
-              <div className="card card-custom">
-                <img
-                  src="Images/download-11.avif"
-                  className="card-img-top"
-                  alt="Upgrade Knowledge"
-                />
-                <div className="card-body">
-                  <h5 className="card-title fs-3">Level up your knowledge</h5>
-                  <p className="card-text ">
-                    Stay informed with the latest updates in the crypto world.
-                    CryptoWatch provides the resources to help you understand
-                    market trends and make informed decisions.
-                  </p>
+            <div className="col-lg-6 mb-4">
+              <div className="card bg-dark text-white p-4 stats-card h-100">
+                <h4>ETH STAKED ON NETWORK</h4>
+                <p>
+                  Total Ethereum staked to secure the network, providing stability
+                  and security.
+                </p>
+                <h2>34.21M</h2>
+                <div className="d-flex justify-content-end">
+                  <button className="btn btn-sm btn-outline-light me-2">
+                    30 Days
+                  </button>
+                  <button className="btn btn-sm btn-outline-light">
+                    90 Days
+                  </button>
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 mb-4">
-              <div className="card card-custom">
-                <img
-                  src="Images/download-12.avif"
-                  className="card-img-top"
-                  alt="CryptoWatch for Enterprise"
-                />
-                <div className="card-body">
-                  <h5 className="card-title fs-3">CryptoWatch for Business</h5>
-                  <p className="card-text">
-                    Discover how CryptoWatch can unlock new opportunities,
-                    streamline operations, and prepare your business for the
-                    future with crypto integration.
-                  </p>
+            <div className="col-lg-6 mb-4">
+              <div className="card bg-dark text-white p-4 stats-card h-100">
+                <h4>DAILY TRANSACTIONS</h4>
+                <p>
+                  Total number of transactions processed on the Ethereum network
+                  today.
+                </p>
+                <h2>1.133M</h2>
+                <div className="d-flex justify-content-end">
+                  <button className="btn btn-sm btn-outline-light me-2">
+                    30 Days
+                  </button>
+                  <button className="btn btn-sm btn-outline-light">
+                    90 Days
+                  </button>
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 mb-4">
-              <div className="card card-custom">
-                <img
-                  src="Images/download-7.avif"
-                  className="card-img-top"
-                  alt="CryptoWatch Community"
-                />
-                <div className="card-body">
-                  <h5 className="card-title fs-3">Join the Community</h5>
-                  <p className="card-text">
-                    CryptoWatch thrives on its community of enthusiasts and
-                    professionals. Explore how you can connect, share insights,
-                    and grow together. Making the revolution in the world
-                  </p>
+            <div className="col-lg-6 mb-4">
+              <div className="card bg-dark text-white p-4 stats-card h-100">
+                <h4>DEFI VALUE LOCKED</h4>
+                <p>
+                  Total value locked in DeFi applications on the CryptoWatch
+                  network.
+                </p>
+                <h2>$96.58B</h2>
+                <div className="d-flex justify-content-end">
+                  <button className="btn btn-sm btn-outline-light me-2">
+                    30 Days
+                  </button>
+                  <button className="btn btn-sm btn-outline-light">
+                    90 Days
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 mb-4">
+              <div className="card bg-dark text-white p-4 stats-card h-100">
+                <h4>NETWORK NODES</h4>
+                <p>
+                  Number of nodes maintaining the CryptoWatch network across the
+                  globe.
+                </p>
+                <h2>4,847</h2>
+                <div className="d-flex justify-content-end">
+                  <button className="btn btn-sm btn-outline-light me-2">
+                    30 Days
+                  </button>
+                  <button className="btn btn-sm btn-outline-light">
+                    90 Days
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="financial-system-section container-fluid py-5">
-          <div className="row">
-            <div className="col-lg-6 d-flex flex-column justify-content-center text-white">
-              <h1 className="mb-4 display-1 fw-semibold">
-                Contribute to CryptoWatch
-              </h1>
-              <p className="mb-4 fs-5">
-                CryptoWatch is a community-driven platform. Whether you want to
-                suggest improvements, contribute new features, or help resolve
-                issues, your input is invaluable.
-              </p>
-              <div className="d-flex">
-                <a href="feedback.html" className="btn btn-green me-2">
-                  More on contributing
-                </a>
-                <a
-                  href="https://github.com/KritikaSawhney/Eval-1"
-                  className="btn btn-outline-light d-flex align-items-center fs-5"
-                >
-                  GitHub <i className="bi bi-github ms-2" />
-                </a>
+          <div className="container py-5">
+            <h1 className="text-white text-center mb-5 display-3 fw-semibold">
+              Explore CryptoWatch.com
+            </h1>
+            <div className="row">
+              <div className="col-lg-4 mb-4">
+                <div className="card card-custom">
+                  <img
+                    src="Images/download-11.avif"
+                    className="card-img-top"
+                    alt="Upgrade Knowledge"
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title fs-3">Level up your knowledge</h5>
+                    <p className="card-text ">
+                      Stay informed with the latest updates in the crypto world.
+                      CryptoWatch provides the resources to help you understand
+                      market trends and make informed decisions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 mb-4">
+                <div className="card card-custom">
+                  <img
+                    src="Images/download-12.avif"
+                    className="card-img-top"
+                    alt="CryptoWatch for Enterprise"
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title fs-3">CryptoWatch for Business</h5>
+                    <p className="card-text">
+                      Discover how CryptoWatch can unlock new opportunities,
+                      streamline operations, and prepare your business for the
+                      future with crypto integration.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 mb-4">
+                <div className="card card-custom">
+                  <img
+                    src="Images/download-7.avif"
+                    className="card-img-top"
+                    alt="CryptoWatch Community"
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title fs-3">Join the Community</h5>
+                    <p className="card-text">
+                      CryptoWatch thrives on its community of enthusiasts and
+                      professionals. Explore how you can connect, share insights,
+                      and grow together. Making the revolution in the world
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="col-lg-6">
-              <img
-                src="Images/download-14.avif"
-                className="img-fluid"
-                alt="CryptoWatch Contribution"
-              />
+          </div>
+          <div className="financial-system-section container-fluid py-5">
+            <div className="row">
+              <div className="col-lg-6 d-flex flex-column justify-content-center text-white">
+                <h1 className="mb-4 display-1 fw-semibold">
+                  Contribute to CryptoWatch
+                </h1>
+                <p className="mb-4 fs-5">
+                  CryptoWatch is a community-driven platform. Whether you want to
+                  suggest improvements, contribute new features, or help resolve
+                  issues, your input is invaluable.
+                </p>
+                <div className="d-flex">
+                  <a href="feedback.html" className="btn btn-green me-2">
+                    More on contributing
+                  </a>
+                  <a
+                    href="https://github.com/KritikaSawhney/Eval-1"
+                    className="btn btn-outline-light d-flex align-items-center fs-5"
+                  >
+                    GitHub <i className="bi bi-github ms-2" />
+                  </a>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <img
+                  src="Images/download-14.avif"
+                  className="img-fluid"
+                  alt="CryptoWatch Contribution"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </section>
-    </main>
+    </>
   );
 };
 

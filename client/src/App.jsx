@@ -1,5 +1,5 @@
 import React from 'react';
-import { 
+import {
   BrowserRouter as Router,
   Routes,
   Route
@@ -34,10 +34,13 @@ function App() {
         <Route path='/CryptoConvertor' element={<CryptoConverter />} />
         <Route path='/Feedback' element={<Feedback />} />
         <Route path='/market' element={<Market />} />
+        <Route path='/Newsletter' element={<Newsletter />} />
+
+
         {<Route path='/News' element={<News />} />}
         {<Route path='/Learn' element={<Learn />} />}
-        {<Route path='/Signin' element={<Signin />} /> }
-        { <Route path='/Signup' element={<Signup />} /> }
+        {<Route path='/Signin' element={<Signin />} />}
+        {<Route path='/Signup' element={<Signup />} />}
       </Routes>
       <Footer />
     </Router>
