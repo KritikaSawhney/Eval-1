@@ -5,7 +5,7 @@ export default function LearnCrypto() {
   return (
     <main>
       <center>
-        <h1 className="fw-bold">Crypto Questions, Answered !!</h1>
+        <h2 className="text-light">Crypto Questions, Answered !!</h2>
         <p className="text-light">Beginner guides, practical tips, and market updates for first-timers, experienced investors, and everyone in between</p><br /><br />
       </center>
       <div className="container ">
@@ -68,7 +68,7 @@ export default function LearnCrypto() {
       </div>
       <hr /><br /><br />
       <center>
-        <h1 className="fw-bold">Crypto Basics</h1>
+        <h2 className="text-light">Crypto Basics</h2>
         <p className="text-light">New to crypto? Not for long — start with these guides and explainers</p><br /><br />
       </center>
       <div className="crypto-container">
@@ -143,7 +143,7 @@ export default function LearnCrypto() {
       <center>
         <br /><br />
         <div className="container">
-          <h1 className="fw-bold">What is......</h1><br /><br />
+          <h2 className="text-light">What is......</h2><br /><br />
           <ul className="terms">
             <li><a href="#">Bitcoin</a></li>
             <li><a href="#">Blockchain</a></li>
@@ -170,7 +170,7 @@ export default function LearnCrypto() {
         <hr />
         <center>
           <br /><br />
-          <h1 className="fw-bold">Tips and Tutorials</h1>
+          <h2 className="text-light">Tips and Tutorials</h2>
           <p className="text-light">Get practical, step-by-step answers to all things crypto</p>
         </center>
         <br /><br />

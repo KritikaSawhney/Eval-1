@@ -1,4 +1,3 @@
-
 .video-bg {
     width: 100%;
     height: 100%;
@@ -8,26 +7,74 @@
 h1 {
     text-shadow: 5px 5px white;
 }  
+/* signup.css */
+body {
+    background-color: #f8f9fa; /* Light grey background, replace with any color you prefer */
+  }
+  
+  .form-section {
+    background-color: #ffffff; /* White background for form section */
+  }
+  
+  .video-bg {
+    background-color: #e0e0e0; /* Light grey background in case video doesn’t load */
+  }
+
+  /* signup.css */
+.form-control {
+    background-color: #ffffff; /* White background for input fields */
+    color: #333; /* Dark text color */
+    border: 1px solid #ced4da; /* Light grey border */
+  }
+  
+  .form-control:focus {
+    background-color: #ffffff; /* Keep background white when focused */
+    color: #333;
+    border-color: #80bdff; /* Light blue border on focus */
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Subtle blue shadow */
+    
+  }
+
+  /* signup.css */
+.form-control {
+    background-color: #ffffff !important; /* White background for input fields */
+    color: #333 !important; /* Dark text color */
+    border: 1px solid #ced4da !important; /* Light grey border */
+  }
+  
+  .form-control:focus {
+    background-color: #ffffff !important; /* Keep background white when focused */
+    color: #333 !important;
+    border-color: #80bdff !important; /* Light blue border on focus */
+    outline: none !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important; /* Subtle blue shadow */
+  }
+  
+
+
 
 .left-section{
     border: 0px solid;
-    /* border-radius: 20px; */
+    border-radius: 20px !important; 
 }
-.overlay-text {
-    position: absolute;
-    top: 83%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    font-weight: 500;
+.overlay-texts {
+    position: absolute !important;
+    top: 83% !important;
+    right: 25% !important;
+    transform: translate(50%, -50%) !important; /* Adjusted translate to align with the right positioning */
+    color: white !important;
+    text-align: center !important;
+    font-weight: 500 !important;
 }
+
 
 .form-section {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    border-radius: 20px !important; /* Rounded corners */
 }
 
 .login-form {

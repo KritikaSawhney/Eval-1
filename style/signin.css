@@ -16,26 +16,29 @@ h1 {
     /* border-radius: 0px 100px 100px 0px; */
 }
 .overlay-text {
-    position: absolute;
-    top: 83%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    font-weight: 500;
+  position: absolute !important;
+  top: 83% !important;
+  left: 25% !important;
+  transform: translate(-50%, -50%) !important;
+  color: white !important;
+  text-align: center !important;
+  font-weight: 500 !important;
 }
+
 
 .form-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    
+    height: 1000px !important;
 }
 
 .login-form {
     width: 100%;
     max-width: 400px;
     padding: 20px;
+    
 }
 
 .login-form h2 {

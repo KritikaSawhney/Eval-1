@@ -73,7 +73,7 @@ export default function SignUp() {
   return (
     <main>
       <div className="container-fluid">
-        <div className="row no-gutters">
+        <div className="row no-gutters ">
           <div className="col-lg-6 col-md-12 form-section">
             <div className="login-form rounded-3">
               <h2 className="mb-3 text-center">Sign up</h2>
@@ -137,7 +137,7 @@ export default function SignUp() {
               <source src="Images/alex-climbing-short.avc.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            <div className="overlay-text">
+            <div className="overlay-texts">
               <h1 className="text-dark display-2 fw-bolder">Look first / <br /> Then leap.</h1>
               <p className="fs-4">Alex Honnold<br />TV Athlete</p>
             </div>
