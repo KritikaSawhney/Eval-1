@@ -4,6 +4,7 @@ import {
   Routes,
   Route
 } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 import Progress from './components/Progress';
 import Navbar from './components/Navbar';
 import LandingPage from './pages/Landing Page/LandingPage';
@@ -25,6 +26,7 @@ import TermsOfUse from './pages/Terms/Terms';
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Progress />
       <Navbar />
       <Routes>
