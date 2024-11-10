@@ -23,30 +23,30 @@
     flex-direction: column;
     justify-content: space-between;
 }
-.box{
+.box-left{
     background-color: rgba(0, 0, 0, 0.913);
     color: white;
     padding: 5px;
     border: 0px solid;
     border-radius: 5px;
 }
-.box input{
+.box-left input{
     color: white;
 }
 
-.form-control {
-color: black;
-border: none;
-border-bottom: 1px solid black;
-border-radius: 0;
+.feedback-section .form-control {
+color: black !important;
+border: none !important;
+border-bottom: 1px solid black !important;
+border-radius: 0 !important;
 }
 
-.form-control::placeholder {
-    color: #555;
+.feedback-section .form-control::placeholder {
+    color: #555 !important;
 }
 
-.form-control:focus {
-    border-bottom: 1px solid black; 
-    box-shadow: none; 
-    outline: none;
+.feedback-section .form-control:focus {
+    border-bottom: 1px solid black !important; 
+    box-shadow: none !important; 
+    outline: none !important;
 }

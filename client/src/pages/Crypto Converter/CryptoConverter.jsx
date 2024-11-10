@@ -78,6 +78,7 @@ const CryptoConverter = () => {
         const URL = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false";
         const sourceImg = document.querySelector('#source-img');
         const targetImg = document.querySelector('#target-img');
+        const icon = document.querySelector('.swap-icon');
         let apiData = null;
 
         const makeOption = () => {
@@ -117,16 +118,15 @@ const CryptoConverter = () => {
         }
 
         const toggleRotate = () => {
-            const icon = document.querySelector('.swap-icon');
             icon.classList.toggle('rotated');
             [fromCurrencySelect.value, toCurrencySelect.value] = [toCurrencySelect.value, fromCurrencySelect.value];
         };
 
-        (async function fetchData() {
+        async function fetchData() {
             let response = await fetch(URL);
             apiData = await response.json();
             renderImg();
-        })();
+        };
 
         const renderImg = () => {
             let selectedSource = fromCurrencySelect.value.toLowerCase();
@@ -146,11 +146,37 @@ const CryptoConverter = () => {
         };
 
         convertBtn.addEventListener('click', convert);
-        makeOption();
 
+        icon.addEventListener('click', () => {
+            toggleRotate();
+            renderImg();
+        });
+
+        fromCurrencySelect.addEventListener('change', () => {
+            renderImg();
+        });
+
+        toCurrencySelect.addEventListener('change', () => {
+            renderImg();
+        });
+
+        makeOption();
+        fetchData();
 
         return () => {
             convertBtn.removeEventListener('click', convert);
+            icon.removeEventListener('click', () => {
+                toggleRotate();
+                renderImg();
+            });
+
+            fromCurrencySelect.removeEventListener('change', () => {
+                renderImg();
+            });
+
+            toCurrencySelect.removeEventListener('change', () => {
+                renderImg();
+            });
         };
     }, []);
 
@@ -181,7 +207,7 @@ const CryptoConverter = () => {
                             <h2 className="mb-0">Convert</h2>
                             <hr />
                             {/* FROM AMOUNT */}
-                            <div className="form-floating mb-3 d-flex position-relative">
+                            <div className="form-floating d-flex position-relative">
                                 <span id="source-icon" className="position-absolute">
                                     <img
                                         src=""
@@ -193,7 +219,7 @@ const CryptoConverter = () => {
                                 </span>
                                 <input
                                     type="number"
-                                    className="form-control  qwer text-light"
+                                    className="form-control text-light"
                                     id="fromAmount"
                                     placeholder="From"
                                 />
@@ -211,7 +237,7 @@ const CryptoConverter = () => {
                                 <FontAwesomeIcon icon={faArrowRightArrowLeft} rotation={90} size="xl" className='my-0' />
                             </div>
                             {/* TO AMOUNT  */}
-                            <div className="form-floating mb-3 d-flex position-relative">
+                            <div className="form-floating mb-4 d-flex position-relative">
                                 <span id="destination-icon" className="position-absolute">
                                     <img
                                         src=""
@@ -237,7 +263,7 @@ const CryptoConverter = () => {
                                 </div>
                             </div>
                             {/* CONVERT BUTTON  */}
-                            <button id="convertBtn" className="btn btn-outline-light w-100 p-2">
+                            <button id="convertBtn" className="btn btn-outline-light w-100 p-2  fw-semibold">
                                 Convert
                             </button>
                         </div>

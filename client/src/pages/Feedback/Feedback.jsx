@@ -19,7 +19,7 @@ const Feedback = () => {
                                 </p>
                             </div>
                             <div className="phone-email d-flex flex-wrap gap-1 ">
-                                <div className="box">
+                                <div className="box-left">
                                     <h6>Phone</h6>
                                     <input
                                         type="text"
@@ -28,7 +28,7 @@ const Feedback = () => {
                                         defaultValue="123-456-789"
                                     />
                                 </div>
-                                <div className="box">
+                                <div className="box-left">
                                     <h6>Email</h6>
                                     <input
                                         type="text"
@@ -77,7 +77,6 @@ const Feedback = () => {
                                     <div className="form-floating">
                                         <textarea
                                             className="form-control"
-                                            placeholder="Leave a comment here"
                                             id="floatingTextarea"
                                             defaultValue={""}
                                         />
@@ -98,7 +97,7 @@ const Feedback = () => {
                                     </label>
                                 </div>
                                 <button
-                                    className="btn btn-lg btn-dark rounded px-5 w-100"
+                                    className="btn btn-lg btn-outline-dark rounded px-5 w-100"
                                     id=""
                                     type="submit"
                                 >

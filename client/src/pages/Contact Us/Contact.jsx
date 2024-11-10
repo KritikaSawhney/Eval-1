@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import './Contact.css';
 
 const ContactUs = () => {
@@ -34,7 +36,7 @@ const ContactUs = () => {
 
     return (
         <>
-            <section className="header-section py-5 rounded-3 bg-black">
+            <section className="header-section py-5  bg-black">
                 <div className="container py-5">
                     <h1 className="display-1 py-3 fw-semibold text-light">Contact Us</h1>
                     <h2 className="text-light">We can Help</h2>
@@ -42,13 +44,13 @@ const ContactUs = () => {
                         {/* Search bar */}
                         <form className="d-flex mb-5">
                             <div className="search-icon">
-                                <i className="fa-solid fa-magnifying-glass"></i>
+                                <FontAwesomeIcon icon={faMagnifyingGlass} />
                             </div>
                             <input
                                 className="form-control ps-5"
                                 id="searchBar"
                                 type="search"
-                                placeholder="Search Topics"
+                                placeholder="Search"
                                 aria-label="Search"
                                 value={searchQuery}
                                 onChange={handleInputChange}
@@ -70,8 +72,8 @@ const ContactUs = () => {
                                 <div className="col topic-item" key={index}>
                                     <div className="card text-center h-100">
                                         <div className="card-body">
-                                            <h5 className="card-title">{topic.title}</h5>
-                                            <p className="card-text">{topic.text}</p>
+                                            <h5 className="card-title fw-semibold">{topic.title}</h5>
+                                            <p className="card-text fw-normal text-dark text-center fs-6">{topic.text}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -99,7 +101,7 @@ const ContactUs = () => {
                         ].map((resource, index) => (
                             <div className="col" key={index}>
                                 <div className="resource-box p-3">
-                                    <h5>{resource.title}</h5>
+                                    <h5 className='text-light'>{resource.title}</h5>
                                     <a href={resource.link} className="text-decoration-none">
                                         Read full article &rarr;
                                     </a>
