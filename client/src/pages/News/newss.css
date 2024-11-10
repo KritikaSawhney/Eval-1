@@ -19,9 +19,6 @@ body {
     margin-bottom: 0;
 }
 
-h2 {
-    margin-bottom: 1.5rem;
-}
 
 ul {
     padding-left: 0;
@@ -368,7 +365,3 @@ ul {
     margin-top: auto; /* Push timestamp to the bottom */
     text-align: left;
 }
-.card-img-top{
-    max-height: 224px;
-}
-

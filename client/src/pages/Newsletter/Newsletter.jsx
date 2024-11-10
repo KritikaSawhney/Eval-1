@@ -67,7 +67,7 @@ const Newsletter = (props) => {
 
   return (
     <div className="bg-black py-5">
-      <div className="container bg-dark">
+      <div className="container form-fix">
         <div className="row align-items-center">
           <div className="col-md-6">
             <h1 className="display-4 fw-bold text-light">Cryptopunk Bytes</h1>
@@ -93,7 +93,7 @@ const Newsletter = (props) => {
               </button>
             </form>
             <p className="small">
-              <a href="#" className="text-light">
+              <a href="#" className="text-light text-decoration-none">
                 Learn how we collect your information by visiting our Privacy Policy.
               </a>
             </p>
@@ -106,7 +106,7 @@ const Newsletter = (props) => {
             <div className="card bg-dark text-light border-secondary">
               <img
                 src="Images/image-1.jpg"
-                className="card-img-top"
+                className="card-img-top top2"
                 alt="Stablecoin Market"
               />
               <div className="card-body">
@@ -136,7 +136,7 @@ const Newsletter = (props) => {
             <div className="card bg-dark text-light border-secondary">
               <img
                 src="Images/image-3.png"
-                className="card-img-top"
+                className="card-img-top top2"
                 alt="Crypto ETF Ambitions"
               />
               <div className="card-body">
@@ -166,7 +166,7 @@ const Newsletter = (props) => {
             <div className="card bg-dark text-light border-secondary">
               <img
                 src="Images/image-3.png"
-                className="card-img-top"
+                className="card-img-top top2"
                 alt="Crypto Rebounds"
               />
               <div className="card-body">
@@ -196,7 +196,7 @@ const Newsletter = (props) => {
             <div className="card bg-dark text-light border-secondary">
               <img
                 src="Images/image-4.jpg"
-                className="card-img-top"
+                className="card-img-top top2"
                 alt="Crypto Selloff Factors"
               />
               <div className="card-body">
@@ -222,7 +222,7 @@ const Newsletter = (props) => {
           </div>
         </div>
       </div>
-      <div className="container pb-5">
+      <div className="container form-fix pb-5">
         <div className="row justify-content-center">
           <div className="col">
             <div className="card p-4 bg-dark text-light border-secondary">

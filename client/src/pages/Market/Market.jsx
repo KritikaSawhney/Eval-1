@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import "./market.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleExclamation, faFire, faStar } from "@fortawesome/free-solid-svg-icons";
 
 const Market = () => {
     useEffect(() => {
@@ -101,10 +103,10 @@ const Market = () => {
                     <div className="container">
                         <div className="Top-Widgets row">
                             <div className="col-md-4 mb-4">
-                                <div className="card">
+                                <div className="card h-100">
                                     <div className="card-body">
-                                        <h5 className="card-title">
-                                            <i className="fa-solid fa-fire"></i> Trending
+                                        <h5 className="card-title ">
+                                            <FontAwesomeIcon icon={faFire} /> Trending
                                         </h5>
                                         <ul className="list-group">
                                             <li className="list-group-item d-flex justify-content-between">
@@ -132,21 +134,20 @@ const Market = () => {
                             </div>
 
                             <div className="col-md-4 mb-4">
-                                <div className="card">
+                                <div className="card h-100">
                                     <div className="card-body">
                                         <h5 className="card-title">
-                                            <i className="fa-solid fa-star"></i> Top Community Article
+                                            <FontAwesomeIcon icon={faStar} /> Top Community Article
                                         </h5>
                                         <div className="row">
-                                            <div className="col-4 d-flex justify-content-center align-items-center">
+                                            <div className="col d-flex  align-items-center">
                                                 <img
                                                     src="Images/bitcoin meme.jpeg"
                                                     alt="Bitcoin Meme"
-                                                    height="100px"
-                                                    className="rounded"
+                                                    className="rounded img-fluid"
                                                 />
                                             </div>
-                                            <div className="col-8">
+                                            <div className="col">
                                                 <h6>Cointelegraph</h6>
                                                 <p>
                                                     Bitcoin exchange reserves reach new yearly low amid $60k
@@ -159,10 +160,10 @@ const Market = () => {
                             </div>
 
                             <div className="col-md-4 mb-4">
-                                <div className="card">
+                                <div className="card h-100">
                                     <div className="card-body">
                                         <h5 className="card-title">
-                                            <i className="fa-solid fa-circle-exclamation"></i> Fear & Greed Index
+                                            <FontAwesomeIcon icon={faCircleExclamation} /> Fear & Greed Index
                                         </h5>
                                         <div className="d-flex flex-column justify-content-center align-items-center text-center p-4 border rounded shadow-sm" id="fearGreed"></div>
                                     </div>

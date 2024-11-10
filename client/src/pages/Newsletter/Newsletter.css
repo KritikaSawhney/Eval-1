@@ -1,0 +1,11 @@
+.form-fix .form-control::placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+
+.form-fix .form-control {
+    border-radius: .375rem;
+}
+.top2{
+    max-height: max-content;
+}
