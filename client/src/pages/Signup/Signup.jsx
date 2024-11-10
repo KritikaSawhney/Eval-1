@@ -137,13 +137,8 @@ export default function SignUp() {
               <source src="Images/alex-climbing-short.avc.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-<<<<<<< HEAD
             <div className="overlay-text">
               <h1 className="text-dark display-2 fw-bolder" id="feof">Look first / <br /> Then leap.</h1>
-=======
-            <div className="overlay-texts">
-              <h1 className="text-dark display-2 fw-bolder">Look first / <br /> Then leap.</h1>
->>>>>>> 10e2f3b5cb41c0c76bd113c6a61cac91b279326d
               <p className="fs-4">Alex Honnold<br />TV Athlete</p>
             </div>
           </div>
