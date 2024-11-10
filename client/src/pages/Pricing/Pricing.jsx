@@ -1,7 +1,7 @@
 import React from 'react';
 import './Pricing.css'
 
-function App() {
+function Pricing() {
   // Functions for toggling plans
   const showNonProfessional = () => {
     document.getElementById('non-professional-plans').classList.remove('d-none');
@@ -21,8 +21,8 @@ function App() {
     <>
       {/* HEADER */}
 
-      <main>
-        <section className="hero-sec bg-dark text-white py-5">
+      <>
+        <section className="hero-sec12 bg-dark text-white ">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-7">
@@ -46,12 +46,12 @@ function App() {
         </section>
 
         <section className="text-center bg-black text-white py-5">
-          <div className="container">
+          <div className="container ">
             <div className="row mb-3">
-              <div className="col">
+              <div className="col ">
                 <button
                   id="toggle-non-professional"
-                  className="btn btn-outline-light active"
+                  className="btn btn-outline-light active mx-3"
                   onClick={showNonProfessional}
                 >
                   Non-professional
@@ -69,8 +69,8 @@ function App() {
           </div>
         </section>
 
-        <div className="container my-5">
-          <div id="non-professional-plans" className="row text-center">
+        <div className="container">
+          <div id="non-professional-plans" className="row text-center py-5">
             <div className="col-md-4 mb-4">
               <div className="card pricing-card">
                 <div className="card-body">
@@ -141,7 +141,7 @@ function App() {
             </div>
           </div>
 
-          <div id="professional-plans" className="row text-center d-none">
+          <div id="professional-plans" className="row text-center d-none py-5">
             <div className="col-md-6 mb-4">
               <div className="card pricing-card">
                 <div className="card-body">
@@ -189,14 +189,10 @@ function App() {
             </div>
           </div>
         </div>
-      </main>
-
-      {/* FOOTER */}
-
-      {/* Bootstrap JS */}
+      </>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     </>
   );
 }
 
-export default App;
+export default Pricing;

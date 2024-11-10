@@ -1,5 +1,5 @@
 import React from 'react';
-import "./learn.css";
+// import "./learn.css";
 
 export default function LearnCrypto() {
   return (
@@ -26,11 +26,11 @@ export default function LearnCrypto() {
                 <p className="text-light">How to earn crypto rewards</p></a></li>
               <li><a href="#" className="text-light text-decoration-none"><h6 className="fw-bold">Getting started</h6>
                 <p className="text-light">How to add crypto to your Coinbase Wallet</p></a></li>
-              <li><a href="#"className="text-light text-decoration-none"><h6 className="fw-bold">Your crypto</h6>
+              <li><a href="#" className="text-light text-decoration-none"><h6 className="fw-bold">Your crypto</h6>
                 <p className="text-light">Tax forms, explained: A guide to U.S. tax forms and crypto reports</p></a></li>
-              <li><a href="#"className="text-light text-decoration-none"><h6 className="fw-bold">Market Update</h6>
+              <li><a href="#" className="text-light text-decoration-none"><h6 className="fw-bold">Market Update</h6>
                 <p className="text-light">Everything you need to know about the first-ever U.S. Bitcoin ETF</p></a></li>
-              <li><a href="#"className="text-light text-decoration-none"><h6 className="fw-bold">Getting Started</h6>
+              <li><a href="#" className="text-light text-decoration-none"><h6 className="fw-bold">Getting Started</h6>
                 <p className="text-light">Beginner's guide to dapps</p></a></li>
             </ul>
           </div>
@@ -118,7 +118,7 @@ export default function LearnCrypto() {
         </div>
         <div className="guide-card">
           <a href="#" className="image-link">
-            <img src="Images/stable coin.png" alt="What is a stablecoin?"  height="600" />
+            <img src="Images/stable coin.png" alt="What is a stablecoin?" height="600" />
           </a>
           <div className="guide-content">
             <span className="guide-label">BEGINNER'S GUIDE</span>

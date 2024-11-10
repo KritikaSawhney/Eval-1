@@ -71,20 +71,20 @@ export default function SignUp() {
   };
 
   return (
-    <main>
+    <>
       <div className="container-fluid">
         <div className="row no-gutters ">
           <div className="col-lg-6 col-md-12 form-section">
             <div className="login-form rounded-3">
-              <h2 className="mb-3 text-center">Sign up</h2>
+              <h2 className="text-center text-dark ">Sign up</h2>
               <form id="signup-form" onSubmit={handleSubmit}>
                 <div className="form-group">
                   <small className="text-danger" id="name-error">{errors.name}</small>
-                  <input 
-                    type="text" 
-                    id="signup-name" 
-                    className="form-control mb-3" 
-                    placeholder="Name" 
+                  <input
+                    type="text"
+                    id="signup-name"
+                    className="form-control"
+                    placeholder="Name"
                     value={formData.name}
                     onChange={handleChange}
                   />
@@ -92,11 +92,11 @@ export default function SignUp() {
 
                 <div className="form-group">
                   <small className="text-danger" id="username-error">{errors.username}</small>
-                  <input 
-                    type="text" 
-                    id="signup-username" 
-                    className="form-control mb-3" 
-                    placeholder="Username" 
+                  <input
+                    type="text"
+                    id="signup-username"
+                    className="form-control"
+                    placeholder="Username"
                     value={formData.username}
                     onChange={handleChange}
                   />
@@ -104,11 +104,11 @@ export default function SignUp() {
 
                 <div className="form-group">
                   <small className="text-danger" id="email-error">{errors.email}</small>
-                  <input 
-                    type="email" 
-                    id="signup-email" 
-                    className="form-control mb-3" 
-                    placeholder="Email" 
+                  <input
+                    type="email"
+                    id="signup-email"
+                    className="form-control"
+                    placeholder="Email"
                     value={formData.email}
                     onChange={handleChange}
                   />
@@ -116,11 +116,11 @@ export default function SignUp() {
 
                 <div className="form-group">
                   <small className="text-danger" id="password-error">{errors.password}</small>
-                  <input 
-                    type="password" 
-                    id="signup-password" 
-                    className="form-control mb-3" 
-                    placeholder="Password" 
+                  <input
+                    type="password"
+                    id="signup-password"
+                    className="form-control mb-3"
+                    placeholder="Password"
                     value={formData.password}
                     onChange={handleChange}
                   />
@@ -137,13 +137,18 @@ export default function SignUp() {
               <source src="Images/alex-climbing-short.avc.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
+<<<<<<< HEAD
+            <div className="overlay-text">
+              <h1 className="text-dark display-2 fw-bolder" id="feof">Look first / <br /> Then leap.</h1>
+=======
             <div className="overlay-texts">
               <h1 className="text-dark display-2 fw-bolder">Look first / <br /> Then leap.</h1>
+>>>>>>> 10e2f3b5cb41c0c76bd113c6a61cac91b279326d
               <p className="fs-4">Alex Honnold<br />TV Athlete</p>
             </div>
           </div>
         </div>
       </div>
-    </main>
+    </>
   );
 }

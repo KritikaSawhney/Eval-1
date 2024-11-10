@@ -89,7 +89,7 @@ main{
   padding: 0px;
   border-radius: 10px;
   margin: 10px;
-  flex: 1 1 400px;
+  flex: 1 1 300px;
 }
 
 .card-img-top {
@@ -125,7 +125,7 @@ main{
 }
 
 .btn-pink {
-  background-color: #8978a0;
+  background-color: #8978a0 !important ;
   color: white;
   font-size: 1.3rem;
 }
@@ -136,7 +136,7 @@ main{
 }
 
 .btn-blue {
-  background-color: #82a9f8;
+  background-color: #82a9f8 !important;
   color: white;
   font-size: 1.3rem;
 }
@@ -147,7 +147,7 @@ main{
 }
 
 .btn-green {
-  background-color: #a5fcf4;
+  background-color: #a5fcf4 !important;
   color: rgb(0, 0, 0);
   font-size: 1.3rem;
 }
@@ -220,4 +220,7 @@ main{
 
 .card-custom .card-text {
   color: #ddd;
+}
+.transparent-bg{
+  background-color: transparent !important;
 }

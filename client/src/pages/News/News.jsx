@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './newss.css';
 
 
-export default function CryptoWatch() {
+export default function News() {
   const [newsData, setNewsData] = useState([]);
   const [carouselData, setCarouselData] = useState([]);
 
@@ -44,7 +44,7 @@ export default function CryptoWatch() {
           {/* Top News section content */}
         </section>
 
-        <div className="container mt-5">
+        <div className="container ">
           <div id="cryptoCarousel" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner">
               {carouselData.map((article, index) => (
@@ -77,7 +77,7 @@ export default function CryptoWatch() {
                 <div id="newsRow" className="row">
                   {newsData.map((article, index) => (
                     <div key={index} className="col-md-4 news-card">
-                      <div className="card">
+                      <div className="card-kritika">
                         <img src={article.image || 'https://via.placeholder.com/400x300?text=No+Image'} alt={article.title} className="img-fluid card-img-top" />
                         <div className="news-content">
                           <span className="news-badge text-bg-light">NEWS</span>

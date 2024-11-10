@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "./LandingPage.css";
 const LandingPage = () => {
   return (
     <>
-      <section className="main-header">
+      <section className="main-header bg-black">
         <div className="container-fluid text-center">
           <img
             src="Images/download.avif"
@@ -185,7 +186,7 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-      <section className="what-is-ethereum-section-2 text-white py-5">
+      <section className="what-is-ethereum-section-2 text-white py-5 bg-black">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6">
@@ -335,7 +336,7 @@ const LandingPage = () => {
             </h1>
             <div className="row">
               <div className="col-lg-4 mb-4">
-                <div className="card card-custom">
+                <div className="card card-custom transparent-bg">
                   <img
                     src="Images/download-11.avif"
                     className="card-img-top"
@@ -352,7 +353,7 @@ const LandingPage = () => {
                 </div>
               </div>
               <div className="col-lg-4 mb-4">
-                <div className="card card-custom">
+                <div className="card card-custom transparent-bg">
                   <img
                     src="Images/download-12.avif"
                     className="card-img-top"
@@ -369,7 +370,7 @@ const LandingPage = () => {
                 </div>
               </div>
               <div className="col-lg-4 mb-4">
-                <div className="card card-custom">
+                <div className="card card-custom transparent-bg ">
                   <img
                     src="Images/download-7.avif"
                     className="card-img-top"
@@ -399,9 +400,9 @@ const LandingPage = () => {
                   issues, your input is invaluable.
                 </p>
                 <div className="d-flex">
-                  <a href="feedback.html" className="btn btn-green me-2">
+                  <Link to="feedback.html" className="btn btn-green me-2">
                     More on contributing
-                  </a>
+                  </Link>
                   <a
                     href="https://github.com/KritikaSawhney/Eval-1"
                     className="btn btn-outline-light d-flex align-items-center fs-5"

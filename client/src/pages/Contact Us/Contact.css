@@ -1,0 +1,82 @@
+body {  
+    background-color: black;
+    color: white;
+  }
+  
+  /* Header Section */
+  .header-section {
+    background-image: url('Images/textured\ background.jpg');
+    background-size: cover;
+  }
+  
+  .card {
+  
+    border: 1px solid white;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    transition: 0.5s ease;
+  }
+  
+  /* More Resources Section */
+  .more-resources-section {
+    background-color: black;
+    padding: 40px 0;
+  }
+  
+  .resource-box {
+    background-color: white;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s;
+  }
+  
+  .resource-box:hover {
+    background-color: black;
+  }
+  
+  .resource-box h5 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .resource-box a {
+    color: #000;
+  }
+  
+  .resource-box a:hover {
+    text-decoration: underline;
+  }
+  
+  .form-control{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 0px;
+    color: white;
+    font-size: 2rem;
+  }
+  
+  .form-control::placeholder{
+    color: white;
+  }
+  .form-control:focus{
+    background-color: transparent;  
+    color: white;
+    border-bottom: 2px solid white;
+    box-shadow: none; 
+  }
+  
+  form{
+    position: relative;
+  }
+  
+  .search-icon {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: white;
+  }

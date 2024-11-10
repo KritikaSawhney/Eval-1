@@ -45,7 +45,7 @@ const Navbar = () => {
               </Link>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown1">
                 <li><Link className="dropdown-item" to="/">Home</Link></li>
-                <li><Link className="dropdown-item" to="/">Pricing</Link></li>
+                <li><Link className="dropdown-item" to="/Pricing">Pricing</Link></li>
               </ul>
             </li>
 
@@ -65,7 +65,7 @@ const Navbar = () => {
                 <li><Link className="dropdown-item" to="/About">About us</Link></li>
                 <li><Link className="dropdown-item" to="/Learn">FAQ</Link></li>
                 <li><Link className="dropdown-item" to="/Feature">Features</Link></li>
-                <li><Link className="dropdown-item" to="/">Terms and Conditions</Link></li>
+                <li><Link className="dropdown-item" to="/TermsOfUse">Terms and Conditions</Link></li>
               </ul>
             </li>
 
@@ -119,7 +119,7 @@ const Navbar = () => {
                 Contact
               </Link>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown5">
-                <li><Link className="dropdown-item" to="/">Contact Us</Link></li>
+                <li><Link className="dropdown-item" to="/Contact">Contact Us</Link></li>
                 <li><Link className="dropdown-item" to="/Feedback">Feedback</Link></li>
                 <li><Link className="dropdown-item" to="Signup">Sign Up</Link></li>
                 <li><Link className="dropdown-item" to="Signin">Sign In</Link></li>

@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import './Newsletter.css'
 
 const Newsletter = (props) => {
   const phoneInputRef = useRef(null);
@@ -81,6 +82,7 @@ const Newsletter = (props) => {
                 type="number"
                 className="form-control me-2 bg-dark text-light phoneInput"
                 placeholder="Your mobile number"
+                id='okbhia'
                 required
               />
               <button

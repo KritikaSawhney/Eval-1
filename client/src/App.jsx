@@ -12,16 +12,14 @@ import CryptoConverter from './pages/Crypto Converter/CryptoConverter';
 import Feedback from './pages/Feedback/Feedback';
 import About from './pages/About/About';
 import Feature from './pages/Feature/Feature';
+import Newsletter from './pages/Newsletter/Newsletter';
+import Pricing from './pages/Pricing/Pricing';
+import ContactUs from './pages/Contact Us/Contact';
+import SignUp from './pages/Signup/Signup';
+import SignIn from './pages/Signin/Signin';
 import News from './pages/News/News';
-import Learn from './pages/Learn/Learn';
-import Signin from './pages/Signin/Signin';
-import Signup from './pages/Signup/Signup';
-
-
-// import Learn from '/pages/Learn/Learn';
-// import Signin from '/pages/Signin/Signin';
-// import Signup from '/pages/Signup/Signup';
-
+// import LearnCrypto from './pages/Learn/Learn';
+import TermsOfUse from './pages/Terms/Terms';
 
 function App() {
   return (
@@ -34,13 +32,14 @@ function App() {
         <Route path='/CryptoConvertor' element={<CryptoConverter />} />
         <Route path='/Feedback' element={<Feedback />} />
         <Route path='/market' element={<Market />} />
+        <Route path='/Contact' element={<ContactUs />} />
         <Route path='/Newsletter' element={<Newsletter />} />
-
-
-        {<Route path='/News' element={<News />} />}
-        {<Route path='/Learn' element={<Learn />} />}
-        {<Route path='/Signin' element={<Signin />} />}
-        {<Route path='/Signup' element={<Signup />} />}
+        <Route path='/Pricing' element={<Pricing />} />
+        <Route path='/SignUp' element={<SignUp />} />
+        <Route path='/SignIn' element={<SignIn />} />
+        <Route path='/News' element={<News />} />
+        {/* <Route path='/Learn' element={<LearnCrypto />} /> */}
+        <Route path='/TermsOfUse' element={<TermsOfUse />} />
       </Routes>
       <Footer />
     </Router>

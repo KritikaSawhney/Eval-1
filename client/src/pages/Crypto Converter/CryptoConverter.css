@@ -56,7 +56,7 @@
     border-radius: 20px;
 }
 
-.form-control{
+.qwer{
     background-color: #242424 !important;
     border: none !important;
     color: #ffffff;
@@ -71,7 +71,7 @@
     font-weight: 500 !important;
 }
 
-.form-control:focus {
+.qwer:focus {
     box-shadow: none !important;
     background-color: #242424 !important;
     color: white !important ;

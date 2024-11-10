@@ -4,7 +4,8 @@
     object-fit: cover;
     object-position: center;
 }
-h1 {
+
+#feof {
     text-shadow: 5px 5px white;
 }  
 /* signup.css */
@@ -56,7 +57,11 @@ body {
 
 .left-section{
     border: 0px solid;
+<<<<<<< HEAD
+    border-radius: 0px;
+=======
     border-radius: 20px !important; 
+>>>>>>> 10e2f3b5cb41c0c76bd113c6a61cac91b279326d
 }
 .overlay-texts {
     position: absolute !important;
@@ -118,6 +123,7 @@ body {
     border-top: 1px solid black;
     margin: 0;
 }
+
 .divider p {
     position: absolute;
     top: 50%;

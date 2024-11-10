@@ -1,20 +1,26 @@
-/* styles.css */
-body {
-    font-family: 'Rubik', sans-serif;
-}
 
 .video-bg {
     width: 100%;
     min-height: 100vh;
     object-fit: cover;
 }
-h1 {
+#pop {
     text-shadow: 5px 5px white;
 }  
 .left-section{
     border: 0px solid;
     /* border-radius: 0px 100px 100px 0px; */
 }
+<<<<<<< HEAD
+.right-pop {
+    position: absolute;
+    top: 83%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-weight: 500;
+=======
 .overlay-text {
   position: absolute !important;
   top: 83% !important;
@@ -23,6 +29,7 @@ h1 {
   color: white !important;
   text-align: center !important;
   font-weight: 500 !important;
+>>>>>>> 10e2f3b5cb41c0c76bd113c6a61cac91b279326d
 }
 
 
@@ -39,11 +46,6 @@ h1 {
     max-width: 400px;
     padding: 20px;
     
-}
-
-.login-form h2 {
-    font-weight: 700;
-    margin-bottom: 20px;
 }
 
 .forgot-password {

@@ -7,15 +7,15 @@ const Market = () => {
         const SentimentURL = "https://api.alternative.me/fng/";
         const Greed = document.querySelector('#fearGreed');
         const tableBody = document.querySelector('.table_body');
-    
+
         const getMarketSentiment = async () => {
             try {
                 let response = await fetch(SentimentURL);
                 let fetchData = await response.json();
-    
+
                 let greedValue = fetchData.data[0].value;
                 let greedClass = fetchData.data[0].value_classification;
-    
+
                 Greed.innerHTML = `
                     <h1 class="display-4 mb-1">${greedValue}</h1>
                     <h2 class="h5 ${greedClass >= 50 ? "text-danger" : "text-success"}">${greedClass}</h2>
@@ -24,12 +24,13 @@ const Market = () => {
                 console.log("Error: ", error);
             }
         };
-    
+
         const getData = async () => {
             try {
                 let response = await fetch(URL);
                 let data = await response.json();
-    
+
+
                 data.forEach(coin => {
                     const row = document.createElement('tr');
                     row.innerHTML = `
@@ -45,17 +46,17 @@ const Market = () => {
                         <td>$${coin.total_volume.toLocaleString()}</td>
                         <td>${coin.circulating_supply.toLocaleString()} ${coin.symbol.toUpperCase()}</td>
                     `;
-    
+
                     tableBody.appendChild(row);
                 });
             } catch (error) {
                 console.error('Error fetching API data:', error);
             }
         };
-    
+
         getMarketSentiment();
         getData();
-    }, []);       
+    }, []);
     return (
         <>
             <section className="CryptoPricesSection">
@@ -84,17 +85,17 @@ const Market = () => {
                             over the last day.
                         </p>
                     </div>
-                            <details className="text-left text-muted mb-3">
-                                <summary>Read more</summary>
-                                <p>
-                                    The total crypto market volume over the last 24 hours is
-                                    $59.62B, which makes a 12.22% decrease. The total volume in DeFi
-                                    is currently $2.96B, 4.96% of the total crypto market 24-hour
-                                    volume. The volume of all stable coins is now $55.07B, which is
-                                    92.37% of the total crypto market 24-hour volume. Bitcoin’s
-                                    dominance is currently 56.14%, a decrease of 0.12% over the day.
-                                </p>
-                            </details>
+                    <details className="text-left text-muted mb-3">
+                        <summary>Read more</summary>
+                        <p>
+                            The total crypto market volume over the last 24 hours is
+                            $59.62B, which makes a 12.22% decrease. The total volume in DeFi
+                            is currently $2.96B, 4.96% of the total crypto market 24-hour
+                            volume. The volume of all stable coins is now $55.07B, which is
+                            92.37% of the total crypto market 24-hour volume. Bitcoin’s
+                            dominance is currently 56.14%, a decrease of 0.12% over the day.
+                        </p>
+                    </details>
 
                     {/* Top Widgets Section */}
                     <div className="container">
@@ -163,7 +164,7 @@ const Market = () => {
                                         <h5 className="card-title">
                                             <i className="fa-solid fa-circle-exclamation"></i> Fear & Greed Index
                                         </h5>
-                                    <div className="d-flex flex-column justify-content-center align-items-center text-center p-4 border rounded shadow-sm" id="fearGreed"></div> 
+                                        <div className="d-flex flex-column justify-content-center align-items-center text-center p-4 border rounded shadow-sm" id="fearGreed"></div>
                                     </div>
                                 </div>
                             </div>
@@ -175,78 +176,78 @@ const Market = () => {
 
             <section className="filterSection">
                 <div className="container">
-                <div
-                    className="btn my-4 category-filters-group"
-                    role="group"
-                    aria-label="Basic example"
-                >
-                    <button type="button" className="btn btn-outline-primary">
-                    All
-                    </button>
-                    <button type="button" className="btn btn-outline-dark">
-                    NFTs
-                    </button>
-                    <button type="button" className="btn btn-outline-dark">
-                    Memes
-                    </button>
-                    <button type="button" className="btn btn-outline-dark">
-                    AI
-                    </button>
-                    <button type="button" className="btn btn-outline-dark">
-                    Gaming
-                    </button>
-                    <button type="button" className="btn btn-outline-dark">
-                    Categories
-                    </button>
-                    <button type="button" className="btn btn-outline-dark">
-                    Token unlocks
-                    </button>
-                    <button type="button" className="btn btn-outline-dark">
-                    Rehypothecated
-                    </button>
-                    <button type="button" className="btn btn-outline-dark">
-                    Solana Eco
-                    </button>
-                    <button type="button" className="btn btn-outline-dark">
-                    RWA
-                    </button>
-                    <button type="button" className="btn btn-outline-dark">
-                    PolitiFi
-                    </button>
-                    <button type="button" className="btn btn-outline-dark">
-                    DePIN
-                    </button>
-                    <button type="button" className="btn btn-outline-dark">
-                    Filters
-                    </button>
-                    <button type="button" className="btn btn-outline-dark">
-                    Customize
-                    </button>
-                </div>
+                    <div
+                        className="btn my-4 category-filters-group"
+                        role="group"
+                        aria-label="Basic example"
+                    >
+                        <button type="button" className="btn btn-outline-primary">
+                            All
+                        </button>
+                        <button type="button" className="btn btn-outline-dark">
+                            NFTs
+                        </button>
+                        <button type="button" className="btn btn-outline-dark">
+                            Memes
+                        </button>
+                        <button type="button" className="btn btn-outline-dark">
+                            AI
+                        </button>
+                        <button type="button" className="btn btn-outline-dark">
+                            Gaming
+                        </button>
+                        <button type="button" className="btn btn-outline-dark">
+                            Categories
+                        </button>
+                        <button type="button" className="btn btn-outline-dark">
+                            Token unlocks
+                        </button>
+                        <button type="button" className="btn btn-outline-dark">
+                            Rehypothecated
+                        </button>
+                        <button type="button" className="btn btn-outline-dark">
+                            Solana Eco
+                        </button>
+                        <button type="button" className="btn btn-outline-dark">
+                            RWA
+                        </button>
+                        <button type="button" className="btn btn-outline-dark">
+                            PolitiFi
+                        </button>
+                        <button type="button" className="btn btn-outline-dark">
+                            DePIN
+                        </button>
+                        <button type="button" className="btn btn-outline-dark">
+                            Filters
+                        </button>
+                        <button type="button" className="btn btn-outline-dark">
+                            Customize
+                        </button>
+                    </div>
                 </div>
             </section>
 
             <section className="pricingTableSection">
                 <div className="container table-responsive">
-                <table className="table table-hover">
-                    <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">24h</th>
-                        <th scope="col">ATH</th>
-                        <th scope="col">Market Cap</th>
-                        <th scope="col">Volume (24h)</th>
-                        <th scope="col">Circulating Supply</th>
-                    </tr>
-                    </thead>
-                    <tbody className="table_body"></tbody>
-                </table>
+                    <table className="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">24h</th>
+                                <th scope="col">ATH</th>
+                                <th scope="col">Market Cap</th>
+                                <th scope="col">Volume (24h)</th>
+                                <th scope="col">Circulating Supply</th>
+                            </tr>
+                        </thead>
+                        <tbody className="table_body"></tbody>
+                    </table>
                 </div>
             </section>
         </>
-  );
+    );
 };
 
 export default Market;

@@ -54,7 +54,7 @@ export default function SignIn() {
   };
 
   return (
-    <main>
+    <>
       <div className="container-fluid">
         <div className="row no-gutters">
           <div className="col-lg-6 d-none d-lg-block d-flex justify-content-center align-items-end">
@@ -62,21 +62,21 @@ export default function SignIn() {
               <source src="/Images/tradingview.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            <div className="overlay-text">
-              <h1 className="text-dark display-2 fw-bolder">Look first / <br /> Then leap.</h1>
+            <div className="overlay-text right-pop">
+              <h1 className="text-dark display-2 fw-bolder" id="pop">Look first / <br /> Then leap.</h1>
               <p className="fs-4">Alex Honnold<br />TV Athlete</p>
             </div>
           </div>
           <div className="col-lg-6 col-md-12 form-section">
             <div className="login-form rounded-3">
-              <h2 className="mb-3 text-center">Sign in with email</h2>
+              <h2 className="text-center mb-0">Sign in with email</h2>
               <form onSubmit={handleSubmit}>
                 <div className="form-group">
                   <small className="text-danger" id="signin-email-error">{emailError}</small>
-                  <input 
-                    type="email" 
-                    className="form-control mb-3" 
-                    id="signinEmail" 
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="signinEmail"
                     placeholder="Email or Username"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -85,10 +85,10 @@ export default function SignIn() {
                 </div>
                 <div className="form-group">
                   <small className="text-danger" id="signin-password-error">{passwordError}</small>
-                  <input 
-                    type="password" 
-                    className="form-control mb-3" 
-                    id="signinPassword" 
+                  <input
+                    type="password"
+                    className="form-control mb-3"
+                    id="signinPassword"
                     placeholder="Password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
@@ -109,6 +109,6 @@ export default function SignIn() {
           </div>
         </div>
       </div>
-    </main>
+    </>
   );
 }
