@@ -1,28 +1,20 @@
-import React from 'react';
-import './Pricing.css'
+import React, { useState } from 'react';
+import './Pricing.css';
 
-function Pricing() {
+function App() {
+  // State hook for toggling plans
+  const [isProfessional, setIsProfessional] = useState(false);
+
   // Functions for toggling plans
-  const showNonProfessional = () => {
-    document.getElementById('non-professional-plans').classList.remove('d-none');
-    document.getElementById('professional-plans').classList.add('d-none');
-    document.getElementById('toggle-non-professional').classList.add('active');
-    document.getElementById('toggle-professional').classList.remove('active');
-  };
-
-  const showProfessional = () => {
-    document.getElementById('non-professional-plans').classList.add('d-none');
-    document.getElementById('professional-plans').classList.remove('d-none');
-    document.getElementById('toggle-non-professional').classList.remove('active');
-    document.getElementById('toggle-professional').classList.add('active');
-  };
+  const showNonProfessional = () => setIsProfessional(false);
+  const showProfessional = () => setIsProfessional(true);
 
   return (
     <>
       {/* HEADER */}
 
-      <>
-        <section className="hero-sec12 bg-dark text-white ">
+      <main>
+        <section className="hero-sec bg-dark text-white py-5">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-7">
@@ -46,19 +38,17 @@ function Pricing() {
         </section>
 
         <section className="text-center bg-black text-white py-5">
-          <div className="container ">
+          <div className="container">
             <div className="row mb-3">
-              <div className="col ">
+              <div className="col">
                 <button
-                  id="toggle-non-professional"
-                  className="btn btn-outline-light active mx-3"
+                  className={`btn btn-outline-light ${!isProfessional ? 'active' : ''}`}
                   onClick={showNonProfessional}
                 >
                   Non-professional
                 </button>
                 <button
-                  id="toggle-professional"
-                  className="btn btn-outline-light"
+                  className={`btn btn-outline-light ${isProfessional ? 'active' : ''}`}
                   onClick={showProfessional}
                 >
                   Professional PRO
@@ -69,130 +59,73 @@ function Pricing() {
           </div>
         </section>
 
-        <div className="container">
-          <div id="non-professional-plans" className="row text-center py-5">
-            <div className="col-md-4 mb-4">
-              <div className="card pricing-card">
-                <div className="card-body">
-                  <h5 className="card-title">Essential</h5>
-                  <h3 className="card-price">
-                    ₹995<span>/month</span>
-                  </h3>
-                  <p className="card-annual-price">₹11,940/year</p>
-                  <p className="card-discount">You save ₹3,600 a year</p>
-                  <a href="#" className="btn btn-primary">Try free for 30 days</a>
-                  <ul className="list-unstyled mt-3 mb-4">
-                    <li>2 charts per tab</li>
-                    <li>5 indicators per chart</li>
-                    <li>10K historical bars</li>
-                    <li>20 price alerts</li>
-                    <li>20 technical alerts</li>
-                    <li>10 parallel chart connections</li>
-                    <li>No ads</li>
-                  </ul>
+        <div className="container my-5">
+          {/* Non-professional plans */}
+          {!isProfessional && (
+            <div id="non-professional-plans" className="row text-center">
+              <div className="col-md-4 mb-4">
+                <div className="card pricing-card">
+                  <div className="card-body">
+                    <h5 className="card-title">Essential</h5>
+                    <h3 className="card-price">
+                      ₹995<span>/month</span>
+                    </h3>
+                    <p className="card-annual-price">₹11,940/year</p>
+                    <p className="card-discount">You save ₹3,600 a year</p>
+                    <a href="#" className="btn btn-primary">Try free for 30 days</a>
+                    <ul className="list-unstyled mt-3 mb-4">
+                      <li>2 charts per tab</li>
+                      <li>5 indicators per chart</li>
+                      <li>10K historical bars</li>
+                      <li>20 price alerts</li>
+                      <li>20 technical alerts</li>
+                      <li>10 parallel chart connections</li>
+                      <li>No ads</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
+              {/* Additional non-professional plan cards here */}
             </div>
+          )}
 
-            <div className="col-md-4 mb-4">
-              <div className="card pricing-card">
-                <div className="card-body">
-                  <h5 className="card-title">Plus</h5>
-                  <h3 className="card-price">
-                    ₹1995<span>/month</span>
-                  </h3>
-                  <p className="card-annual-price">₹23,940/year</p>
-                  <p className="card-discount">You save ₹6,000 a year</p>
-                  <a href="#" className="btn btn-primary">Try free for 30 days</a>
-                  <ul className="list-unstyled mt-3 mb-4">
-                    <li>4 charts per tab</li>
-                    <li>10 indicators per chart</li>
-                    <li>50K historical bars</li>
-                    <li>40 price alerts</li>
-                    <li>40 technical alerts</li>
-                    <li>20 parallel chart connections</li>
-                    <li>No ads</li>
-                  </ul>
+          {/* Professional plans */}
+          {isProfessional && (
+            <div id="professional-plans" className="row text-center">
+              <div className="col-md-6 mb-4">
+                <div className="card pricing-card">
+                  <div className="card-body">
+                    <h5 className="card-title">Professional PRO Basic</h5>
+                    <h3 className="card-price">
+                      ₹9,995<span>/month</span>
+                    </h3>
+                    <p className="card-annual-price">₹119,940/year</p>
+                    <p className="card-discount">You save ₹36,000 a year</p>
+                    <a href="#" className="btn btn-primary">Try free for 30 days</a>
+                    <ul className="list-unstyled mt-3 mb-4">
+                      <li>Unlimited charts</li>
+                      <li>50 indicators per chart</li>
+                      <li>500K historical bars</li>
+                      <li>200 price alerts</li>
+                      <li>200 technical alerts</li>
+                      <li>50 parallel chart connections</li>
+                      <li>No ads</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
+              {/* Additional professional plan cards here */}
             </div>
-
-            <div className="col-md-4 mb-4">
-              <div className="card pricing-card">
-                <div className="card-body">
-                  <h5 className="card-title">Premium</h5>
-                  <h3 className="card-price">
-                    ₹3995<span>/month</span>
-                  </h3>
-                  <p className="card-annual-price">₹47,940/year</p>
-                  <p className="card-discount">You save ₹12,000 a year</p>
-                  <a href="#" className="btn btn-primary">Try free for 30 days</a>
-                  <ul className="list-unstyled mt-3 mb-4">
-                    <li>8 charts per tab</li>
-                    <li>25 indicators per chart</li>
-                    <li>100K historical bars</li>
-                    <li>100 price alerts</li>
-                    <li>100 technical alerts</li>
-                    <li>30 parallel chart connections</li>
-                    <li>No ads</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="professional-plans" className="row text-center d-none py-5">
-            <div className="col-md-6 mb-4">
-              <div className="card pricing-card">
-                <div className="card-body">
-                  <h5 className="card-title">Professional PRO Basic</h5>
-                  <h3 className="card-price">
-                    ₹9,995<span>/month</span>
-                  </h3>
-                  <p className="card-annual-price">₹119,940/year</p>
-                  <p className="card-discount">You save ₹36,000 a year</p>
-                  <a href="#" className="btn btn-primary">Try free for 30 days</a>
-                  <ul className="list-unstyled mt-3 mb-4">
-                    <li>Unlimited charts</li>
-                    <li>50 indicators per chart</li>
-                    <li>500K historical bars</li>
-                    <li>200 price alerts</li>
-                    <li>200 technical alerts</li>
-                    <li>50 parallel chart connections</li>
-                    <li>No ads</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-6 mb-4">
-              <div className="card pricing-card">
-                <div className="card-body">
-                  <h5 className="card-title">Professional PRO Ultimate</h5>
-                  <h3 className="card-price">
-                    ₹14,995<span>/month</span>
-                  </h3>
-                  <p className="card-annual-price">₹179,940/year</p>
-                  <p className="card-discount">You save ₹48,000 a year</p>
-                  <a href="#" className="btn btn-primary">Try free for 30 days</a>
-                  <ul className="list-unstyled mt-3 mb-4">
-                    <li>Unlimited charts</li>
-                    <li>100 indicators per chart</li>
-                    <li>Unlimited historical bars</li>
-                    <li>500 price alerts</li>
-                    <li>500 technical alerts</li>
-                    <li>100 parallel chart connections</li>
-                    <li>No ads</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+          )}
         </div>
-      </>
+      </main>
+
+      {/* FOOTER */}
+
+      {/* Bootstrap JS */}
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     </>
   );
 }
 
-export default Pricing;
+export default App;
