@@ -147,7 +147,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <button className="btn btn-outline-dark fw-bold">
-                  <Link to="signup.html"><FontAwesomeIcon icon={faUser} /></Link>
+                  <Link to="/Watch"><FontAwesomeIcon icon={faUser} /></Link>
                 </button>
               </li>
             </ul>

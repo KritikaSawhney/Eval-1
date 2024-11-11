@@ -139,7 +139,7 @@ export default function SignUp() {
             </video>
             <div className="overlay-text">
               <h1 className="text-dark display-2 fw-bolder" id="feof">Look first / <br /> Then leap.</h1>
-              <p className="fs-4">Alex Honnold<br />TV Athlete</p>
+              <p className="fs-4" id="right-ja">Alex Honnold<br />TV Athlete</p>
             </div>
           </div>
         </div>

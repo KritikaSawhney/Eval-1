@@ -98,7 +98,7 @@ function TermsOfUse() {
                     You agree not to use CryptoWatch for any unlawful or prohibited activities.
                     Prohibited activities include, but are not limited to:
                 </p>
-                <ul className="text-light list-disc">
+                <ul className="text-light list-disc mb-0">
                     <li>Attempting to access or use another user's account without permission.</li>
                     <li>Engaging in any activity that could damage, disable, overburden, or impair the functionality of CryptoWatch.</li>
                     <li>Using any automated means (such as bots or scripts) to access or interact with CryptoWatch, unless expressly permitted by us.</li>

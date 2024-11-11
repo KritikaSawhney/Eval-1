@@ -11,7 +11,6 @@
     border: 0px solid;
     /* border-radius: 0px 100px 100px 0px; */
 }
-<<<<<<< HEAD
 .right-pop {
     position: absolute;
     top: 83%;
@@ -20,16 +19,6 @@
     color: white;
     text-align: center;
     font-weight: 500;
-=======
-.overlay-text {
-  position: absolute !important;
-  top: 83% !important;
-  left: 25% !important;
-  transform: translate(-50%, -50%) !important;
-  color: white !important;
-  text-align: center !important;
-  font-weight: 500 !important;
->>>>>>> 10e2f3b5cb41c0c76bd113c6a61cac91b279326d
 }
 
 

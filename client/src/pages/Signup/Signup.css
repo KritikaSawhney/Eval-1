@@ -7,7 +7,14 @@
 
 #feof {
     text-shadow: 5px 5px white;
+    margin-top: -450px;
+    margin-left: 200px;
 }  
+
+#right-ja{
+    margin-left: 325px;
+    color: white;
+}
 /* signup.css */
 body {
     background-color: #f8f9fa; /* Light grey background, replace with any color you prefer */
@@ -57,20 +64,27 @@ body {
 
 .left-section{
     border: 0px solid;
-<<<<<<< HEAD
     border-radius: 0px;
-=======
-    border-radius: 20px !important; 
->>>>>>> 10e2f3b5cb41c0c76bd113c6a61cac91b279326d
 }
+
 .overlay-texts {
     position: absolute !important;
     top: 83% !important;
     right: 25% !important;
-    transform: translate(50%, -50%) !important; /* Adjusted translate to align with the right positioning */
+    transform: translate(50%, -50%) !important;
     color: white !important;
     text-align: center !important;
     font-weight: 500 !important;
+} */
+
+/* .right-pop{
+    position: absolute;
+    top: 83%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-weight: 500;
 }
 
 
@@ -79,8 +93,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    border-radius: 20px !important; /* Rounded corners */
-}
+    border-radius: 20px !important; /* Rounded corners 
+}*/
 
 .login-form {
     width: 100%;
