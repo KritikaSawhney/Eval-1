@@ -22,8 +22,8 @@
 - **Frontend:**
   - HTML5
   - CSS3
-  - JavaScript (to be added in the future)
-  - React.js (to be added in the future)
+  - JavaScript 
+  - React.js
 
 - **APIs:**
   - CoinGecko API (for fetching real-time cryptocurrency data, to be added in the future)
